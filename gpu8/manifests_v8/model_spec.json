@@ -1,0 +1,84 @@
+{
+  "generated_utc": "2026-09-24T03:50:53Z",
+  "source": "gpu8v71.core71.TypedCore / gpu8v71.train71.CoreTrainer",
+  "archived_run": "runs_v71/V71CHAIN__core__f0_outer__s42",
+  "core": {
+    "rank": 128,
+    "gate": "global",
+    "image": false,
+    "mouse": false,
+    "expr_scale": 3.0,
+    "expr_min_cov": 0.8,
+    "use_sequence": true,
+    "use_function": true,
+    "use_expression": true
+  },
+  "train": {
+    "lambda_A": 0.2,
+    "tau": 0.1,
+    "tau_a": 0.1,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch": 16,
+    "anchor_batch": 128,
+    "max_epochs": 60,
+    "patience": 8,
+    "anchor_steps": 100,
+    "grad_clip": 1.0,
+    "controls": "reference"
+  },
+  "n_trainable_parameters": 159749,
+  "parameter_breakdown": {
+    "P_T": 98304,
+    "P_S": 61440,
+    "mix": 2,
+    "gate_b": 3
+  },
+  "inputs": {
+    "d_text": 768,
+    "d_hpo": 768,
+    "g_sequence": 480,
+    "g_function": 768,
+    "g_expression": 51,
+    "d_tissue": 51,
+    "anchors": "SapBERT GO definitions"
+  },
+  "modalities": [
+    "S",
+    "F",
+    "E"
+  ],
+  "gate": "global (u fixed at 0)",
+  "featurepack_v71_hash": "d27677582e667e3b6027207f126e95791f65d09eb99aea5764c8138920f0c391",
+  "selection": {
+    "rank": 128,
+    "lambda_A": 0.2,
+    "gate": "global"
+  },
+  "reproduction": {
+    "generated_utc": "2026-09-24T03:50:53Z",
+    "run": "V71CHAIN__core__f0_outer__s42",
+    "best_epoch_archived": 8,
+    "best_epoch_refit": 8,
+    "best_val_archived": 0.09896846634359083,
+    "best_val_refit": 0.09896846634359083,
+    "history_maxabs_diff": 0.0,
+    "epochs_archived": 16,
+    "epochs_refit": 16,
+    "weights_maxabs_diff": {
+      "mix": 0.0,
+      "b": 0.0,
+      "u": 0.0,
+      "P_T.weight": 0.0,
+      "P_S.weight": 0.0
+    },
+    "n_params": 159749,
+    "seconds": 38.04152798652649,
+    "tolerance": {
+      "weights_maxabs": 0.001,
+      "history_maxabs": 0.005
+    },
+    "note": "GPU kernels are not bit-deterministic; differences within tolerance count as reproduced",
+    "reproduced": true
+  }
+}

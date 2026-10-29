@@ -1,0 +1,176 @@
+{
+  "generated_utc": "2026-09-23T08:50:26Z",
+  "resources": [
+    {
+      "file": "rna_tissue_consensus.tsv.zip",
+      "group": "hpa",
+      "url": "https://www.proteinatlas.org/download/tsv/rna_tissue_consensus.tsv.zip",
+      "fetched_utc": "2026-09-23T08:11:37.6685934Z",
+      "bytes": 5293680,
+      "sha256": "b001903da23f802c8dfbd1b6b3a8c20b831fedd4932f4bb721b06622d83ae60b",
+      "present": true,
+      "what": "HPA consensus normal-tissue RNA (nTPM), 51 tissues, HPA + GTEx consensus",
+      "version": "HPA release current at download (page shows HPA 25.1, Ensembl 109)",
+      "licence": "CC BY-SA 4.0 (Human Protein Atlas)",
+      "mapping": "Ensembl gene id -> project gene via genes.ensembl_gene_id (explicit table)",
+      "pending": "header checked at parse time; consensus values are not 51 independent donors"
+    },
+    {
+      "file": "subcellular_location.tsv.zip",
+      "group": "hpa",
+      "url": "https://www.proteinatlas.org/download/tsv/subcellular_location.tsv.zip",
+      "fetched_utc": "2026-09-23T08:11:41.0389074Z",
+      "bytes": 252331,
+      "sha256": "a9466882bd3328416bcde77c32a6bcb2a17d70183af90e98d032f6f5f781d504",
+      "present": true,
+      "what": "HPA subcellular location labels (localisation-only control for the image channel)",
+      "version": "HPA current",
+      "licence": "CC BY-SA 4.0",
+      "mapping": "Ensembl gene id",
+      "pending": "used only in the conditional image extension"
+    },
+    {
+      "file": "UP000005640_9606.fasta.gz",
+      "group": "uniprot",
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640/UP000005640_9606.fasta.gz",
+      "fetched_utc": "2026-09-23T08:12:01.7616191Z",
+      "bytes": 7728297,
+      "sha256": "64299d01e8f41fb6ef03cdf7ec051d3d4e5f041003b6b0fa75b09d439af79dce",
+      "present": true,
+      "what": "UniProt human reference proteome, one canonical sequence per gene",
+      "version": "see uniprot/RELEASE.metalink",
+      "licence": "CC BY 4.0 (UniProt)",
+      "mapping": "UniProt accession -> Entrez via HGNC uniprot_ids; fallback after MANE",
+      "pending": "ambiguous multi-gene accessions go to the exception table"
+    },
+    {
+      "file": "RELEASE.metalink",
+      "group": "uniprot",
+      "url": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/RELEASE.metalink",
+      "fetched_utc": "2026-09-23T08:12:03.6053804Z",
+      "bytes": 2595,
+      "sha256": "8ba110f3babf72be900eed666ba20cea91f2f02f0ce911f3c177f046f20592bb",
+      "present": true
+    },
+    {
+      "file": "MANE.GRCh38.v1.5.summary.txt.gz",
+      "group": "mane",
+      "url": "https://ftp.ncbi.nlm.nih.gov/refseq/MANE/MANE_human/current/MANE.GRCh38.v1.5.summary.txt.gz",
+      "fetched_utc": "2026-09-23T08:12:10.4486218Z",
+      "bytes": 1115288,
+      "sha256": "d10ace2720681a3b2e0eefd9da4f551274a6b4141ac9bfd6a2565dfb6e9ad55c",
+      "present": true,
+      "what": "MANE Select / Plus Clinical summary (GeneID -> RefSeq protein)",
+      "version": "MANE v1.5",
+      "licence": "public domain (NCBI) / EMBL-EBI terms",
+      "mapping": "NCBI GeneID (= project gene id) -> MANE Select RefSeq protein",
+      "pending": "none"
+    },
+    {
+      "file": "MANE.GRCh38.v1.5.refseq_protein.faa.gz",
+      "group": "mane",
+      "url": "https://ftp.ncbi.nlm.nih.gov/refseq/MANE/MANE_human/current/MANE.GRCh38.v1.5.refseq_protein.faa.gz",
+      "fetched_utc": "2026-09-23T08:12:15.7341403Z",
+      "bytes": 7180983,
+      "sha256": "b12307f98481b6d8c4e17d9ecd1856ee1f64a63db6507ff7529f669e26f6f372",
+      "present": true,
+      "what": "MANE RefSeq protein sequences",
+      "version": "MANE v1.5",
+      "licence": "public domain (NCBI)",
+      "mapping": "RefSeq protein accession",
+      "pending": "none"
+    },
+    {
+      "file": "genotype-phenotype-assertions-ALL.csv.gz",
+      "group": "impc",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/impc/all-data-releases/latest/results/genotype-phenotype-assertions-ALL.csv.gz",
+      "fetched_utc": "2026-09-23T08:12:48.3738005Z",
+      "bytes": 5001223,
+      "sha256": "f9d5c963f4c33abf5caf107dcb764924db76a201dee27830afadd3d65852799f",
+      "present": true,
+      "what": "IMPC genotype-phenotype calls (MP terms after gene perturbation)",
+      "version": "IMPC latest release at download",
+      "licence": "CC BY 4.0 (IMPC)",
+      "mapping": "MGI marker -> human gene through MGI HOM_MouseHumanSequence (1:1 only)",
+      "pending": "manual spot check of the HP-MP bridge not performed (exported sample)"
+    },
+    {
+      "file": "mp.obo",
+      "group": "ontology",
+      "url": "https://purl.obolibrary.org/obo/mp.obo",
+      "fetched_utc": "2026-09-23T08:12:59.7338391Z",
+      "bytes": 7679452,
+      "sha256": "30840ff64fd27b14b665efd0af4fadba31389a6b47543c2f8ac12bbecebef755",
+      "present": true,
+      "what": "Mammalian Phenotype ontology",
+      "version": "data-version in header",
+      "licence": "CC BY 4.0",
+      "mapping": "is_a closure",
+      "pending": "none"
+    },
+    {
+      "file": "HOM_MouseHumanSequence.rpt",
+      "group": "mgi",
+      "url": "https://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt",
+      "fetched_utc": "2026-09-23T08:13:34.0551928Z",
+      "bytes": 15112222,
+      "sha256": "b8220b7689f11066c3d82e0f24c23ba3c7a30ad26a0f24ab639357aebc09582d",
+      "present": true,
+      "what": "MGI human-mouse homology classes",
+      "version": "MGI report at download",
+      "licence": "MGI terms of use (CC BY 4.0)",
+      "mapping": "DB Class Key groups; only one human and one mouse gene per class kept",
+      "pending": "replaces HCOP, whose bulk file URL returned 404"
+    },
+    {
+      "file": "mp_hp_mgi_all.sssom.tsv",
+      "group": "mapping",
+      "url": "https://raw.githubusercontent.com/mapping-commons/mh_mapping_initiative/master/mappings/mp_hp_mgi_all.sssom.tsv",
+      "fetched_utc": "2026-09-23T08:13:36.8901153Z",
+      "bytes": 328986,
+      "sha256": "6b23131d80d596a8a5d5a5e6c3a3e94a63c83229059bc6b346888d6b9fd7a5de",
+      "present": true,
+      "what": "MGI curated MP-HP mappings (mapping-commons mh_mapping_initiative, SSSOM)",
+      "version": "master branch at download",
+      "licence": "CC0 / CC BY (mapping commons)",
+      "mapping": "exact / close / broad / narrow match kept with their predicate",
+      "pending": "programmatic checks only; a random sample is exported for manual review"
+    },
+    {
+      "file": "subcell_image_umap_features.tsv.zip",
+      "group": "hpa",
+      "url": "https://www.proteinatlas.org/download/subcell_image_umap_features.tsv.zip",
+      "fetched_utc": "2026-09-23T08:25:24.3880504Z",
+      "bytes": 632515574,
+      "sha256": "c23170d2fc1107d66c87c5a181a10b97f19cb4c2b2c5e2f2bc369ba7d547f92d",
+      "present": true,
+      "what": "HPA subcellular image features (1,024-d DenseNet features + UMAP coordinates)",
+      "version": "HPA current",
+      "licence": "CC BY-SA 4.0",
+      "mapping": "image -> antibody x cell line -> gene (hierarchical equal-weight means)",
+      "pending": "'tissue' column there is a cell line, never mixed with the tissue axis"
+    }
+  ],
+  "not_obtained": [
+    {
+      "file": "human_mouse_hcop_fifteen_column.txt.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/genenames/hcop/human_mouse_hcop_fifteen_column.txt.gz",
+      "status": "HTTP 404 at feasibility check (2026-09-23); MGI homology used instead"
+    },
+    {
+      "file": "subcell_image_umap_features.tsv.zip (tsv/ path)",
+      "url": "https://www.proteinatlas.org/download/tsv/subcell_image_umap_features.tsv.zip",
+      "status": "HTTP 404; the file is served from /download/ without tsv/"
+    }
+  ],
+  "reused_from_v6": [
+    "go/go-basic_current.obo",
+    "go/goa_human_current.gaf.gz",
+    "gtex/GTEx_v8_gene_median_tpm.gct.gz (E4 old-resource arm)"
+  ],
+  "provenance_reviewed": false,
+  "note": "provenance_reviewed=false: sources, licences and versions were recorded programmatically; no manual source audit is claimed",
+  "protocol_id": "gpu8_v71",
+  "written_utc": "2026-09-23T08:50:26Z",
+  "payload_hash": "293e69077431d326d9f9265de21becbbdf62b4bac7b3a49a2eff6730bbfe7b4e"
+}

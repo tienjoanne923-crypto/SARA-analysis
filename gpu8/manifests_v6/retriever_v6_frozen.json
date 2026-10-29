@@ -1,0 +1,300 @@
+{
+  "decided_on": "development families only (864 labelled dev diseases x 5 outer contexts)",
+  "objective": "macro oracle U@10 at budget 500; coverage tie-break",
+  "mode": "rrf",
+  "weights": {
+    "hier": 0.25,
+    "onto": 0.05,
+    "text": 0.25,
+    "gene_hpo": 0.15000000000000002,
+    "rwr_pheno": 0.3
+  },
+  "config_name": "refine_rrf_0.00_0.25_0.05_0.25_0.15_0.30_0.00",
+  "budget": 500,
+  "quota": 0,
+  "dev_metrics": {
+    "U10": 0.431714594133199,
+    "coverage": 0.4369595027589995,
+    "zero_coverage": 0.4703703703703704,
+    "n": 4320.0,
+    "coverage_direct_evidence": 0.3333568376740683,
+    "coverage_any_signal": 0.40812239996800076,
+    "coverage_prior_fill": 0.028837102790998704,
+    "mean_signal_genes": 441.3775462962963,
+    "mean_direct_genes": 266.7261574074074
+  },
+  "best_grid_point": {
+    "name": "grid_rrf_0.00_0.25_0.00_0.25_0.25_0.25_0.00",
+    "U10": 0.4263028001773567,
+    "coverage": 0.4314760604632872,
+    "zero_coverage": 0.4752314814814815,
+    "n": 4320.0,
+    "coverage_direct_evidence": 0.33273631833939316,
+    "coverage_any_signal": 0.39879057630188763,
+    "coverage_prior_fill": 0.03268548416139955,
+    "mean_signal_genes": 434.25439814814814,
+    "mean_direct_genes": 314.4270833333333
+  },
+  "ladder": {
+    "L0_v5_components": {
+      "U10": 0.32475234157365546,
+      "coverage": 0.3295408366708171,
+      "zero_coverage": 0.5761574074074074,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.15529530307342834,
+      "coverage_any_signal": 0.26855592507263903,
+      "coverage_prior_fill": 0.060984911598178086,
+      "mean_signal_genes": 401.56944444444446,
+      "mean_direct_genes": 92.95648148148148
+    },
+    "L1_repaired_hpo": {
+      "U10": 0.3489793556520789,
+      "coverage": 0.3537843149644726,
+      "zero_coverage": 0.5509259259259259,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.16746710488966085,
+      "coverage_any_signal": 0.2987802319512898,
+      "coverage_prior_fill": 0.05500408301318284,
+      "mean_signal_genes": 410.24444444444447,
+      "mean_direct_genes": 86.78657407407407
+    },
+    "L2_plus_onto": {
+      "U10": 0.361294684373475,
+      "coverage": 0.36627982692168637,
+      "zero_coverage": 0.5400462962962963,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.19863726032964216,
+      "coverage_any_signal": 0.3201984367980111,
+      "coverage_prior_fill": 0.04608139012367533,
+      "mean_signal_genes": 420.5435185185185,
+      "mean_direct_genes": 115.71157407407408
+    },
+    "L3_plus_text": {
+      "U10": 0.3842289783510146,
+      "coverage": 0.3894715865102322,
+      "zero_coverage": 0.5185185185185185,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.24854928460603085,
+      "coverage_any_signal": 0.36063448371923357,
+      "coverage_prior_fill": 0.028837102790998704,
+      "mean_signal_genes": 441.3775462962963,
+      "mean_direct_genes": 156.44328703703704
+    },
+    "L4_plus_gene_hpo": {
+      "U10": 0.35637022320365647,
+      "coverage": 0.3613916862659196,
+      "zero_coverage": 0.5453703703703704,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.32847682887121754,
+      "coverage_any_signal": 0.33255458347492095,
+      "coverage_prior_fill": 0.028837102790998704,
+      "mean_signal_genes": 441.3775462962963,
+      "mean_direct_genes": 436.83194444444445
+    },
+    "L5_plus_compat": {
+      "U10": 0.3589337234969362,
+      "coverage": 0.3641625330157891,
+      "zero_coverage": 0.5428240740740741,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.32850019664926605,
+      "coverage_any_signal": 0.3353254302247904,
+      "coverage_prior_fill": 0.028837102790998704,
+      "mean_signal_genes": 441.3775462962963,
+      "mean_direct_genes": 404.99444444444447
+    }
+  },
+  "singles": {
+    "pheno": {
+      "U10": 0.2113065668197654,
+      "coverage": 0.21551383334243399,
+      "zero_coverage": 0.6909722222222222,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.08762367593541937,
+      "coverage_any_signal": 0.08762367593541937,
+      "coverage_prior_fill": 0.12789015740701465,
+      "mean_signal_genes": 30.088657407407407,
+      "mean_direct_genes": 30.088657407407407
+    },
+    "hier": {
+      "U10": 0.21199125218419598,
+      "coverage": 0.2172817574175661,
+      "zero_coverage": 0.6902777777777778,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.1141629777400026,
+      "coverage_any_signal": 0.1141629777400026,
+      "coverage_prior_fill": 0.10311877967756351,
+      "mean_signal_genes": 62.10787037037037,
+      "mean_direct_genes": 62.10787037037037
+    },
+    "onto": {
+      "U10": 0.21087078037339063,
+      "coverage": 0.21577060059806652,
+      "zero_coverage": 0.6972222222222222,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.1094242645594388,
+      "coverage_any_signal": 0.1094242645594388,
+      "coverage_prior_fill": 0.10634633603862771,
+      "mean_signal_genes": 49.56273148148148,
+      "mean_direct_genes": 49.56273148148148
+    },
+    "text": {
+      "U10": 0.2330698420135409,
+      "coverage": 0.23802657911288871,
+      "zero_coverage": 0.6710648148148148,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.155103105806645,
+      "coverage_any_signal": 0.155103105806645,
+      "coverage_prior_fill": 0.08292347330624374,
+      "mean_signal_genes": 69.69560185185185,
+      "mean_direct_genes": 69.69560185185185
+    },
+    "gene_hpo": {
+      "U10": 0.30255344309206267,
+      "coverage": 0.3059637536372014,
+      "zero_coverage": 0.5969907407407408,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.22448326899195736,
+      "coverage_any_signal": 0.22448326899195736,
+      "coverage_prior_fill": 0.08148048464524406,
+      "mean_signal_genes": 382.0196759259259,
+      "mean_direct_genes": 382.0196759259259
+    },
+    "rwr_pheno": {
+      "U10": 0.30547227669158333,
+      "coverage": 0.30899317211853455,
+      "zero_coverage": 0.5960648148148148,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.0,
+      "coverage_any_signal": 0.22751268747329048,
+      "coverage_prior_fill": 0.08148048464524406,
+      "mean_signal_genes": 384.837962962963,
+      "mean_direct_genes": 0.0
+    },
+    "compat": {
+      "U10": 0.2606451306819199,
+      "coverage": 0.26441777099764313,
+      "zero_coverage": 0.6393518518518518,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.0,
+      "coverage_any_signal": 0.1827058048709176,
+      "coverage_prior_fill": 0.08171196612672554,
+      "mean_signal_genes": 381.65416666666664,
+      "mean_direct_genes": 0.0
+    },
+    "pheno_v5": {
+      "U10": 0.19170091205786063,
+      "coverage": 0.19584576436018747,
+      "zero_coverage": 0.7122685185185185,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.06806182726333686,
+      "coverage_any_signal": 0.06806182726333686,
+      "coverage_prior_fill": 0.1277839370968506,
+      "mean_signal_genes": 37.91574074074074,
+      "mean_direct_genes": 37.91574074074074
+    },
+    "rwr_v5": {
+      "U10": 0.2762297275436066,
+      "coverage": 0.2797418080472516,
+      "zero_coverage": 0.6291666666666667,
+      "n": 4320.0,
+      "coverage_direct_evidence": 0.0,
+      "coverage_any_signal": 0.191032572214923,
+      "coverage_prior_fill": 0.08870923583232858,
+      "mean_signal_genes": 373.8425925925926,
+      "mean_direct_genes": 0.0
+    }
+  },
+  "n_grid_configs": 420,
+  "n_refine_configs": 199,
+  "contexts": [
+    {
+      "fold": 0,
+      "n_reference_v5": 2542,
+      "n_reference_v6": 2541,
+      "removed_strict_equivalents": 1,
+      "n_visible_relations": 13612,
+      "gene_hpo": {
+        "rows_total": 314326,
+        "rows_mapped": 169827,
+        "rows_excluded_forbidden_source": 93993,
+        "rows_unmapped_source": 144499,
+        "rows_used": 75834,
+        "lenient": false,
+        "genes_with_profile": 2154,
+        "genes_before_exclusion": 3797
+      }
+    },
+    {
+      "fold": 1,
+      "n_reference_v5": 2542,
+      "n_reference_v6": 2541,
+      "removed_strict_equivalents": 1,
+      "n_visible_relations": 12902,
+      "gene_hpo": {
+        "rows_total": 314326,
+        "rows_mapped": 169827,
+        "rows_excluded_forbidden_source": 83722,
+        "rows_unmapped_source": 144499,
+        "rows_used": 86105,
+        "lenient": false,
+        "genes_with_profile": 2286,
+        "genes_before_exclusion": 3797
+      }
+    },
+    {
+      "fold": 2,
+      "n_reference_v5": 2543,
+      "n_reference_v6": 2541,
+      "removed_strict_equivalents": 2,
+      "n_visible_relations": 13828,
+      "gene_hpo": {
+        "rows_total": 314326,
+        "rows_mapped": 169827,
+        "rows_excluded_forbidden_source": 77372,
+        "rows_unmapped_source": 144499,
+        "rows_used": 92455,
+        "lenient": false,
+        "genes_with_profile": 2231,
+        "genes_before_exclusion": 3797
+      }
+    },
+    {
+      "fold": 3,
+      "n_reference_v5": 2544,
+      "n_reference_v6": 2540,
+      "removed_strict_equivalents": 4,
+      "n_visible_relations": 15850,
+      "gene_hpo": {
+        "rows_total": 314326,
+        "rows_mapped": 169827,
+        "rows_excluded_forbidden_source": 83650,
+        "rows_unmapped_source": 144499,
+        "rows_used": 86177,
+        "lenient": false,
+        "genes_with_profile": 2162,
+        "genes_before_exclusion": 3797
+      }
+    },
+    {
+      "fold": 4,
+      "n_reference_v5": 2543,
+      "n_reference_v6": 2540,
+      "removed_strict_equivalents": 3,
+      "n_visible_relations": 14101,
+      "gene_hpo": {
+        "rows_total": 314326,
+        "rows_mapped": 169827,
+        "rows_excluded_forbidden_source": 89095,
+        "rows_unmapped_source": 144499,
+        "rows_used": 80732,
+        "lenient": false,
+        "genes_with_profile": 2105,
+        "genes_before_exclusion": 3797
+      }
+    }
+  ],
+  "seconds": 2343.200685739517,
+  "protocol_id": "gpu8_v6",
+  "written_utc": "2026-09-23T04:08:13Z",
+  "payload_hash": "faa687d235852b69b8dced0d3cab88cb099e37f237afb74dfb819aeb73137dfd"
+}

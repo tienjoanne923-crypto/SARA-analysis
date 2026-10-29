@@ -1,0 +1,530 @@
+{
+  "generated_utc": "2026-09-24T04:44:59Z",
+  "provisional_w": 0.5,
+  "per_context": {
+    "f0_outer": {
+      "rows": [
+        {
+          "config": "none",
+          "coverage": 0.580361001943153,
+          "masked_coverage": 0.47115384615384615,
+          "n_masked_pos": 312
+        },
+        {
+          "config": "mlp_wd0.0001",
+          "kind": "mlp",
+          "wd": 0.0001,
+          "coverage": 0.5808665183145638,
+          "masked_coverage": 0.42948717948717946,
+          "shuffled_masked_coverage": 0.3782051282051282,
+          "shuffled_coverage": 0.5772923039592582,
+          "gain": -0.041666666666666685,
+          "shuffled_gain": -0.09294871794871795,
+          "coverage_delta": 0.0005055163714108302,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.031332979288369624,
+            "top10": 0.13436006372809348,
+            "median_rank": 248.0,
+            "mean_cos_true": 0.5515832901000977,
+            "mean_pairwise_cos": 0.1907496601343155,
+            "effective_rank": 63.65474319458008,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "mlp_wd0.01",
+          "kind": "mlp",
+          "wd": 0.01,
+          "coverage": 0.5805758175030297,
+          "masked_coverage": 0.42628205128205127,
+          "shuffled_masked_coverage": 0.3782051282051282,
+          "shuffled_coverage": 0.5784730635665083,
+          "gain": -0.04487179487179488,
+          "shuffled_gain": -0.09294871794871795,
+          "coverage_delta": 0.00021481555987667988,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.031332979288369624,
+            "top10": 0.13382899628252787,
+            "median_rank": 250.0,
+            "mean_cos_true": 0.551231861114502,
+            "mean_pairwise_cos": 0.19171226024627686,
+            "effective_rank": 63.57099533081055,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "linear_wd0.0001",
+          "kind": "linear",
+          "wd": 0.0001,
+          "coverage": 0.5787709128070058,
+          "masked_coverage": 0.40064102564102566,
+          "shuffled_masked_coverage": 0.3814102564102564,
+          "shuffled_coverage": 0.5789645225321755,
+          "gain": -0.07051282051282048,
+          "shuffled_gain": -0.08974358974358976,
+          "coverage_delta": -0.0015900891361472214,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.026553372278279343,
+            "top10": 0.09134360063728093,
+            "median_rank": 361.0,
+            "mean_cos_true": 0.5173733830451965,
+            "mean_pairwise_cos": 0.2413819134235382,
+            "effective_rank": 66.78330993652344,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "linear_wd0.01",
+          "kind": "linear",
+          "wd": 0.01,
+          "coverage": 0.5787709128070058,
+          "masked_coverage": 0.40064102564102566,
+          "shuffled_masked_coverage": 0.36538461538461536,
+          "shuffled_coverage": 0.5772685026769275,
+          "gain": -0.07051282051282048,
+          "shuffled_gain": -0.10576923076923078,
+          "coverage_delta": -0.0015900891361472214,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.026553372278279343,
+            "top10": 0.09187466808284653,
+            "median_rank": 365.0,
+            "mean_cos_true": 0.5171542167663574,
+            "mean_pairwise_cos": 0.24082715809345245,
+            "effective_rank": 66.69561004638672,
+            "collapsed": false
+          }
+        }
+      ],
+      "accepted": false,
+      "config": null
+    },
+    "f1_outer": {
+      "rows": [
+        {
+          "config": "none",
+          "coverage": 0.5479114342452706,
+          "masked_coverage": 0.4391025641025641,
+          "n_masked_pos": 312
+        },
+        {
+          "config": "mlp_wd0.0001",
+          "kind": "mlp",
+          "wd": 0.0001,
+          "coverage": 0.5462349586569987,
+          "masked_coverage": 0.3942307692307692,
+          "shuffled_masked_coverage": 0.34615384615384615,
+          "shuffled_coverage": 0.5387134476796582,
+          "gain": -0.04487179487179488,
+          "shuffled_gain": -0.09294871794871795,
+          "coverage_delta": -0.0016764755882718863,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.027615507169410514,
+            "top10": 0.12267657992565056,
+            "median_rank": 263.0,
+            "mean_cos_true": 0.5452429056167603,
+            "mean_pairwise_cos": 0.22314225137233734,
+            "effective_rank": 66.82188415527344,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "mlp_wd0.01",
+          "kind": "mlp",
+          "wd": 0.01,
+          "coverage": 0.5462349586569987,
+          "masked_coverage": 0.3942307692307692,
+          "shuffled_masked_coverage": 0.3525641025641026,
+          "shuffled_coverage": 0.5420132644234854,
+          "gain": -0.04487179487179488,
+          "shuffled_gain": -0.08653846153846151,
+          "coverage_delta": -0.0016764755882718863,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.026022304832713755,
+            "top10": 0.1210833775889538,
+            "median_rank": 267.0,
+            "mean_cos_true": 0.5449935793876648,
+            "mean_pairwise_cos": 0.22510483860969543,
+            "effective_rank": 66.70877838134766,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "linear_wd0.0001",
+          "kind": "linear",
+          "wd": 0.0001,
+          "coverage": 0.5444217726763236,
+          "masked_coverage": 0.36538461538461536,
+          "shuffled_masked_coverage": 0.34294871794871795,
+          "shuffled_coverage": 0.5394352246605717,
+          "gain": -0.07371794871794873,
+          "shuffled_gain": -0.09615384615384615,
+          "coverage_delta": -0.0034896615689469224,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.024429102496016993,
+            "top10": 0.09877854487519915,
+            "median_rank": 389.0,
+            "mean_cos_true": 0.5143843293190002,
+            "mean_pairwise_cos": 0.25510454177856445,
+            "effective_rank": 69.5926284790039,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "linear_wd0.01",
+          "kind": "linear",
+          "wd": 0.01,
+          "coverage": 0.5444024825528667,
+          "masked_coverage": 0.36538461538461536,
+          "shuffled_masked_coverage": 0.34294871794871795,
+          "shuffled_coverage": 0.5394390402893874,
+          "gain": -0.07371794871794873,
+          "shuffled_gain": -0.09615384615384615,
+          "coverage_delta": -0.003508951692403839,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.024429102496016993,
+            "top10": 0.09930961232076474,
+            "median_rank": 389.0,
+            "mean_cos_true": 0.5142865777015686,
+            "mean_pairwise_cos": 0.25509536266326904,
+            "effective_rank": 69.50706481933594,
+            "collapsed": false
+          }
+        }
+      ],
+      "accepted": false,
+      "config": null
+    },
+    "f2_outer": {
+      "rows": [
+        {
+          "config": "none",
+          "coverage": 0.5316620984574689,
+          "masked_coverage": 0.41346153846153844,
+          "n_masked_pos": 312
+        },
+        {
+          "config": "mlp_wd0.0001",
+          "kind": "mlp",
+          "wd": 0.0001,
+          "coverage": 0.5304978462999218,
+          "masked_coverage": 0.375,
+          "shuffled_masked_coverage": 0.3333333333333333,
+          "shuffled_coverage": 0.5262497857947691,
+          "gain": -0.038461538461538436,
+          "shuffled_gain": -0.08012820512820512,
+          "coverage_delta": -0.0011642521575471187,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.027615507169410514,
+            "top10": 0.12002124269782262,
+            "median_rank": 234.0,
+            "mean_cos_true": 0.5158879160881042,
+            "mean_pairwise_cos": 0.1436949223279953,
+            "effective_rank": 66.49913024902344,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "mlp_wd0.01",
+          "kind": "mlp",
+          "wd": 0.01,
+          "coverage": 0.5289482063822264,
+          "masked_coverage": 0.375,
+          "shuffled_masked_coverage": 0.32051282051282054,
+          "shuffled_coverage": 0.5258757337940048,
+          "gain": -0.038461538461538436,
+          "shuffled_gain": -0.0929487179487179,
+          "coverage_delta": -0.00271389207524253,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.026553372278279343,
+            "top10": 0.11789697291556028,
+            "median_rank": 232.0,
+            "mean_cos_true": 0.515511691570282,
+            "mean_pairwise_cos": 0.1448831856250763,
+            "effective_rank": 66.327392578125,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "linear_wd0.0001",
+          "kind": "linear",
+          "wd": 0.0001,
+          "coverage": 0.5255904504349129,
+          "masked_coverage": 0.33653846153846156,
+          "shuffled_masked_coverage": 0.3333333333333333,
+          "shuffled_coverage": 0.5249848077511691,
+          "gain": -0.07692307692307687,
+          "shuffled_gain": -0.08012820512820512,
+          "coverage_delta": -0.006071648022555998,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.0201805629314923,
+            "top10": 0.09771640998406797,
+            "median_rank": 300.0,
+            "mean_cos_true": 0.485172301530838,
+            "mean_pairwise_cos": 0.1383640617132187,
+            "effective_rank": 68.55065155029297,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "linear_wd0.01",
+          "kind": "linear",
+          "wd": 0.01,
+          "coverage": 0.5255904504349129,
+          "masked_coverage": 0.33653846153846156,
+          "shuffled_masked_coverage": 0.32051282051282054,
+          "shuffled_coverage": 0.5250372822676602,
+          "gain": -0.07692307692307687,
+          "shuffled_gain": -0.0929487179487179,
+          "coverage_delta": -0.006071648022555998,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.0201805629314923,
+            "top10": 0.09771640998406797,
+            "median_rank": 297.0,
+            "mean_cos_true": 0.4849557876586914,
+            "mean_pairwise_cos": 0.13701902329921722,
+            "effective_rank": 68.47508239746094,
+            "collapsed": false
+          }
+        }
+      ],
+      "accepted": false,
+      "config": null
+    },
+    "f3_outer": {
+      "rows": [
+        {
+          "config": "none",
+          "coverage": 0.5528194072018476,
+          "masked_coverage": 0.4358974358974359,
+          "n_masked_pos": 312
+        },
+        {
+          "config": "mlp_wd0.0001",
+          "kind": "mlp",
+          "wd": 0.0001,
+          "coverage": 0.5529916953363503,
+          "masked_coverage": 0.3782051282051282,
+          "shuffled_masked_coverage": 0.34615384615384615,
+          "shuffled_coverage": 0.5488694130565159,
+          "gain": -0.05769230769230771,
+          "shuffled_gain": -0.08974358974358976,
+          "coverage_delta": 0.00017228813450265168,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.03186404673393521,
+            "top10": 0.12002124269782262,
+            "median_rank": 275.0,
+            "mean_cos_true": 0.5763574242591858,
+            "mean_pairwise_cos": 0.21772170066833496,
+            "effective_rank": 60.01451110839844,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "mlp_wd0.01",
+          "kind": "mlp",
+          "wd": 0.01,
+          "coverage": 0.5527987941017823,
+          "masked_coverage": 0.3782051282051282,
+          "shuffled_masked_coverage": 0.358974358974359,
+          "shuffled_coverage": 0.550246129723578,
+          "gain": -0.05769230769230771,
+          "shuffled_gain": -0.07692307692307693,
+          "coverage_delta": -2.0613100065292045e-05,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.030801911842804036,
+            "top10": 0.11789697291556028,
+            "median_rank": 274.0,
+            "mean_cos_true": 0.5761885643005371,
+            "mean_pairwise_cos": 0.21675023436546326,
+            "effective_rank": 59.892208099365234,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "linear_wd0.0001",
+          "kind": "linear",
+          "wd": 0.0001,
+          "coverage": 0.5520345076561133,
+          "masked_coverage": 0.3717948717948718,
+          "shuffled_masked_coverage": 0.3525641025641026,
+          "shuffled_coverage": 0.5480720900269449,
+          "gain": -0.0641025641025641,
+          "shuffled_gain": -0.08333333333333331,
+          "coverage_delta": -0.0007848995457343522,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.02336696760488582,
+            "top10": 0.08815719596388741,
+            "median_rank": 378.0,
+            "mean_cos_true": 0.5459043979644775,
+            "mean_pairwise_cos": 0.23909325897693634,
+            "effective_rank": 62.8438835144043,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "linear_wd0.01",
+          "kind": "linear",
+          "wd": 0.01,
+          "coverage": 0.5520345076561133,
+          "masked_coverage": 0.3717948717948718,
+          "shuffled_masked_coverage": 0.34615384615384615,
+          "shuffled_coverage": 0.5478363210351598,
+          "gain": -0.0641025641025641,
+          "shuffled_gain": -0.08974358974358976,
+          "coverage_delta": -0.0007848995457343522,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.02336696760488582,
+            "top10": 0.08762612851832183,
+            "median_rank": 377.0,
+            "mean_cos_true": 0.5457184910774231,
+            "mean_pairwise_cos": 0.24091146886348724,
+            "effective_rank": 62.73690414428711,
+            "collapsed": false
+          }
+        }
+      ],
+      "accepted": false,
+      "config": null
+    },
+    "f4_outer": {
+      "rows": [
+        {
+          "config": "none",
+          "coverage": 0.5749502201184157,
+          "masked_coverage": 0.47435897435897434,
+          "n_masked_pos": 312
+        },
+        {
+          "config": "mlp_wd0.0001",
+          "kind": "mlp",
+          "wd": 0.0001,
+          "coverage": 0.5753690521404821,
+          "masked_coverage": 0.38782051282051283,
+          "shuffled_masked_coverage": 0.358974358974359,
+          "shuffled_coverage": 0.5722417359253272,
+          "gain": -0.08653846153846151,
+          "shuffled_gain": -0.11538461538461536,
+          "coverage_delta": 0.00041883202206638437,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.028146574614976102,
+            "top10": 0.11789697291556028,
+            "median_rank": 268.0,
+            "mean_cos_true": 0.5817885398864746,
+            "mean_pairwise_cos": 0.24847111105918884,
+            "effective_rank": 60.57965087890625,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "mlp_wd0.01",
+          "kind": "mlp",
+          "wd": 0.01,
+          "coverage": 0.5747903484367783,
+          "masked_coverage": 0.38461538461538464,
+          "shuffled_masked_coverage": 0.358974358974359,
+          "shuffled_coverage": 0.5722417359253272,
+          "gain": -0.0897435897435897,
+          "shuffled_gain": -0.11538461538461536,
+          "coverage_delta": -0.00015987168163733578,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.02867764206054169,
+            "top10": 0.11683483802442911,
+            "median_rank": 273.0,
+            "mean_cos_true": 0.5816267132759094,
+            "mean_pairwise_cos": 0.2512229084968567,
+            "effective_rank": 60.48347854614258,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "linear_wd0.0001",
+          "kind": "linear",
+          "wd": 0.0001,
+          "coverage": 0.5760906664310065,
+          "masked_coverage": 0.3942307692307692,
+          "shuffled_masked_coverage": 0.3717948717948718,
+          "shuffled_coverage": 0.5728200277654026,
+          "gain": -0.08012820512820512,
+          "shuffled_gain": -0.10256410256410253,
+          "coverage_delta": 0.0011404463125908038,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.02496016994158258,
+            "top10": 0.09559214020180563,
+            "median_rank": 381.0,
+            "mean_cos_true": 0.5472878217697144,
+            "mean_pairwise_cos": 0.24303556978702545,
+            "effective_rank": 63.600006103515625,
+            "collapsed": false
+          }
+        },
+        {
+          "config": "linear_wd0.01",
+          "kind": "linear",
+          "wd": 0.01,
+          "coverage": 0.5760906664310065,
+          "masked_coverage": 0.3942307692307692,
+          "shuffled_masked_coverage": 0.36538461538461536,
+          "shuffled_coverage": 0.5734554030470043,
+          "gain": -0.08012820512820512,
+          "shuffled_gain": -0.10897435897435898,
+          "coverage_delta": 0.0011404463125908038,
+          "gene_level_masked": {
+            "n_val_genes": 1883,
+            "pool": 18784,
+            "top1": 0.025491237387148168,
+            "top10": 0.09612320764737121,
+            "median_rank": 383.0,
+            "mean_cos_true": 0.5471187233924866,
+            "mean_pairwise_cos": 0.24163758754730225,
+            "effective_rank": 63.508609771728516,
+            "collapsed": false
+          }
+        }
+      ],
+      "accepted": false,
+      "config": null
+    }
+  },
+  "rule": "accept iff masked-positive coverage gain > 0, paired (length-stratum) shuffle lowers it, and overall development coverage does not drop by more than 0.005; among passing configurations the largest gain, ties -> linear, then the larger weight decay",
+  "protocol_id": "gpu8_v8final",
+  "written_utc": "2026-09-24T04:44:59Z",
+  "payload_hash": "1fdec13e7ef4559d0ad9b5866b9f18c59a3cce6a3e69023b890ac6b4fe6c5b21"
+}

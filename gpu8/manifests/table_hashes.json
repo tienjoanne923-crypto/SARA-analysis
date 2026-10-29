@@ -1,0 +1,158 @@
+{
+  "recorded_utc": "2026-09-22T19:23:49+00:00",
+  "stage": "after ingest and mapping",
+  "tables": {
+    "genes": {
+      "status": "present",
+      "rows": 19861,
+      "columns": [
+        "gene_id",
+        "ncbi_gene_id",
+        "hgnc_id",
+        "symbol",
+        "ensembl_gene_id",
+        "locus_type",
+        "locus_group",
+        "map_path",
+        "ambiguity_status",
+        "in_legacy_space",
+        "protein_coding",
+        "version"
+      ],
+      "bytes": 726456,
+      "sha256": "871f20a9a5ebb3fc19ed7e83738a4f468e6f0b19c366338b9ec12f2494b90436",
+      "path": "gpu8/tables/genes.parquet"
+    },
+    "diseases": {
+      "status": "present",
+      "rows": 13321,
+      "columns": [
+        "disease_id",
+        "disease_name",
+        "source_ids",
+        "omim_ids",
+        "definition",
+        "synonyms",
+        "tree_numbers",
+        "parent_ids",
+        "equivalence_group",
+        "family_group",
+        "mapping_type",
+        "hpo_coverage",
+        "n_relations",
+        "source",
+        "mondo_ids",
+        "external_curies",
+        "family_source"
+      ],
+      "bytes": 3008996,
+      "sha256": "0d87ad92f2a2de9bc711378fd20bece071c9f8b908231b8e641b5a5d2391ce8d",
+      "path": "gpu8/tables/diseases.parquet"
+    },
+    "relations": {
+      "status": "present",
+      "rows": 33762,
+      "columns": [
+        "relation_id",
+        "disease_id",
+        "gene_id",
+        "relation_type",
+        "n_pmids",
+        "omim_ids"
+      ],
+      "bytes": 449710,
+      "sha256": "a1ac99822cc2f1458cb55538d4a633afcec59332958b08117dfd8e2d119c801c",
+      "path": "gpu8/tables/relations.parquet"
+    },
+    "evidence": {
+      "status": "present",
+      "rows": 42345,
+      "columns": [
+        "relation_id",
+        "source",
+        "source_record",
+        "pmid",
+        "level",
+        "original_date",
+        "first_curated_date",
+        "version"
+      ],
+      "bytes": 796719,
+      "sha256": "871941c470433f85c15a07e2f80514fbcec910116fee1c7bab6d459c7ede0c02",
+      "path": "gpu8/tables/evidence.parquet"
+    },
+    "phenotypes": {
+      "status": "present",
+      "rows": 95170,
+      "columns": [
+        "disease_id",
+        "hpo_id",
+        "negated",
+        "frequency",
+        "source",
+        "date",
+        "aspect"
+      ],
+      "bytes": 841623,
+      "sha256": "f3679b16089ef5d1d74745babcc2e5a5b88b1500c760469c35243d315cbad2e0",
+      "path": "gpu8/tables/phenotypes.parquet"
+    },
+    "hierarchy": {
+      "status": "present",
+      "rows": 22419,
+      "columns": [
+        "child_disease",
+        "parent_disease",
+        "relation_type",
+        "resource_version"
+      ],
+      "bytes": 166619,
+      "sha256": "869a2727d04d679de97507c2ae8f25badfcea34087b9844d1f0330336c9237c3",
+      "path": "gpu8/tables/hierarchy.parquet"
+    },
+    "ppi": {
+      "status": "present",
+      "rows": 314018,
+      "columns": [
+        "gene_a",
+        "gene_b",
+        "score",
+        "network_type",
+        "source"
+      ],
+      "bytes": 1506103,
+      "sha256": "038a5e96ac0d7c19dd59e7544f5daeccdc3478347b5a812ee760fc027db41e23",
+      "path": "gpu8/tables/ppi.parquet"
+    },
+    "hpo_terms": {
+      "status": "present",
+      "rows": 19389,
+      "columns": [
+        "hpo_id",
+        "name",
+        "definition",
+        "synonyms",
+        "is_a"
+      ],
+      "bytes": 2038479,
+      "sha256": "7b5543e07c1342f00ecbbea70563465607ad9f74e6b5147d93246e3ba6926dc0",
+      "path": "gpu8/tables/hpo_terms.parquet"
+    },
+    "do_terms": {
+      "status": "present",
+      "rows": 12155,
+      "columns": [
+        "term_id",
+        "name",
+        "definition",
+        "synonyms",
+        "is_a",
+        "xref"
+      ],
+      "bytes": 1592965,
+      "sha256": "08e8803ed24dd18e73de441e0ff4f5e632a7d4398832c37b1028198544964b13",
+      "path": "gpu8/tables/do_terms.parquet"
+    }
+  },
+  "note": "diseases.parquet is written twice by design: ingest builds it from the CTD vocabulary, then mapping adds mondo_ids, mapping_type, equivalence_group, family_group and family_source. The hash below is the final one and is the reference for the provenance check."
+}

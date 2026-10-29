@@ -1,0 +1,265 @@
+{
+  "generated_utc": "2026-09-24T14:24:41Z",
+  "numbers": {
+    "main.h1_vs_channel_lgb_v6.delta": {
+      "value": 0.04514351648413413,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h1_vs_channel_lgb_v6.ci_low": {
+      "value": 0.02902405289600524,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h1_vs_channel_lgb_v6.ci_high": {
+      "value": 0.06111846051712785,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h1_vs_channel_lgb_v6.a": {
+      "value": 0.16629916788749433,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h1_vs_channel_lgb_v6.b": {
+      "value": 0.12115565140336018,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h2_vs_v71_direct_strict.delta": {
+      "value": -0.0015658646864344704,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h2_vs_v71_direct_strict.ci_low": {
+      "value": -0.005598852312692154,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h2_vs_v71_direct_strict.ci_high": {
+      "value": 0.0031075960303836524,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h2_vs_v71_direct_strict.a": {
+      "value": 0.16629916788749433,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h2_vs_v71_direct_strict.b": {
+      "value": 0.1678650325739288,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h3_cold_vs_v71_direct_strict.delta": {
+      "value": -0.0033559960499744794,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h3_cold_vs_v71_direct_strict.ci_low": {
+      "value": -0.009709281203214582,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h3_cold_vs_v71_direct_strict.ci_high": {
+      "value": 0.004099902870838827,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h3_cold_vs_v71_direct_strict.a": {
+      "value": 0.03942146399081689,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.h3_cold_vs_v71_direct_strict.b": {
+      "value": 0.04277746004079138,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_B.delta": {
+      "value": 0.04574090359533211,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_B.ci_low": {
+      "value": 0.028773688328386563,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_B.ci_high": {
+      "value": 0.06269347360821649,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_B.a": {
+      "value": 0.16629916788749433,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_B.b": {
+      "value": 0.12055826429216222,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_F7_v6.delta": {
+      "value": 0.059876118051060793,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_F7_v6.ci_low": {
+      "value": 0.04097843267258114,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_F7_v6.ci_high": {
+      "value": 0.08278637605371647,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_F7_v6.a": {
+      "value": 0.16629916788749433,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_F7_v6.b": {
+      "value": 0.10642304983643353,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_standalone_sF.delta": {
+      "value": 0.05710090606932426,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_standalone_sF.ci_low": {
+      "value": 0.04769309867960774,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_standalone_sF.ci_high": {
+      "value": 0.06824766780981484,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_standalone_sF.a": {
+      "value": 0.16629916788749433,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.vs_standalone_sF.b": {
+      "value": 0.10919826181817005,
+      "source": "results_v8/eval/eval_test_main.parquet",
+      "note": "seed-averaged per disease"
+    },
+    "main.B.recall10": {
+      "value": 0.12055826429216222,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.B.cold_recall10": {
+      "value": 0.002796085480327541,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.F7_strict.recall10": {
+      "value": 0.10611656819368716,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.F7_strict.cold_recall10": {
+      "value": 0.0,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.F7_v6.recall10": {
+      "value": 0.10642304983643353,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.F7_v6.cold_recall10": {
+      "value": 0.0,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.channel_lgb_v6.recall10": {
+      "value": 0.12115565140336018,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.channel_lgb_v6.cold_recall10": {
+      "value": 0.001597763131615738,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.deployed.recall10": {
+      "value": 0.16629916788749433,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.deployed.cold_recall10": {
+      "value": 0.03942146399081689,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.standalone_r.recall10": {
+      "value": 0.11817982381419403,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.standalone_r.cold_recall10": {
+      "value": 0.05387138685183188,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.standalone_sF.recall10": {
+      "value": 0.10919826181817005,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.standalone_sF.cold_recall10": {
+      "value": 0.06267533632751739,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.standalone_sF0.recall10": {
+      "value": 0.06321118672212232,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.standalone_sF0.cold_recall10": {
+      "value": 0.053717323757943365,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.standalone_sS.recall10": {
+      "value": 0.028682974311277785,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.standalone_sS.cold_recall10": {
+      "value": 0.005741009922215057,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.v71_direct_strict.recall10": {
+      "value": 0.1678650325739288,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.v71_direct_strict.cold_recall10": {
+      "value": 0.04277746004079138,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.v71_direct_v6.recall10": {
+      "value": 0.15031850354824183,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    },
+    "main.v71_direct_v6.cold_recall10": {
+      "value": 0.016679149191132413,
+      "source": "results_v8/tables/t2_main_comparison.csv",
+      "note": ""
+    }
+  }
+}

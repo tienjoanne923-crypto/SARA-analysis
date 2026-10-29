@@ -1,0 +1,747 @@
+{
+  "schema_version": "1.0",
+  "scope": "local deterministic input preprocessing stages only; no fitting, selection, registration or network acquisition",
+  "prepared_date": "2026-10-29",
+  "requires_semantics": "exact relative paths; all are required existence preflight, not an exhaustive semantic or content-hash validation",
+  "commands_semantics": "Each commands entry is an argv list. Replace leading python with selected interpreter, run sequentially from disposable workspace root with PYTHONPATH pointing to that root/gpu8/src.",
+  "verified_semantics": "verified=true means original source CLI and required paths statically inspected; execution_verified=false means no pipeline execution performed.",
+  "execution_policy": {
+    "default": "list_and_preflight_only",
+    "execute_requires_explicit_flag": true,
+    "auto_run_dependencies": false,
+    "auto_download": false,
+    "auto_development_or_registration": false,
+    "require_disposable_workspace": true,
+    "missing_inputs_fail_closed": true,
+    "existing_cache_is_not_fresh_rebuild": true
+  },
+  "stages": [
+    {
+      "id": "legacy-background",
+      "title": "Rebuild the legacy gene-background file",
+      "commands": [
+        [
+          "python",
+          "code/prepare_processed_data.py",
+          "--root",
+          ".",
+          "--out_dir",
+          "processed_data",
+          "--min_inference_score",
+          "50",
+          "--ppi_score_threshold",
+          "700",
+          "--max_ctd_rows",
+          "0",
+          "--max_pairs",
+          "0"
+        ]
+      ],
+      "requires": [
+        "association/CTD_diseases.tsv.gz",
+        "association/CTD_genes_diseases.tsv.gz",
+        "function/Homo_sapiens.gene_info.gz",
+        "ontology/doid.obo",
+        "phenotype/hp.obo",
+        "phenotype/phenotype.hpoa",
+        "ppi/9606.protein.aliases.v12.0.txt.gz",
+        "ppi/9606.protein.info.v12.0.txt.gz",
+        "ppi/9606.protein.physical.links.v12.0.txt.gz"
+      ],
+      "writes_to": [
+        "processed_data"
+      ],
+      "source_contract": [
+        "code/prepare_processed_data.py"
+      ],
+      "depends_on": [],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": [
+        "No inferred association switch; original count 8676 legacy gene nodes. All snapshot hashes must match before execution."
+      ]
+    },
+    {
+      "id": "base-ingest",
+      "title": "Build canonical base tables",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8.ingest"
+        ]
+      ],
+      "requires": [
+        "association/CTD_diseases.tsv.gz",
+        "association/CTD_genes_diseases.tsv.gz",
+        "function/Homo_sapiens.gene_info.gz",
+        "gpu8/configs/frozen_config.json",
+        "gpu8/external/hgnc/hgnc_complete_set.txt",
+        "gpu8/external/string/9606.protein.links.v12.0.txt.gz",
+        "ontology/doid.obo",
+        "phenotype/hp.obo",
+        "phenotype/phenotype.hpoa",
+        "ppi/9606.protein.aliases.v12.0.txt.gz",
+        "ppi/9606.protein.info.v12.0.txt.gz",
+        "ppi/9606.protein.physical.links.v12.0.txt.gz",
+        "processed_data/nodes_gene.csv"
+      ],
+      "writes_to": [
+        "gpu8/tables",
+        "gpu8/configs",
+        "gpu8/manifests"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8/ingest.py"
+      ],
+      "depends_on": [
+        "legacy-background"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": [
+        "Default also incorporates functional network when present; require it to avoid silent baseline drift.",
+        "Writes config and resource manifest as well as tables. Preserve frozen manifest copies separately."
+      ]
+    },
+    {
+      "id": "disease-mapping",
+      "title": "Attach disease equivalence and assigned grouping fields",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8.mapping"
+        ]
+      ],
+      "requires": [
+        "gpu8/configs/frozen_config.json",
+        "gpu8/external/mondo/mondo.obo",
+        "gpu8/external/mondo/mondo.sssom.tsv",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/hierarchy.parquet"
+      ],
+      "writes_to": [
+        "gpu8/tables",
+        "gpu8/manifests"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8/mapping.py"
+      ],
+      "depends_on": [
+        "base-ingest"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": [
+        "Frozen replay uses existing role records, not a new gpu8.protocol execution."
+      ]
+    },
+    {
+      "id": "v6-phenotypes",
+      "title": "Rebuild repaired phenotype mappings",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v6.phenotypes_v6"
+        ]
+      ],
+      "requires": [
+        "gpu8/external/mondo/mondo.obo",
+        "gpu8/external/mondo/mondo.sssom.tsv",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/hpo_terms.parquet",
+        "phenotype/phenotype.hpoa"
+      ],
+      "writes_to": [
+        "gpu8/tables_v6",
+        "gpu8/results_v6"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v6/phenotypes_v6.py"
+      ],
+      "depends_on": [
+        "disease-mapping"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": []
+    },
+    {
+      "id": "v6-text",
+      "title": "Rebuild masked disease text",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v6.disease_text"
+        ]
+      ],
+      "requires": [
+        "gpu8/external/hgnc/hgnc_complete_set.txt",
+        "gpu8/external/mondo/mondo.obo",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/do_terms.parquet",
+        "gpu8/tables/genes.parquet"
+      ],
+      "writes_to": [
+        "gpu8/tables_v6",
+        "gpu8/results_v6"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v6/disease_text.py"
+      ],
+      "depends_on": [
+        "disease-mapping"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": []
+    },
+    {
+      "id": "v71-sequences",
+      "title": "Prepare representative sequence table",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v71.sequences71"
+        ]
+      ],
+      "requires": [
+        "gpu8/configs/frozen_config.json",
+        "gpu8/external/hgnc/hgnc_complete_set.txt",
+        "gpu8/external/v71/mane/MANE.GRCh38.v1.5.refseq_protein.faa.gz",
+        "gpu8/external/v71/mane/MANE.GRCh38.v1.5.summary.txt.gz",
+        "gpu8/external/v71/uniprot/RELEASE.metalink",
+        "gpu8/external/v71/uniprot/UP000005640_9606.fasta.gz",
+        "gpu8/manifests/contexts.json",
+        "gpu8/manifests/splits_main_5fold.json",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/evidence.parquet",
+        "gpu8/tables/genes.parquet",
+        "gpu8/tables/hierarchy.parquet",
+        "gpu8/tables/hpo_terms.parquet",
+        "gpu8/tables/phenotypes.parquet",
+        "gpu8/tables/relations.parquet"
+      ],
+      "writes_to": [
+        "gpu8/tables_v71",
+        "gpu8/results_v71"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v71/sequences71.py"
+      ],
+      "depends_on": [
+        "disease-mapping"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": []
+    },
+    {
+      "id": "v71-encoders",
+      "title": "Encode exact frozen disease HPO GO and sequence inputs",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v71.encoders71",
+          "--device",
+          "cuda",
+          "--only",
+          "disease",
+          "hpo",
+          "go",
+          "esm"
+        ]
+      ],
+      "requires": [
+        "gpu8/external/hgnc/hgnc_complete_set.txt",
+        "gpu8/external/mondo/mondo.obo",
+        "gpu8/external/v6/go/go-basic_current.obo",
+        "gpu8/external/v71/models/esm2_35m/config.json",
+        "gpu8/external/v71/models/esm2_35m/model.safetensors",
+        "gpu8/external/v71/models/esm2_35m/vocab.txt",
+        "gpu8/external/v71/models/sapbert/config.json",
+        "gpu8/external/v71/models/sapbert/pytorch_model.bin",
+        "gpu8/external/v71/models/sapbert/vocab.txt",
+        "gpu8/manifests_v71/models_v71.json",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/do_terms.parquet",
+        "gpu8/tables/genes.parquet",
+        "gpu8/tables/hpo_terms.parquet",
+        "gpu8/tables_v71/sequences_v71.parquet"
+      ],
+      "writes_to": [
+        "gpu8/caches_v71",
+        "gpu8/tables_v71",
+        "gpu8/results_v71"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v71/encoders71.py"
+      ],
+      "depends_on": [
+        "v71-sequences",
+        "v6-text"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": [
+        "Verify every model file against frozen models manifest first; no model downloading occurs in this stage."
+      ]
+    },
+    {
+      "id": "v71-functions",
+      "title": "Build GO semantic vectors and anchors",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v71.function71"
+        ]
+      ],
+      "requires": [
+        "gpu8/caches_v71/encoders/sapbert_go.key.json",
+        "gpu8/caches_v71/encoders/sapbert_go.npy",
+        "gpu8/configs/frozen_config.json",
+        "gpu8/external/hgnc/hgnc_complete_set.txt",
+        "gpu8/external/v6/go/go-basic_current.obo",
+        "gpu8/external/v6/go/goa_human_current.gaf.gz",
+        "gpu8/manifests/contexts.json",
+        "gpu8/manifests/splits_main_5fold.json",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/evidence.parquet",
+        "gpu8/tables/genes.parquet",
+        "gpu8/tables/hierarchy.parquet",
+        "gpu8/tables/hpo_terms.parquet",
+        "gpu8/tables/phenotypes.parquet",
+        "gpu8/tables/relations.parquet",
+        "gpu8/tables_v71/go_term_texts_v71.parquet"
+      ],
+      "writes_to": [
+        "gpu8/tables_v71",
+        "gpu8/results_v71"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v71/function71.py"
+      ],
+      "depends_on": [
+        "v71-encoders"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": []
+    },
+    {
+      "id": "v71-expression",
+      "title": "Build HPA GTEx expression and disease tissue features",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v71.expression71"
+        ]
+      ],
+      "requires": [
+        "gpu8/configs/frozen_config.json",
+        "gpu8/external/v6/gtex/GTEx_v8_gene_median_tpm.gct.gz",
+        "gpu8/external/v71/hpa/rna_tissue_consensus.tsv.zip",
+        "gpu8/manifests/contexts.json",
+        "gpu8/manifests/splits_main_5fold.json",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/evidence.parquet",
+        "gpu8/tables/genes.parquet",
+        "gpu8/tables/hierarchy.parquet",
+        "gpu8/tables/hpo_terms.parquet",
+        "gpu8/tables/phenotypes.parquet",
+        "gpu8/tables/relations.parquet",
+        "gpu8/tables_v6/phenotypes_v6.parquet",
+        "gpu8/tables_v71/disease_templates_v71.parquet"
+      ],
+      "writes_to": [
+        "gpu8/tables_v71",
+        "gpu8/results_v71"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v71/expression71.py"
+      ],
+      "depends_on": [
+        "v71-encoders",
+        "v6-phenotypes"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": []
+    },
+    {
+      "id": "v71-featurepack",
+      "title": "Build aligned canonical feature pack",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v71.featurepack71"
+        ]
+      ],
+      "requires": [
+        "gpu8/caches_v71/encoders/esm_gene.key.json",
+        "gpu8/caches_v71/encoders/esm_gene.npy",
+        "gpu8/caches_v71/encoders/sapbert_disease.key.json",
+        "gpu8/caches_v71/encoders/sapbert_disease.npy",
+        "gpu8/caches_v71/encoders/sapbert_hpo.key.json",
+        "gpu8/caches_v71/encoders/sapbert_hpo.npy",
+        "gpu8/configs/frozen_config.json",
+        "gpu8/manifests/contexts.json",
+        "gpu8/manifests/splits_main_5fold.json",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/evidence.parquet",
+        "gpu8/tables/genes.parquet",
+        "gpu8/tables/hierarchy.parquet",
+        "gpu8/tables/hpo_terms.parquet",
+        "gpu8/tables/phenotypes.parquet",
+        "gpu8/tables/relations.parquet",
+        "gpu8/tables_v6/phenotypes_v6.parquet",
+        "gpu8/tables_v71/anchor_incidence.npz",
+        "gpu8/tables_v71/anchor_vectors.npy",
+        "gpu8/tables_v71/d_tissue.npy",
+        "gpu8/tables_v71/d_tissue_mask.npy",
+        "gpu8/tables_v71/disease_templates_v71.parquet",
+        "gpu8/tables_v71/g_expression.npy",
+        "gpu8/tables_v71/g_expression_gtex.npy",
+        "gpu8/tables_v71/g_expression_gtex_mask.npy",
+        "gpu8/tables_v71/g_expression_mask.npy",
+        "gpu8/tables_v71/g_function.npy",
+        "gpu8/tables_v71/g_function_mask.npy",
+        "gpu8/tables_v71/hpo_term_texts_v71.parquet",
+        "gpu8/tables_v71/sequences_v71.parquet"
+      ],
+      "writes_to": [
+        "gpu8/caches_v71",
+        "gpu8/manifests_v71",
+        "gpu8/results_v71"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v71/featurepack71.py"
+      ],
+      "depends_on": [
+        "v71-functions",
+        "v71-expression"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": [
+        "Image fields are optional and affect container byte identity; compare scientific array hashes."
+      ]
+    },
+    {
+      "id": "v8-text-level1",
+      "title": "Rebuild main segmented disease vectors",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.textseg8",
+          "1"
+        ]
+      ],
+      "requires": [
+        "gpu8/caches_v71/encoders/sapbert_disease.key.json",
+        "gpu8/caches_v71/encoders/sapbert_disease.npy",
+        "gpu8/configs/frozen_config.json",
+        "gpu8/external/hgnc/hgnc_complete_set.txt",
+        "gpu8/external/mondo/mondo.obo",
+        "gpu8/external/v71/models/sapbert/config.json",
+        "gpu8/external/v71/models/sapbert/pytorch_model.bin",
+        "gpu8/external/v71/models/sapbert/vocab.txt",
+        "gpu8/manifests/contexts.json",
+        "gpu8/manifests/splits_main_5fold.json",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/do_terms.parquet",
+        "gpu8/tables/evidence.parquet",
+        "gpu8/tables/genes.parquet",
+        "gpu8/tables/hierarchy.parquet",
+        "gpu8/tables/hpo_terms.parquet",
+        "gpu8/tables/phenotypes.parquet",
+        "gpu8/tables/relations.parquet",
+        "gpu8/tables_v71/disease_templates_v71.parquet"
+      ],
+      "writes_to": [
+        "gpu8/caches_v8",
+        "gpu8/tables_v8",
+        "gpu8/results_v8"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/textseg8.py"
+      ],
+      "depends_on": [
+        "v71-encoders"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": [
+        "Original caches_v8/encoders directory was absent; generated files are reconstructions, not archived original bytes."
+      ]
+    },
+    {
+      "id": "v8-masks",
+      "title": "Rebuild frozen GO masking sets",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.masks8"
+        ]
+      ],
+      "requires": [
+        "gpu8/caches_v71/encoders/sapbert_go.key.json",
+        "gpu8/caches_v71/encoders/sapbert_go.npy",
+        "gpu8/caches_v71/featurepack_v71.npz",
+        "gpu8/caches_v71/featurepack_v71_anchors.npz",
+        "gpu8/configs/frozen_config.json",
+        "gpu8/external/hgnc/hgnc_complete_set.txt",
+        "gpu8/external/v6/go/go-basic_current.obo",
+        "gpu8/external/v6/go/goa_human_current.gaf.gz",
+        "gpu8/manifests/contexts.json",
+        "gpu8/manifests/splits_main_5fold.json",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/evidence.parquet",
+        "gpu8/tables/genes.parquet",
+        "gpu8/tables/hierarchy.parquet",
+        "gpu8/tables/hpo_terms.parquet",
+        "gpu8/tables/phenotypes.parquet",
+        "gpu8/tables/ppi.parquet",
+        "gpu8/tables/relations.parquet",
+        "gpu8/tables_v71/go_term_texts_v71.parquet"
+      ],
+      "writes_to": [
+        "gpu8/tables_v8",
+        "gpu8/manifests_v8",
+        "gpu8/results_v8"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/masks8.py"
+      ],
+      "depends_on": [
+        "v71-featurepack"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": [
+        "Compare hash_dev/hash_test with frozen reference; generator writes manifest, never substitute new expected values."
+      ]
+    },
+    {
+      "id": "v8-evidence",
+      "title": "Rebuild GO provenance and publication-block artifacts",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.evidence8"
+        ]
+      ],
+      "requires": [
+        "gpu8/caches_v71/encoders/sapbert_go.key.json",
+        "gpu8/caches_v71/encoders/sapbert_go.npy",
+        "gpu8/configs/frozen_config.json",
+        "gpu8/external/hgnc/hgnc_complete_set.txt",
+        "gpu8/external/v6/go/go-basic_current.obo",
+        "gpu8/external/v6/go/goa_human_current.gaf.gz",
+        "gpu8/manifests/contexts.json",
+        "gpu8/manifests/splits_main_5fold.json",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/evidence.parquet",
+        "gpu8/tables/genes.parquet",
+        "gpu8/tables/hierarchy.parquet",
+        "gpu8/tables/hpo_terms.parquet",
+        "gpu8/tables/phenotypes.parquet",
+        "gpu8/tables/relations.parquet",
+        "gpu8/tables_v71/anchor_incidence.npz",
+        "gpu8/tables_v71/g_function.npy",
+        "gpu8/tables_v71/g_function_mask.npy",
+        "gpu8/tables_v71/go_term_texts_v71.parquet"
+      ],
+      "writes_to": [
+        "gpu8/tables_v8",
+        "gpu8/results_v8"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/evidence8.py"
+      ],
+      "depends_on": [
+        "v71-functions"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": [
+        "Contains evaluation-conditioned diagnostic deletions; these are not production feature generation."
+      ]
+    },
+    {
+      "id": "v8-retrieval-main",
+      "title": "Build main full-background retrieval contexts",
+      "commands": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.v6pass8",
+          "main"
+        ]
+      ],
+      "requires": [
+        "gpu8/configs/frozen_config.json",
+        "gpu8/manifests/contexts.json",
+        "gpu8/manifests/splits_main_5fold.json",
+        "gpu8/manifests_v6/retriever_v6_frozen.json",
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/evidence.parquet",
+        "gpu8/tables/genes.parquet",
+        "gpu8/tables/hierarchy.parquet",
+        "gpu8/tables/hpo_terms.parquet",
+        "gpu8/tables/phenotypes.parquet",
+        "gpu8/tables/ppi.parquet",
+        "gpu8/tables/relations.parquet",
+        "gpu8/tables_v6/disease_text.parquet",
+        "gpu8/tables_v6/hpoa_id_map.parquet",
+        "gpu8/tables_v6/phenotypes_v6.parquet",
+        "phenotype/genes_to_phenotype.txt"
+      ],
+      "writes_to": [
+        "gpu8/caches_v8"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/v6pass8.py",
+        "gpu8/src/gpu8v8final/roles8.py"
+      ],
+      "depends_on": [
+        "v6-phenotypes",
+        "v6-text"
+      ],
+      "verified": true,
+      "verification_kind": "static_source_cli_and_dependency_review",
+      "execution_verified": false,
+      "optional": false,
+      "network_required": false,
+      "research_development_or_registration": false,
+      "notes": [
+        "CUDA default; existing meta.json causes skip; requires substantial disk space."
+      ]
+    }
+  ],
+  "source_contract_hashes": [
+    {
+      "path": "code/prepare_processed_data.py",
+      "sha256": "2aa2164cca0103e2c7d530796f689e22ddb545a4d31f3ff3bc8aa4729624be05"
+    },
+    {
+      "path": "gpu8/src/gpu8/ingest.py",
+      "sha256": "8663fd919bc79a483dff521d263d8904140e1f401e4615494a83b8aebcbc3a1a"
+    },
+    {
+      "path": "gpu8/src/gpu8/mapping.py",
+      "sha256": "25a021866a327beee1df847c5c53cbdb33aa1f711d3842740dc44fc198bafa04"
+    },
+    {
+      "path": "gpu8/src/gpu8v6/disease_text.py",
+      "sha256": "a2f97c011e3290fe675be2ba65c4a160436e4b099d5df324f8636998222d6722"
+    },
+    {
+      "path": "gpu8/src/gpu8v6/phenotypes_v6.py",
+      "sha256": "cd127b173f4d66142779e568224899b5799dc98e0ff19cf3fe2fda814b88b91b"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/encoders71.py",
+      "sha256": "4717126f0ee9748df3662fb79c84bc760df6c4c92e8999eb98702e8ca4197373"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/expression71.py",
+      "sha256": "2541152839448b7d632e035d63a01eb938c02d4d3364ebe10802e4b631a958d0"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/featurepack71.py",
+      "sha256": "1d03e7d641ba8f7ea743f6b11a4b7aaf4ecf68f32c75285a41b3d06666d200c9"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/function71.py",
+      "sha256": "d73a3c2f6f90c33226404900d99ef79f7712482c45b9658ce5fad92f72e3808b"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/sequences71.py",
+      "sha256": "2153482dbe0f001490defdb294082e165288919d0c8158316db93685843c995a"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/evidence8.py",
+      "sha256": "a300bb9ffe7ad9f33d6ac33dcd30da776a3d159277cb1efdabc8b464050f5e06"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/masks8.py",
+      "sha256": "db5a5b446c6960d5d4f567a183ea6a5cef7187ea9e0fecd5b09a5ebdf9d6b616"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/roles8.py",
+      "sha256": "40c34d4f4896dd52b6c1988a8f609329bcc3621c1ca466e0d4fb9702c13b6d6a"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/textseg8.py",
+      "sha256": "fa8c154c12cfbc36f02632f172926b3102811a6ab799115d90ebddb1ad91170d"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/v6pass8.py",
+      "sha256": "959d7ed388e7df6b90acdb643e64695d1848f1feee2eefaa124a94ae770c4388"
+    }
+  ]
+}

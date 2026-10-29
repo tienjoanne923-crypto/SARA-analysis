@@ -1,0 +1,243 @@
+{
+  "created_utc": "2026-09-22T19:23:53.279537+00:00",
+  "n_files": 28,
+  "files": [
+    {
+      "group": "association",
+      "name": "CTD_diseases.tsv.gz",
+      "path": "association/CTD_diseases.tsv.gz",
+      "bytes": 1784838,
+      "sha256": "5307f517d79cfbb73aae5f733b3681a3a33b03d5a3f2d5e36c010c049236c73b",
+      "mtime_utc": "2026-06-04T09:08:50+00:00"
+    },
+    {
+      "group": "association",
+      "name": "CTD_genes_diseases.tsv.gz",
+      "path": "association/CTD_genes_diseases.tsv.gz",
+      "bytes": 3114049350,
+      "sha256": "dc6d892158c2b2ea66a4e84fdbaaa473df24004e10a231da8758f2164e57b9b1",
+      "mtime_utc": "2026-06-04T09:11:04+00:00"
+    },
+    {
+      "group": "phenotype",
+      "name": "genes_to_phenotype.txt",
+      "path": "phenotype/genes_to_phenotype.txt",
+      "bytes": 20821704,
+      "sha256": "507a17bff9c49e6329fbd88b1f91734fa7e9fdea5c06304044c0892eb6ab248c",
+      "mtime_utc": "2026-09-22T04:27:40+00:00"
+    },
+    {
+      "group": "phenotype",
+      "name": "hp.obo",
+      "path": "phenotype/hp.obo",
+      "bytes": 10703106,
+      "sha256": "8d6c23798667d4506767ce643fc3c028f0d1c85e7e1d8810e491181a345d53cd",
+      "mtime_utc": "2026-06-04T08:46:00+00:00"
+    },
+    {
+      "group": "phenotype",
+      "name": "phenotype.hpoa",
+      "path": "phenotype/phenotype.hpoa",
+      "bytes": 35240241,
+      "sha256": "84e4eccac44d2e1587db11446ec0f104e1508239506f642afa72e44bd9610c8f",
+      "mtime_utc": "2026-06-04T08:46:14+00:00"
+    },
+    {
+      "group": "function",
+      "name": "gene2go.gz",
+      "path": "function/gene2go.gz",
+      "bytes": 1326274809,
+      "sha256": "854bc224a86e7efc627bc3d9ce18e7eae7d74227f8964ca3f18ba78c5ff203d9",
+      "mtime_utc": "2026-06-04T08:52:00+00:00"
+    },
+    {
+      "group": "function",
+      "name": "Homo_sapiens.gene_info.gz",
+      "path": "function/Homo_sapiens.gene_info.gz",
+      "bytes": 5189840,
+      "sha256": "6d1f340d4e54ff26bb0713f5c2269bb486192650f3d5948a998c9d16f32c6ccc",
+      "mtime_utc": "2026-09-22T04:09:16+00:00"
+    },
+    {
+      "group": "ontology",
+      "name": "doid.obo",
+      "path": "ontology/doid.obo",
+      "bytes": 7112256,
+      "sha256": "296e09427e31da16e6ccaf6526b509c8b4a5fdf43f5e9b4a7024069d1b88c52f",
+      "mtime_utc": "2026-06-04T08:52:10+00:00"
+    },
+    {
+      "group": "ppi",
+      "name": "9606.protein.aliases.v12.0.txt.gz",
+      "path": "ppi/9606.protein.aliases.v12.0.txt.gz",
+      "bytes": 19777800,
+      "sha256": "b65f730b993ed0c1bd72edf4565d3d425db42861101b29699704810e8f125680",
+      "mtime_utc": "2026-09-22T04:14:50+00:00"
+    },
+    {
+      "group": "ppi",
+      "name": "9606.protein.info.v12.0.txt.gz",
+      "path": "ppi/9606.protein.info.v12.0.txt.gz",
+      "bytes": 1970090,
+      "sha256": "144de4b0d98c6a7dfde6ddc2591cf88657f27b989eadff4f501450c3ed1f0f1c",
+      "mtime_utc": "2026-06-04T09:09:22+00:00"
+    },
+    {
+      "group": "ppi",
+      "name": "9606.protein.physical.links.v12.0.txt.gz",
+      "path": "ppi/9606.protein.physical.links.v12.0.txt.gz",
+      "bytes": 8954065,
+      "sha256": "1ca87209a93cf7685e9c2997fbcfbfc69fedc6a803ccc1df917318a651df0823",
+      "mtime_utc": "2026-09-22T04:17:52+00:00"
+    },
+    {
+      "group": "external",
+      "name": "gene_condition_source_id",
+      "path": "gpu8/external/clinvar/gene_condition_source_id",
+      "bytes": 1254904,
+      "sha256": "54fd1e407d6172a2bb44ee4f3be82a7de1891fa432d433401e5f0665e821cef8",
+      "mtime_utc": "2026-09-22T10:14:05.597647+00:00"
+    },
+    {
+      "group": "external",
+      "name": "variant_summary.txt.gz",
+      "path": "gpu8/external/clinvar/variant_summary.txt.gz",
+      "bytes": 443063763,
+      "sha256": "f25970aa49619fc73cdf8c878a3a20faaa69a0abd56cc8e14954f1d143e7e44e",
+      "mtime_utc": "2026-09-22T10:18:55.290224+00:00"
+    },
+    {
+      "group": "external",
+      "name": "download_log.csv",
+      "path": "gpu8/external/download_log.csv",
+      "bytes": 4734,
+      "sha256": "60ae3e538abb2fe7fd78478291241178736711988309b0c01633d8cf92c51080",
+      "mtime_utc": "2026-09-22T10:37:58.591873+00:00"
+    },
+    {
+      "group": "external",
+      "name": "gencc-submissions.tsv",
+      "path": "gpu8/external/gencc/gencc-submissions.tsv",
+      "bytes": 25023343,
+      "sha256": "08ab83e29de26ce324d97af01362426857aa4d943fdea949edf8dcdb99929694",
+      "mtime_utc": "2026-09-22T10:13:04.109924+00:00"
+    },
+    {
+      "group": "external",
+      "name": "GPL13158.annot.gz",
+      "path": "gpu8/external/geo/GPL13158.annot.gz",
+      "bytes": 8313277,
+      "sha256": "d9eddd653c200c9ac1b282b441079a19e890914929b35792a4e99ce4eba3b0d0",
+      "mtime_utc": "2026-09-22T10:13:56.564828+00:00"
+    },
+    {
+      "group": "external",
+      "name": "GPL570.annot.gz",
+      "path": "gpu8/external/geo/GPL570.annot.gz",
+      "bytes": 8471521,
+      "sha256": "d7cd44352127b1e34f3a720ebea86093ef255a38f1612a85a2962b71bde8f394",
+      "mtime_utc": "2026-09-22T10:37:10.970740+00:00"
+    },
+    {
+      "group": "external",
+      "name": "GPL6244.annot.gz",
+      "path": "gpu8/external/geo/GPL6244.annot.gz",
+      "bytes": 7193437,
+      "sha256": "99ee70f87e02c75ff1c8dc57b6c40c0482c7ef2760e004301315ac34344ac6dc",
+      "mtime_utc": "2026-09-22T10:14:02.722564+00:00"
+    },
+    {
+      "group": "external",
+      "name": "GSE13355_series_matrix.txt.gz",
+      "path": "gpu8/external/geo/GSE13355_series_matrix.txt.gz",
+      "bytes": 35921043,
+      "sha256": "087043c4a620828d65f3055840be9de25bd31306d5caf018ae28ce5d18de6194",
+      "mtime_utc": "2026-09-22T10:21:03.008479+00:00"
+    },
+    {
+      "group": "external",
+      "name": "GSE30999_series_matrix.txt.gz",
+      "path": "gpu8/external/geo/GSE30999_series_matrix.txt.gz",
+      "bytes": 12251771,
+      "sha256": "988d6ca437028a6e958da379908c62c8b9bb6db614108c182321488ae934574b",
+      "mtime_utc": "2026-09-22T10:39:09.677473+00:00"
+    },
+    {
+      "group": "external",
+      "name": "GSE75214_series_matrix.txt.gz",
+      "path": "gpu8/external/geo/GSE75214_series_matrix.txt.gz",
+      "bytes": 34902052,
+      "sha256": "4a20658754f5d4d50f9f938585afd466273d1aa141579d27f2fd4495a2647798",
+      "mtime_utc": "2026-09-22T10:37:05.227301+00:00"
+    },
+    {
+      "group": "external",
+      "name": "GSE87466_series_matrix.txt.gz",
+      "path": "gpu8/external/geo/GSE87466_series_matrix.txt.gz",
+      "bytes": 16168815,
+      "sha256": "91a6eb2f3d9b166b34b8854ecd527ac26bd26d86cae70f3ae7f1fe058adf597a",
+      "mtime_utc": "2026-09-22T10:34:53.499662+00:00"
+    },
+    {
+      "group": "external",
+      "name": "hgnc_complete_set.txt",
+      "path": "gpu8/external/hgnc/hgnc_complete_set.txt",
+      "bytes": 16940274,
+      "sha256": "69bb5722d5a42bb355580deb2c9f197ce3d7f7d13807173b9674a7db65e52191",
+      "mtime_utc": "2026-09-22T10:11:00.058326+00:00"
+    },
+    {
+      "group": "external",
+      "name": "KDGene-master.zip",
+      "path": "gpu8/external/kdgene/KDGene-master.zip",
+      "bytes": 44414672,
+      "sha256": "a3b2e07f1a4112863d8ba8ab516f919b90a08f80d6f13fd8db4a27db196030cd",
+      "mtime_utc": "2026-09-22T10:37:41.197381+00:00"
+    },
+    {
+      "group": "external",
+      "name": "mondo.obo",
+      "path": "gpu8/external/mondo/mondo.obo",
+      "bytes": 53134854,
+      "sha256": "50c8367f9bd9978321eedf84d4e2e79cb757efbed514c81effb00b9ad2e49994",
+      "mtime_utc": "2026-09-22T10:11:49.976647+00:00"
+    },
+    {
+      "group": "external",
+      "name": "mondo.sssom.tsv",
+      "path": "gpu8/external/mondo/mondo.sssom.tsv",
+      "bytes": 13113756,
+      "sha256": "317ac4bf93be1deff4406b4d7d18bb730ead3c4f5c7c814f75d24be7f6ef302f",
+      "mtime_utc": "2026-09-22T10:12:04.320769+00:00"
+    },
+    {
+      "group": "external",
+      "name": "qdgp-main.zip",
+      "path": "gpu8/external/qdgp/qdgp-main.zip",
+      "bytes": 19190571,
+      "sha256": "1c8befbb46c1fac18a9a3746b9c2de444a381585f0d05094b967ef2807ef9b3b",
+      "mtime_utc": "2026-09-22T10:37:58.567636+00:00"
+    },
+    {
+      "group": "external",
+      "name": "9606.protein.links.v12.0.txt.gz",
+      "path": "gpu8/external/string/9606.protein.links.v12.0.txt.gz",
+      "bytes": 83164437,
+      "sha256": "3e22f32572211aa341d5b4bd08d30c32e693e294603202120936872f87719d4f",
+      "mtime_utc": "2026-09-22T10:19:31.574346+00:00"
+    }
+  ],
+  "license_entry_points": {
+    "CTD": "https://ctdbase.org/about/legal.jsp",
+    "HPO": "https://hpo.jax.org/app/license",
+    "DO": "https://disease-ontology.org (CC0)",
+    "STRING": "https://string-db.org/cgi/access (CC BY 4.0)",
+    "NCBI Gene": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+    "HGNC": "https://www.genenames.org/about/ (no restrictions)",
+    "Mondo": "https://mondo.monarchinitiative.org (CC BY 4.0)",
+    "GenCC": "https://thegencc.org/terms (CC0 1.0)",
+    "ClinVar": "https://www.ncbi.nlm.nih.gov/clinvar/docs/maintenance_use/",
+    "GEO": "https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html"
+  },
+  "manifest_hash": "c9a4e761d99020e44fd6eac0aa73223fd633cba4587821e1241673058df02cd2"
+}

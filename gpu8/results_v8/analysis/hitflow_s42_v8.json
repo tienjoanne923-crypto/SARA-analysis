@@ -1,0 +1,59 @@
+{
+  "generated_utc": "2026-09-24T11:19:36Z",
+  "flows": {
+    "channel_lgb_v6->deployed": {
+      "kept": 956,
+      "lost": 437,
+      "gained": 837,
+      "kept_cold": 2,
+      "lost_cold": 0,
+      "gained_cold": 76,
+      "diseases": 4238
+    },
+    "B->deployed": {
+      "kept": 960,
+      "lost": 460,
+      "gained": 833,
+      "kept_cold": 3,
+      "lost_cold": 2,
+      "gained_cold": 75,
+      "diseases": 4238
+    },
+    "channel_lgb_v6->C_b2_l0.1": {
+      "kept": 903,
+      "lost": 490,
+      "gained": 616,
+      "kept_cold": 2,
+      "lost_cold": 0,
+      "gained_cold": 92,
+      "diseases": 4238
+    },
+    "B->C_b2_l0.1": {
+      "kept": 994,
+      "lost": 426,
+      "gained": 525,
+      "kept_cold": 5,
+      "lost_cold": 0,
+      "gained_cold": 89,
+      "diseases": 4238
+    },
+    "channel_lgb_v6->C_b0_l0.1": {
+      "kept": 894,
+      "lost": 499,
+      "gained": 626,
+      "kept_cold": 2,
+      "lost_cold": 0,
+      "gained_cold": 91,
+      "diseases": 4238
+    },
+    "B->C_b0_l0.1": {
+      "kept": 980,
+      "lost": 440,
+      "gained": 540,
+      "kept_cold": 5,
+      "lost_cold": 0,
+      "gained_cold": 88,
+      "diseases": 4238
+    }
+  }
+}

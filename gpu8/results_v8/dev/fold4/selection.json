@@ -1,0 +1,432 @@
+{
+  "fold": 4,
+  "controls": "background",
+  "student": null,
+  "w": {
+    "coverage": {
+      "aware_w0.3": 0.5942370913700867,
+      "plain_w0.3": 0.596041215669753,
+      "aware_w0.5": 0.5976846347678939,
+      "plain_w0.5": 0.6011786763469812,
+      "aware_w0.7": 0.5801020603707937,
+      "plain_w0.7": 0.5825491503178836,
+      "aware_w0.9": 0.4915450595903206,
+      "plain_w0.9": 0.4915450595903206,
+      "v6_500": 0.44913336566567535
+    },
+    "w": 0.5,
+    "rule": "max development coverage@500 of the aware RRF; tie -> larger w"
+  },
+  "summary": {
+    "fold": 4,
+    "seed": 42,
+    "tag": "main",
+    "B_minus_0": {
+      "best_iteration": 88,
+      "mu": -0.9912040713138999,
+      "sd": 0.6058336165897819,
+      "reload_maxabs": 0.0,
+      "train_contexts": [
+        "f4_inner1",
+        "f4_inner2"
+      ],
+      "checkpoint": "F_(j+1) in f4_inner0",
+      "seconds": 3.094250440597534
+    },
+    "B_minus_1": {
+      "best_iteration": 85,
+      "mu": -1.0022767248737916,
+      "sd": 0.5380941385261306,
+      "reload_maxabs": 0.0,
+      "train_contexts": [
+        "f4_inner0",
+        "f4_inner2"
+      ],
+      "checkpoint": "F_(j+1) in f4_inner1",
+      "seconds": 2.9608616828918457
+    },
+    "B_minus_2": {
+      "best_iteration": 123,
+      "mu": -1.3401060361856438,
+      "sd": 0.6498358308239122,
+      "reload_maxabs": 0.0,
+      "train_contexts": [
+        "f4_inner0",
+        "f4_inner1"
+      ],
+      "checkpoint": "F_(j+1) in f4_inner2",
+      "seconds": 3.589101552963257
+    },
+    "B_outer": {
+      "best_iteration": 110,
+      "mu": -1.023208459358782,
+      "sd": 0.5611965317530191,
+      "reload_maxabs": 0.0,
+      "seconds": 4.874704122543335
+    },
+    "pool_hashes": {
+      "f4_inner0": {
+        "oof": "8d0e011bcfdc73e21079b29d498202dd73c3d7853cb5860e15b1c350983b82d0",
+        "val": "75397b3f51d5da132c0342150114acf2024adf86140df9dc264a9e0687cd03a5"
+      },
+      "f4_inner1": {
+        "oof": "2771ec4e569e60d4c0f68936ee0f9717e25115a670d695f5c96ec8446ee432c4",
+        "val": "466f19f9013542330f10d912f2a55f4bcf23f773d03c6c493c3887e9d0848251"
+      },
+      "f4_inner2": {
+        "oof": "3b3d414ff0e295530eaafb0ef7ca95a7d08ae1d0b59e04e28a01640256444a1d",
+        "val": "f9793749633392bb248b123d7a43c6843165cfd7546161bf1f2099b0640d67a5"
+      },
+      "f4_outer": {
+        "test": "49922782f5e237ab41d4438aff5f395dfd82e19bd691004f457bdaa96e4eff08",
+        "val": "d80374163f881af9ea68c1459a2a233c01d1c11020525bd703ffb50ee8224409",
+        "dev": "c17bc31852c43062a6d46cc04d8a52b75062c38543356b5b342b21338b503a76"
+      }
+    },
+    "underfit_trigger_config": [],
+    "corrector": [
+      {
+        "name": "C_b0_l0.03",
+        "beta": 0.0,
+        "lam": 0.03,
+        "dev_recall10": 0.1462877762629491,
+        "dev_cold_recall10": 0.05577640030543951,
+        "best_iteration": 45,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1728,
+          "skipped_no_positive_in_pool": 815,
+          "skipped_no_unlabelled": 0,
+          "rows": 116154,
+          "pairs": 355968,
+          "cold_positives_in_pairs": 590,
+          "diseases_with_cold_positive": 469,
+          "rows_gated_on": 114106,
+          "sample_hash": "0390e43ed6ebb54cff7b706a41e232aee42b854a57991ab5518d6fce08ea795b",
+          "seconds": 11.53583025932312,
+          "best_iteration": 45,
+          "val_recall10_best": 0.15638559117692818,
+          "val_recall10_round1": 0.12418780481973246,
+          "train_loss_first": 1694.8281701843475,
+          "train_loss_r150": 859.8585559642618,
+          "train_loss_last": 811.0616183194122,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      },
+      {
+        "name": "C_b0_l0.1",
+        "beta": 0.0,
+        "lam": 0.1,
+        "dev_recall10": 0.15062399191064646,
+        "dev_cold_recall10": 0.059920046714279286,
+        "best_iteration": 86,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1728,
+          "skipped_no_positive_in_pool": 815,
+          "skipped_no_unlabelled": 0,
+          "rows": 116154,
+          "pairs": 355968,
+          "cold_positives_in_pairs": 590,
+          "diseases_with_cold_positive": 469,
+          "rows_gated_on": 114106,
+          "sample_hash": "0390e43ed6ebb54cff7b706a41e232aee42b854a57991ab5518d6fce08ea795b",
+          "seconds": 11.495675086975098,
+          "best_iteration": 86,
+          "val_recall10_best": 0.16361506273703455,
+          "val_recall10_round1": 0.12552413049404357,
+          "train_loss_first": 1694.8281701843475,
+          "train_loss_r150": 959.7852589800937,
+          "train_loss_last": 914.6276638854051,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      },
+      {
+        "name": "C_b1_l0.03",
+        "beta": 1.0,
+        "lam": 0.03,
+        "dev_recall10": 0.1508667537317349,
+        "dev_cold_recall10": 0.05163275389659973,
+        "best_iteration": 38,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1728,
+          "skipped_no_positive_in_pool": 815,
+          "skipped_no_unlabelled": 0,
+          "rows": 116154,
+          "pairs": 355968,
+          "cold_positives_in_pairs": 590,
+          "diseases_with_cold_positive": 469,
+          "rows_gated_on": 114106,
+          "sample_hash": "0390e43ed6ebb54cff7b706a41e232aee42b854a57991ab5518d6fce08ea795b",
+          "seconds": 11.70678424835205,
+          "best_iteration": 38,
+          "val_recall10_best": 0.15614189884551688,
+          "val_recall10_round1": 0.12418780481973246,
+          "train_loss_first": 1704.2504762852182,
+          "train_loss_r150": 861.2920214767213,
+          "train_loss_last": 811.4581922631194,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      },
+      {
+        "name": "C_b1_l0.1",
+        "beta": 1.0,
+        "lam": 0.1,
+        "dev_recall10": 0.1491099151906063,
+        "dev_cold_recall10": 0.05301396936621299,
+        "best_iteration": 50,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1728,
+          "skipped_no_positive_in_pool": 815,
+          "skipped_no_unlabelled": 0,
+          "rows": 116154,
+          "pairs": 355968,
+          "cold_positives_in_pairs": 590,
+          "diseases_with_cold_positive": 469,
+          "rows_gated_on": 114106,
+          "sample_hash": "0390e43ed6ebb54cff7b706a41e232aee42b854a57991ab5518d6fce08ea795b",
+          "seconds": 11.493746519088745,
+          "best_iteration": 50,
+          "val_recall10_best": 0.16348903138858478,
+          "val_recall10_round1": 0.12432220741712051,
+          "train_loss_first": 1704.2504762852182,
+          "train_loss_r150": 961.294755703963,
+          "train_loss_last": 915.6385325580561,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      },
+      {
+        "name": "C_b2_l0.03",
+        "beta": 2.0,
+        "lam": 0.03,
+        "dev_recall10": 0.14554713662573063,
+        "dev_cold_recall10": 0.05577640030543951,
+        "best_iteration": 43,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1728,
+          "skipped_no_positive_in_pool": 815,
+          "skipped_no_unlabelled": 0,
+          "rows": 116154,
+          "pairs": 355968,
+          "cold_positives_in_pairs": 590,
+          "diseases_with_cold_positive": 469,
+          "rows_gated_on": 114106,
+          "sample_hash": "0390e43ed6ebb54cff7b706a41e232aee42b854a57991ab5518d6fce08ea795b",
+          "seconds": 11.690495729446411,
+          "best_iteration": 43,
+          "val_recall10_best": 0.15299942011349732,
+          "val_recall10_round1": 0.12591338127849866,
+          "train_loss_first": 1710.3693035235374,
+          "train_loss_r150": 857.8650686183207,
+          "train_loss_last": 806.2103527438605,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      },
+      {
+        "name": "C_b2_l0.1",
+        "beta": 2.0,
+        "lam": 0.1,
+        "dev_recall10": 0.15166470380840444,
+        "dev_cold_recall10": 0.05715761577505277,
+        "best_iteration": 75,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1728,
+          "skipped_no_positive_in_pool": 815,
+          "skipped_no_unlabelled": 0,
+          "rows": 116154,
+          "pairs": 355968,
+          "cold_positives_in_pairs": 590,
+          "diseases_with_cold_positive": 469,
+          "rows_gated_on": 114106,
+          "sample_hash": "0390e43ed6ebb54cff7b706a41e232aee42b854a57991ab5518d6fce08ea795b",
+          "seconds": 11.477956056594849,
+          "best_iteration": 75,
+          "val_recall10_best": 0.1632470945842016,
+          "val_recall10_round1": 0.12326088666240352,
+          "train_loss_first": 1710.3693035235374,
+          "train_loss_r150": 964.0436022017616,
+          "train_loss_last": 916.6468811453221,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      }
+    ],
+    "A": [
+      {
+        "name": "A_nl15_mc50",
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "dev_recall10": 0.1797199685519866,
+        "dev_cold_recall10": 0.053440686340565056,
+        "best_iteration": 122
+      },
+      {
+        "name": "A_nl15_mc200",
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "dev_recall10": 0.17943188099930824,
+        "dev_cold_recall10": 0.04650092081031308,
+        "best_iteration": 156
+      },
+      {
+        "name": "A_nl31_mc50",
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "dev_recall10": 0.17342988739569382,
+        "dev_cold_recall10": 0.046500920810313075,
+        "best_iteration": 84
+      },
+      {
+        "name": "A_nl31_mc200",
+        "num_leaves": 31,
+        "min_child_samples": 200,
+        "dev_recall10": 0.1754856209752154,
+        "dev_cold_recall10": 0.04653460899249876,
+        "best_iteration": 162
+      },
+      {
+        "name": "A_nl63_mc50",
+        "num_leaves": 63,
+        "min_child_samples": 50,
+        "dev_recall10": 0.1764585912882233,
+        "dev_cold_recall10": 0.05202578268876611,
+        "best_iteration": 61
+      },
+      {
+        "name": "A_nl63_mc200",
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "dev_recall10": 0.17177790709268376,
+        "dev_cold_recall10": 0.04377217805327224,
+        "best_iteration": 58
+      }
+    ],
+    "B_dev": {
+      "dev_recall10": 0.12086323820647658,
+      "dev_cold_recall10": 0.009208103130755065
+    }
+  },
+  "ab": {
+    "best_A": "A_nl15_mc50",
+    "best_A_dev_recall10": 0.1797199685519866,
+    "best_A_dev_cold_recall10": 0.053440686340565056,
+    "kept_B_configs": [],
+    "chosen_B": null,
+    "deploy": "A",
+    "reason": "no corrector within the margin of the best A"
+  },
+  "underfit_31_leaf_trigger": false,
+  "seconds": 179.57128071784973,
+  "generated_utc": "2026-09-24T05:03:13Z"
+}

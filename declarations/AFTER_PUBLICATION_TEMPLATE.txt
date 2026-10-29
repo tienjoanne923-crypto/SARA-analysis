@@ -1,0 +1,11 @@
+POST-PUBLICATION TEMPLATE — NOT A CURRENT AVAILABILITY CLAIM
+
+Use the text below only after every field is replaced with a verified public record. Cite the published version DOI for the exact release, not an unpublished reserved DOI. Confirm that the released contents still match the description.
+
+Availability of data and materials
+
+This study reused data from CTD, HPO, GO/GOA, MeSH, the Human Disease Ontology, Mondo, HGNC, NCBI Gene, STRING v12, MANE, UniProt, the Human Protein Atlas, GTEx v8, GenCC, ClinVar and GEO. The expression cohorts were GSE13355, GSE30999, GSE87466 and GSE75214. Resource versions, source access routes, preprocessing and evaluation definitions are described in the Supplementary Information and the accompanying provenance records. Reused third-party resources are obtained from their original providers under the applicable access and licensing terms.
+
+The analysis source code, frozen configurations and development selections, preprocessing scripts, environment specifications and input SHA-256 records are available at https://github.com/tienjoanne923-crypto/SARA-analysis. The release v1.0.0-rc2, corresponding to commit [FULL_COMMIT_SHA], is archived at [PUBLISHED_VERSION_DOI_URL]. This code and provenance archive excludes third-party databases, processed data tables, fitted weights and saved prediction arrays. Its reproducibility documentation identifies the inputs that require restoration or regeneration and the limits of historical raw-data reconstruction.
+
+Code licence: MIT. This licence applies to the covered original code; third-party resources retain their own terms.

@@ -1,0 +1,12 @@
+{
+  "edim": 1000,
+  "rdim": 1000,
+  "batch_size": 512,
+  "learning_rate": 0.1,
+  "reg": 0.1,
+  "optimizer": "Adagrad",
+  "gate": "LSTMCell",
+  "max_epochs": 30,
+  "patience": 4,
+  "note": "Starting point kept at the dimension the original paper reports for its example command. Per the protocol, if this does not fit or does not finish, the batch size is reduced first and the failure is recorded; the dimension is not silently cut to make the comparator weak."
+}

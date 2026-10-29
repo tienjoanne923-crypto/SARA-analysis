@@ -1,0 +1,56 @@
+{
+  "decided_on": "development families x 5 outer contexts (budget 500)",
+  "objective": "macro end-to-end Recall@10 within the frozen candidates",
+  "hand_v5_weights_on_v6_channels": {
+    "weights": {
+      "pheno": 0.4,
+      "hier": 0.2,
+      "rwr_pheno": 0.3,
+      "compat": 0.1
+    },
+    "dev_recall10": 0.07106019517305114
+  },
+  "retrieval_order": {
+    "dev_recall10": 0.08981553744664379
+  },
+  "F4": {
+    "weights": {
+      "pheno": 0.25,
+      "hier": 0.15000000000000002,
+      "rwr_pheno": 0.05,
+      "compat": 0.55
+    },
+    "dev_recall10": 0.07588075604473414,
+    "n_grid": 35,
+    "n_refine": 36
+  },
+  "F7": {
+    "weights": {
+      "pheno": 0.0,
+      "hier": 0.2,
+      "onto": 0.05,
+      "text": 0.25,
+      "gene_hpo": 0.5,
+      "rwr_pheno": 0.0,
+      "compat": 0.0
+    },
+    "dev_recall10": 0.10428148305349659,
+    "n_grid": 210,
+    "n_refine": 126
+  },
+  "main": "F7",
+  "weights": {
+    "pheno": 0.0,
+    "hier": 0.2,
+    "onto": 0.05,
+    "text": 0.25,
+    "gene_hpo": 0.5,
+    "rwr_pheno": 0.0,
+    "compat": 0.0
+  },
+  "dev_recall10": 0.10428148305349659,
+  "n_dev_disease_contexts": 4320,
+  "protocol_id": "gpu8_v6",
+  "written_utc": "2026-09-23T04:41:16Z",
+  "payload_hash": "6bdc3b1b066bf7698f3b58d4c3d0499e502fd568f1498838fe44c5337d5b237e"
+}

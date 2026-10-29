@@ -1,0 +1,48 @@
+{
+  "generated_utc": "2026-09-24T11:19:24Z",
+  "strata": {
+    "channel_lgb_v6": {
+      "single_relation_recall10": 0.13118279569892474,
+      "multi_relation_recall10": 0.09831733744323837,
+      "omim_mapped_recall10": 0.1226608912087936,
+      "not_omim_recall10": 0.11719456190679976,
+      "burden_1": 0.13118279569892474,
+      "burden_2_5": 0.11073099415204679,
+      "burden_gt5": 0.08061681380591301,
+      "therapeutic_only_pairs": 1259,
+      "therapeutic_only_hit10_micro": 0.03283028858882711
+    },
+    "deployed": {
+      "single_relation_recall10": 0.18087153367289194,
+      "multi_relation_recall10": 0.13310843529817037,
+      "omim_mapped_recall10": 0.17947071191018218,
+      "not_omim_recall10": 0.13163780396832167,
+      "burden_1": 0.18087153367289194,
+      "burden_2_5": 0.15796052631578947,
+      "burden_gt5": 0.09767205786216568,
+      "therapeutic_only_pairs": 1259,
+      "therapeutic_only_hit10_micro": 0.04289118347895155
+    },
+    "v71_direct_strict": {
+      "single_relation_recall10": 0.18426711941143184,
+      "multi_relation_recall10": 0.13050683788216827,
+      "omim_mapped_recall10": 0.18128846958173575,
+      "not_omim_recall10": 0.13254080373847446,
+      "burden_1": 0.18426711941143184,
+      "burden_2_5": 0.15473684210526314,
+      "burden_gt5": 0.0959574885209073,
+      "therapeutic_only_pairs": 1259,
+      "therapeutic_only_hit10_micro": 0.04209690230341541
+    }
+  },
+  "zero_signal_s42": {
+    "queries": 23442,
+    "no_v6_signal": 10498,
+    "no_semantic": 951,
+    "zero_signal_both": 778,
+    "zero_signal_share": 0.033188294514119955,
+    "zero_signal_in_pool": 0,
+    "zero_signal_in_top10": 0
+  },
+  "note": "strata are evaluation-only; positive burden never routes a query"
+}

@@ -1,0 +1,59 @@
+{
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": {
+      "imported": true,
+      "version": "2.5.3"
+    },
+    "scipy": {
+      "imported": true,
+      "version": "1.18.1"
+    },
+    "pandas": {
+      "imported": true,
+      "version": "3.0.6"
+    },
+    "pyarrow": {
+      "imported": true,
+      "version": "25.0.1"
+    },
+    "lightgbm": {
+      "imported": true,
+      "version": "4.7.0"
+    },
+    "torch": {
+      "imported": true,
+      "version": "2.9.1+cu128"
+    },
+    "pytest": {
+      "imported": true,
+      "version": "9.1.1"
+    },
+    "transformers": {
+      "imported": true,
+      "version": "5.17.0"
+    },
+    "tokenizers": {
+      "imported": true,
+      "version": "0.23.2"
+    },
+    "huggingface_hub": {
+      "imported": true,
+      "version": "1.32.0"
+    },
+    "safetensors": {
+      "imported": true,
+      "version": "0.8.0"
+    }
+  },
+  "network_access": false,
+  "training": false,
+  "torch_cuda": {
+    "build": "12.8",
+    "available": true
+  },
+  "probe_date": "2026-10-29",
+  "bytecode_writes_disabled": true,
+  "offline_environment_variables": true
+}

@@ -1,0 +1,1616 @@
+{
+  "files": [
+    {
+      "path": "gpu8/configs/frozen_config.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/configs/kdgene_config.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/cancelled_runs.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/context_index.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/contexts.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/development_summary.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/disease_mapping_report.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/frozen_hyperparameters.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/protocol_report.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/resource_manifest.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/retriever_frozen.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/splits_family.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/splits_main_5fold.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests/table_hashes.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v6/candidates_v6_index.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v6/devfit_v6_selection.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v6/failed_attempts_v6.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v6/protocol_v6_registered.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v6/retriever_v6_frozen.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v6/scorer_v6_frozen.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v6/support_v6_frozen.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v6/z_main_scorer.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v71/core_dev_selection_v71.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v71/featurepack_v71.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v71/fixed_late_beta_core.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v71/models_v71.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v71/mouse_channel_v71.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v71/protocol_v71_registered.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v71/resources_v71.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v71/small_support_gamma_v71.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v71/srff_v71.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v8/archive_hashes_end.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v8/archive_hashes_start.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v8/dev_student_selection_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v8/dev_teacher_controls_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v8/go_masks_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v8/model_spec.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/manifests_v8/protocol_v8_registered.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/requirements.txt",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/analysis/hitflow_s42_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/analysis/strata_zero_signal_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/audit/acceptance_ten_checks_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/audit/archive_comparison_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/audit/evidence_policy_audit_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/audit/historical_inputs_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/audit/reproduction_env_blocked_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/audit/reproduction_venv_repro_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/audit/text_segments_l1.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/audit/text_segments_l2.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/dev/fold0/selection.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/dev/fold1/selection.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/dev/fold2/selection.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/dev/fold3/selection.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/dev/fold4/selection.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/eval/eval_index.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/external/external618/external618_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/final_assembly_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/numbers_v8.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/results_v8/numbers_v8_results.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/adapt.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/aggregate.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/alt_contexts.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/alt_runner.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/appendix.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/audit.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/baselines/__init__.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/baselines/kdgene.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/baselines/learned.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/baselines/meta_ridge.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/baselines/registry.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/baselines/simple.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/build_docx.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/build_figures.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/candidates.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/case_studies.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/config.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/contexts.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/episodes.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/experiments.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/expression.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/external_labels.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/figures.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/gaps.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/hashing.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/ingest.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/manual_review.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/manuscript.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/mapping.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/metrics.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/model.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/narrative.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/paths.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/protocol.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/registry.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/resources.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/runner.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/stats.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/summarise.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/support.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/temporal.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8/train.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/__init__.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/appendix6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/audit_metrics.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/availability.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/build_candidates.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/build_docx6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/clinvar_chain.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/common.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/diagnostics_v6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/disease_semantics.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/disease_text.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/expression6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/external6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/external_learned.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/family_audit.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/figures6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/gene_block_ablation.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/gene_features.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/gene_hpo.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/hitflow.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/kdgene_curve.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/ledger6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/manuscript6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/metrics6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/numbers6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/ontology_v2.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/paths6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/permutation.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/permutation_v5.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/phenotypes_v6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/propagate.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/register_protocol.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/report_s.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/report_z.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/reports6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/residual.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/retrieval.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/rewire_control.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/run_permutations.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/scoring.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/select_main.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/source_report.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/sources.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/support_line.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/support_seed.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/temporal6.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/temporal_support.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/traditional_baselines.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/tune_retrieval.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v6/zero_support.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/__init__.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/appendix71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/baseline71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/behavior71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/chain71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/common71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/core71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/diagnostics71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/encoders71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/evaluate71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/expression71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/featurepack71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/figures71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/function71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/fusion71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/image71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/isolation71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/ledger71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/manuscript71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/manuscript71_body.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/manuscript71_results.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/mouse71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/mstext71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/mstext71_refs.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/numbers71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/paths71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/pools71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/probe71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/register71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/reports71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/resources71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/run_behaviour.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/score71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/sensitivity71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/sequences71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/support71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v71/train71.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/__init__.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/acceptance8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/analysis8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/audit10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/audit8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/audit9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/audit_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/baselines8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/build_docx10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/build_docx9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/build_docx_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/chain8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/common8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/comparators8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/cover_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/dev8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/eval8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/evaluate8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/evidence8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/expression8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/external8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/feats8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/figinv_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/figtext_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/figures8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/final8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/fmt9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/fmt_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/formal8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/glossary_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/hist8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/ledger8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/manuscript10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/manuscript10_prepolish_20261007.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/manuscript8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/manuscript8v2.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/manuscript9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/manuscript_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/masks8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/models8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/mstext8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/mt_api10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/mt_factory10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/mt_resize10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/mt_roundtrip10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/narrative8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/notes10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/notes9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/notes_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/numbers8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/numbers9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pack8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/package10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/package9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/package_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/paths8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pool8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/protst8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubbook10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubbook8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubbook9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubbook_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubcolor8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubdata8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubdata8b.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubfigs8a.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubfigs8a_part2.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubfigs8a_part3.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubfigs8b.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubfigs8c.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubfigs8s.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubfigs8x.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubfigs9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/publabel9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubrun8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubrun9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubrun_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubstyle8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubstyle9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubstyle_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/pubviz8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/qa10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/refs10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/refs9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/refs_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/register8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/reports8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/repro8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/review8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/roles8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/semantic8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/student8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/supp10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/supp9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/supp_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/support8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/teacher8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/temporal8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/terms_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/textseg8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/v6pass8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/variants8.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/verify10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/verify9.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/verify_en.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/wordpdf10.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tests/test_v6_guardrails.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tests/test_v71_core.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tests/test_v71_prep.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tests/test_v8_integration.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tests/test_v8_properties.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tools/download_external.ps1",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tools/download_external_v6.ps1",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tools/download_external_v71.ps1",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tools/gpu_probe.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tools/record_numeric_checks.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "gpu8/tools/record_table_hashes.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/clinvar_raw_audit.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/clinvar_raw_audit.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/equivalence_main_sensitivity.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/equivalence_training_audit.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/external_clinvar_definition_sensitivity.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/external_family_audit.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/external_family_audit.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/external_family_bundle_manifest.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/external_strict_sensitivity.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/main_equivalence_exclusion_sensitivity.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/package_external_family_audit.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/strict_equivalence_training_audit.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/teacher_equivalence_fit_hash_verification.json",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit/verify_teacher_equivalence_fit_hashes.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "sara_revision_20261018/audit_training_mechanism.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "code/prepare_processed_data.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "path": "code/download_raw_data.py",
+      "source_unchanged": true,
+      "copy_matches": true
+    }
+  ],
+  "n_files": 322,
+  "all_passed": true
+}

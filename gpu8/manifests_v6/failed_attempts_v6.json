@@ -1,0 +1,26 @@
+{
+  "attempts": [
+    {
+      "run_id": "V6Z__lightgbm__f0__s42",
+      "attempt": 1,
+      "status": "failed",
+      "started_utc": "2026-09-23T04:46:26Z",
+      "finished_utc": "2026-09-23T04:46:47Z",
+      "failure_reason": "LightGBMError: Model file ...\\runs_v6\\V6Z__lightgbm__f0__s42\\model.txt is not available for writes (the LightGBM C writer cannot open a non-ASCII path)",
+      "metrics_at_failure": {
+        "recall10_end": 0.10441340429738626
+      },
+      "stderr_tail": "D:\\信\\gpu8\\.venv\\Lib\\site-packages\\lightgbm\\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.\n  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)\n[LightGBM] [Fatal] Model file D:\\信\\gpu8\\runs_v6\\V6Z__lightgbm__f0__s42\\model.txt is not available for writes\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"D:\\信\\gpu8\\src\\gpu8v6\\zero_support.py\", line 248, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"D:\\信\\gpu8\\src\\gpu8v6\\zero_support.py\", line 242, in main\n    formal(w, args.learned, folds=tuple(args.folds), seeds=tuple(args.seeds))\n  File \"D:\\信\\gpu8\\src\\gpu8v6\\zero_support.py\", line 221, in formal\n    obj.m.booster_.save_model(str(run_dir(run_id) / \"model.txt\"))\n  File \"D:\\信\\gpu8\\.venv\\Lib\\site-packages\\lightgbm\\basic.py\", line 4600, in save_model\n    _safe_call(\n  File \"D:\\信\\gpu8\\.venv\\Lib\\site-packages\\lightgbm\\basic.py\", line 297, in _safe_call\n    raise LightGBMError(_LIB.LGBM_GetLastError().decode(\"utf-8\"))\nlightgbm.basic.LightGBMError: Model file D:\\信\\gpu8\\runs_v6\\V6Z__lightgbm__f0__s42\\model.txt is not available for writes\nD:\\信\\gpu8\\src\\gpu8v6\\residual.py:204: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\nConsider using tensor.detach() first. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\torch\\csrc\\autograd\\generated\\python_variable_methods.cpp:837.)\n  tot += float(loss)\n",
+      "fix": "model serialised with booster.model_to_string() and written by Python",
+      "rerun": {
+        "status": "done",
+        "recall10_end": 0.10441340429738626,
+        "finished_utc": "2026-09-23T04:48:32Z"
+      },
+      "note": "the failed result.json was overwritten by the rerun before attempt preservation was added to ledger6.write_result; this record is rebuilt from the preserved stderr log logs/v6_formal_z.err and the console output"
+    }
+  ],
+  "protocol_id": "gpu8_v6",
+  "written_utc": "2026-09-23T05:26:20Z",
+  "payload_hash": "6c5801a53c4946914c9463d48e2f372011f9ee8faa057556316bf1cdc1164cc8"
+}

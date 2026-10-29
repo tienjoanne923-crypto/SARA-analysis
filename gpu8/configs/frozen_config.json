@@ -1,0 +1,146 @@
+{
+  "data": {
+    "primary_evidence": [
+      "marker/mechanism"
+    ],
+    "secondary_evidence": [
+      "therapeutic"
+    ],
+    "include_inferred": false,
+    "min_inference_score": 50.0,
+    "ppi_score_threshold": 700,
+    "ppi_secondary_threshold": 700,
+    "gene_background": "protein_coding",
+    "keep_legacy_gene_space": true,
+    "hpo_negative_qualifier": "NOT"
+  },
+  "protocol": {
+    "dev_family_fraction": 0.15,
+    "n_outer_folds": 5,
+    "inner_blocks": 3,
+    "family_split_fractions": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "external_holdout": true,
+    "split_seed": 20260922,
+    "support_doses": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "support_order_draws": 10,
+    "min_positives_for_dose": 6,
+    "train_seeds": [
+      42,
+      52,
+      62
+    ],
+    "ablation_folds": [
+      0,
+      2,
+      4
+    ],
+    "ablation_seeds": [
+      42,
+      52
+    ]
+  },
+  "candidates": {
+    "n_candidates": 500,
+    "stress_sizes": [
+      100,
+      500,
+      1000
+    ],
+    "phenotype_neighbours": 20,
+    "hierarchy_max_distance": 2,
+    "fusion_weight_phenotype": 1.0,
+    "fusion_weight_hierarchy": 1.0,
+    "fusion_weight_rwr": 0.25,
+    "n_anchors": 64,
+    "anchor_uniform_fraction": 0.5,
+    "anchor_seed": 20260922
+  },
+  "features": {
+    "view_dim": 128,
+    "n_views": 4,
+    "hpo_basis_dim": 128,
+    "propagation_steps": 2,
+    "rwr_restart": 0.15,
+    "rwr_iters": 32,
+    "channel_log_c": 1.0,
+    "clip_sigma": 5.0,
+    "n_scalar_channels": 4,
+    "n_quality_fields": 12
+  },
+  "model": {
+    "node_in_dim": 512,
+    "hidden_dim": 128,
+    "pair_hidden_dim": 128,
+    "adapt_dim": 64,
+    "channel_net_hidden": 32,
+    "control_net_hidden": 16,
+    "lambda_min": 0.1,
+    "lambda_max": 2.0,
+    "rho_max": 2.0,
+    "ridge_b_clip": 5.0
+  },
+  "train": {
+    "optimizer": "adamw",
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "tasks_per_microbatch": 8,
+    "accumulate_to_tasks": 16,
+    "score_batch": 8192,
+    "max_epochs": 20,
+    "patience": 5,
+    "eta_zero_shot": 0.25,
+    "task_mix": [
+      0.5,
+      0.3,
+      0.1,
+      0.1
+    ],
+    "max_query_pos_per_task": 16,
+    "max_query_anchor_per_task": 32,
+    "missing_view_probs": [
+      0.6,
+      0.25,
+      0.15
+    ],
+    "amp": true,
+    "select_metric": "recall10_end",
+    "tie_break_metric": "ndcg10_end"
+  },
+  "evaluation": {
+    "ks": [
+      10,
+      20,
+      50
+    ],
+    "primary_k": 10,
+    "bootstrap_draws": 10000,
+    "bootstrap_unit": "family",
+    "permutation_draws": 10000,
+    "stat_seed": 20260922,
+    "multiplicity": "holm",
+    "primary_comparisons": [
+      "b9_ours__vs__b4_lightgbm",
+      "b9_ours__vs__b7_kdgene",
+      "b9_ours__vs__b8_meta_ridge"
+    ]
+  },
+  "hardware": {
+    "profile": "16gb",
+    "device": "cuda",
+    "cpu_threads": 4,
+    "target_gpu_reserved_gib": 12.0,
+    "target_rss_gib": 16.0
+  },
+  "protocol_id": "gpu8_v1",
+  "_config_hash": "3348c50e65674508ba78f3a8e65f9e6da764e3dcefd45c690a107c9cf455243d"
+}

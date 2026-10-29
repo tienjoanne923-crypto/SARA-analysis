@@ -1,0 +1,18 @@
+{
+  "selected_on": "development families only",
+  "context": "f0_outer",
+  "n_candidates": 500,
+  "criterion": "mean disease-macro coverage, ties broken by zero-coverage fraction",
+  "selected": {
+    "n_neighbours": 20.0,
+    "w_phenotype": 1.0,
+    "w_hierarchy": 1.0,
+    "w_rwr": 0.25,
+    "mean_coverage": 0.34555604934281403,
+    "zero_coverage_frac": 0.6175,
+    "mean_tie_break_fallback": 0.09129999999999999,
+    "n_dev": 400.0
+  },
+  "note": "ranking quality was never consulted here, so the retriever cannot have been tuned toward any particular scoring model",
+  "grid_rows": 48
+}

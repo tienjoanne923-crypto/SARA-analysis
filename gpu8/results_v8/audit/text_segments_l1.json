@@ -1,0 +1,18 @@
+{
+  "level": 1,
+  "n_diseases": 13321,
+  "n_truncated_v71": 3566,
+  "share_truncated_v71": 0.26769762029877636,
+  "n_multi_segment": 3566,
+  "segments_total": 17651,
+  "max_segments": 7,
+  "tokens_full_median": 79.0,
+  "tokens_full_p95": 227.0,
+  "segment_tokenizer_truncations": 0,
+  "masked_placeholders_in_new_text": 1513,
+  "diseases_with_mask_in_new_text": 794,
+  "seconds": 45.16366648674011,
+  "single_segment_vs_v71_cosine_min": 0.9999998807907104,
+  "single_segment_vs_v71_maxabs": 0.0,
+  "multi_segment_vs_v71_cosine_median": 0.9836748242378235
+}

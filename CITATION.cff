@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this software release."
+type: software
+title: "SARA analysis code and provenance for disease gene retrieval under uneven knowledge coverage"
+authors:
+  - family-names: "Xu"
+    given-names: "Jialu"
+version: "1.0.0-rc2"
+date-released: "2026-10-29"
+license: MIT
+repository-code: "https://github.com/tienjoanne923-crypto/SARA-analysis"
+url: "https://github.com/tienjoanne923-crypto/SARA-analysis/releases/tag/v1.0.0-rc2"
+keywords:
+  - disease gene prioritization
+  - semantic retrieval
+  - bioinformatics
+  - reproducibility

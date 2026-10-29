@@ -1,0 +1,15 @@
+{
+  "level": 2,
+  "n_diseases": 13321,
+  "n_truncated_v71": 3564,
+  "share_truncated_v71": 0.2675474814203138,
+  "n_multi_segment": 3564,
+  "segments_total": 17647,
+  "max_segments": 7,
+  "tokens_full_median": 79.0,
+  "tokens_full_p95": 226.0,
+  "segment_tokenizer_truncations": 0,
+  "masked_placeholders_in_new_text": 1624,
+  "diseases_with_mask_in_new_text": 813,
+  "seconds": 46.03998684883118
+}

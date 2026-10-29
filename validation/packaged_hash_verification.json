@@ -1,0 +1,1238 @@
+{
+  "selected_files": 307,
+  "counts": {
+    "matched": 307
+  },
+  "all_selected_matched": true,
+  "files": [
+    {
+      "path": "association/CTD_diseases.tsv.gz",
+      "status": "matched"
+    },
+    {
+      "path": "association/CTD_genes_diseases.tsv.gz",
+      "status": "matched"
+    },
+    {
+      "path": "data_snapshots/historical_2023q4/association/CTD_diseases.tsv.gz",
+      "status": "matched"
+    },
+    {
+      "path": "data_snapshots/historical_2023q4/ontology/doid.obo",
+      "status": "matched"
+    },
+    {
+      "path": "data_snapshots/historical_2023q4/phenotype/hp.obo",
+      "status": "matched"
+    },
+    {
+      "path": "data_snapshots/historical_2023q4/phenotype/phenotype.hpoa",
+      "status": "matched"
+    },
+    {
+      "path": "function/Homo_sapiens.gene_info.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/caches_v71/featurepack_v71.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/configs/frozen_config.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/clinvar/variant_summary.txt.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/gencc/gencc-submissions.tsv",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/geo/GPL13158.annot.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/geo/GPL570.annot.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/geo/GPL6244.annot.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/geo/GSE13355_series_matrix.txt.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/geo/GSE30999_series_matrix.txt.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/geo/GSE75214_series_matrix.txt.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/geo/GSE87466_series_matrix.txt.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/hgnc/hgnc_complete_set.txt",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/mondo/mondo.obo",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/mondo/mondo.sssom.tsv",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v6/clinvar/var_citations.txt",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v6/go/go-basic_2023-10-09.obo",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v6/go/go-basic_current.obo",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v6/go/goa_human_2023-10-09.gaf.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v6/go/goa_human_current.gaf.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v6/gtex/GTEx_v8_gene_median_tpm.gct.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v6/hgnc/hgnc_complete_set_2023-10-01.txt",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v6/hpo/genes_to_phenotype_v2023-10-09.txt",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/hpa/rna_tissue_consensus.tsv.zip",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/mane/MANE.GRCh38.v1.5.refseq_protein.faa.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/mane/MANE.GRCh38.v1.5.summary.txt.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/models/esm2_35m/config.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/models/esm2_35m/model.safetensors",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/models/esm2_35m/special_tokens_map.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/models/esm2_35m/tokenizer_config.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/models/esm2_35m/vocab.txt",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/models/sapbert/config.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/models/sapbert/pytorch_model.bin",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/models/sapbert/special_tokens_map.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/models/sapbert/tokenizer_config.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/models/sapbert/vocab.txt",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/uniprot/RELEASE.metalink",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/external/v71/uniprot/UP000005640_9606.fasta.gz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/manifests/contexts.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/manifests/splits_main_5fold.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results/external/clinvar_variant_level.csv",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results/external/external_labels_audit.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/eval/eval_test_main.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/external/external618/external_pairs_fields.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/external/external618/external_per_disease.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pools_f0_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pools_f0_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pools_f0_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pools_f1_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pools_f1_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pools_f1_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pools_f2_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pools_f2_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pools_f2_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pools_f3_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pools_f3_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pools_f3_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pools_f4_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pools_f4_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pools_f4_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pools_f0_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pools_f0_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pools_f0_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pools_f1_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pools_f1_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pools_f1_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pools_f2_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pools_f2_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pools_f2_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pools_f3_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pools_f3_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pools_f3_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pools_f4_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pools_f4_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pools_f4_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pools_f0_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pools_f0_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pools_f0_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pools_f1_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pools_f1_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pools_f1_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pools_f2_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pools_f2_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pools_f2_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pools_f3_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pools_f3_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pools_f3_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pools_f4_inner0_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pools_f4_inner1_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pools_f4_inner2_oof.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pred_B__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pred_F7_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pred_channel_lgb_v6__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pred_deployed__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pred_v71_direct_strict__test.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/results_v8/pub/query_ranks.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner0__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner0__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner0__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner1__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner1__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner1__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner2__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner2__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner2__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_outer__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_outer__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_outer__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_outer__reference__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner0__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner0__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner0__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner1__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner1__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner1__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner2__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner2__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner2__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_outer__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_outer__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_outer__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_outer__reference__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner0__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner0__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner0__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner1__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner1__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner1__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner2__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner2__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner2__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_outer__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_outer__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_outer__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_outer__reference__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner0__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner0__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner0__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner1__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner1__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner1__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner2__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner2__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner2__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_outer__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_outer__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_outer__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_outer__reference__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner0__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner0__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner0__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner1__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner1__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner1__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner2__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner2__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner2__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_outer__background__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_outer__background__s52/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_outer__background__s62/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_outer__reference__s42/result.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8/external_labels.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8/mapping.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8/protocol.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/evaluate71.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/register71.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/chain8.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/external8.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/feats8.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/models8.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/roles8.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/teacher8.py",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/build_report.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/diseases.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/do_terms.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/evidence.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/external_labels.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/gene_alias_ambiguity.csv",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/genes.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/hierarchy.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/hpo_terms.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/phenotypes.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/ppi.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables/relations.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_historical/diseases.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_historical/evidence.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_historical/genes.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_historical/hierarchy.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_historical/historical_build_report.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_historical/phenotypes.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_historical/ppi.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_historical/relations.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/disease_hpo_class.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/disease_semantics.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/disease_text.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/gene_features_current_names.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/gene_features_hist2023_names.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/gene_function_bridge_current.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/gene_function_bridge_hist2023.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/go_reference_pmids_current.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/go_reference_pmids_hist2023.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/hpoa_id_map.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/phenotypes_v6.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v6/phenotypes_v6_all_rows.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v71/anchor_incidence.npz",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v71/anchor_terms.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v71/confirmation_set_v71.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v71/d_tissue_audit.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v71/disease_templates_v71.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v71/go_term_texts_v71.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v71/hpo_term_texts_v71.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v71/sequences_v71.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v71/tissue_alias_table_v71.csv",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v71/tissue_order_v71.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v8/disease_segment_summary_l1.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v8/disease_segment_summary_l2.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v8/disease_segments_l1.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v8/disease_segments_l2.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v8/evidence_block_pmids_v8.json",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v8/evidence_block_relations_v8.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v8/go_masks_v8.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v8/go_records_current_v8.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v8/go_term_texts_2023.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "gpu8/tables_v8/hpo_term_ids_2023.parquet",
+      "status": "matched"
+    },
+    {
+      "path": "ontology/doid.obo",
+      "status": "matched"
+    },
+    {
+      "path": "phenotype/genes_to_phenotype.txt",
+      "status": "matched"
+    },
+    {
+      "path": "phenotype/hp.obo",
+      "status": "matched"
+    },
+    {
+      "path": "phenotype/phenotype.hpoa",
+      "status": "matched"
+    },
+    {
+      "path": "ppi/9606.protein.aliases.v12.0.txt.gz",
+      "status": "matched"
+    },
+    {
+      "path": "ppi/9606.protein.info.v12.0.txt.gz",
+      "status": "matched"
+    },
+    {
+      "path": "ppi/9606.protein.physical.links.v12.0.txt.gz",
+      "status": "matched"
+    }
+  ],
+  "coverage_note": "Only selected existing files are checked. Known missing originals are separately documented."
+}

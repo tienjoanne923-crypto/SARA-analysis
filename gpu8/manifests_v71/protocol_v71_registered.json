@@ -1,0 +1,151 @@
+{
+  "plan": {
+    "status_of_folds": "the five outer folds were used by V5/V6; V7.1 five-fold numbers are internal estimates; the new confirmation set below is the only untouched evaluation",
+    "primary_endpoint": "disease macro end-to-end Recall@10 over the fixed evaluation background; multi-seed: per run per disease first, then averaged (never a union of hits)",
+    "secondary": [
+      "Hit@10",
+      "Recall@50",
+      "coverage (500 / work pool)",
+      "oracle U@10",
+      "NDCG@10",
+      "new and squeezed-out hits"
+    ],
+    "E1": {
+      "task": "outer cold start, 4,238 five-fold diseases, 5 folds x 3 seeds",
+      "methods": [
+        "F7 (V6 frozen fusion, deterministic)",
+        "V6 LightGBM (archived V6 main scorer, read from runs_v6)",
+        "retrieval-channel-only LightGBM on the V6 500 (re-registered strong control, 3 seeds)",
+        "same-resource fixed fusion (zero-training SapBERT/HPA/ESM similarities, weights on dev)",
+        "multimodal core alone (own 500 list, degree-prior fill marked)",
+        "late fusion, non-negative fixed (F7 + core, weight on dev)",
+        "late fusion, LightGBM on the OOF work pool (V6 500 U core top-500)"
+      ]
+    },
+    "E2": {
+      "task": "same data, different algorithms (seed 42)",
+      "methods": [
+        "raw concatenation of modality vectors into LightGBM",
+        "linear two-tower",
+        "core without / with anchor alignment (lambda_A flipped)",
+        "full core"
+      ]
+    },
+    "E3": {
+      "task": "association-cold genes",
+      "strata": [
+        "visible_ctd",
+        "visible_hpo_only",
+        "ppi_only",
+        "unseen"
+      ],
+      "readouts": [
+        "work-pool coverage",
+        "final-500 coverage",
+        "top-10 recovery"
+      ],
+      "strict_variant": "anchor training restricted to association-warm genes of the context (stricter gene-supervision cold); cold genes keep frozen features only"
+    },
+    "E4": {
+      "task": "resource x method 2x2",
+      "cells": {
+        "old resources, old method": "V6 LightGBM",
+        "new resources, old method": "LightGBM on the V6 500 + raw V7.1 modality vectors",
+        "old resources, new method": "late fusion with a core on GO function + GTEx expression (no ESM, no HPA)",
+        "new resources, new method": "late fusion with the full core"
+      }
+    },
+    "E5": {
+      "task": "modality behaviour on fixed candidates",
+      "checks": [
+        "single-modality shutdown",
+        "paired permutations (sequence: length+degree; function: annotation depth+degree; tissue weights: tissue count+broad flag)",
+        "missing-mask-only second-level model",
+        "full-background chunk invariance"
+      ]
+    },
+    "E6": {
+      "task": "candidate attribution",
+      "comparisons": [
+        "old V6 500 fixed, only the score changes",
+        "shared new work pool",
+        "each system end to end",
+        "new hits and squeezed-out old hits"
+      ]
+    },
+    "E7": {
+      "task": "support and confirmation",
+      "parts": [
+        "V6 support task kept as archived",
+        "small support sets (k = 1, diseases with 2-5 known genes) with the V6 support line and an optional core term whose weight is set on dev (0 allowed)",
+        "new confirmation set (frozen below), every method evaluated once"
+      ]
+    },
+    "E8": {
+      "task": "optional channels, exploratory",
+      "image": "HPA DenseNet image features (obtained); controls: localisation-only, within-cell-line image-gene permutation, cell-line-centred features",
+      "mouse": "IMPC calls + MGI 1:1 homology + MGI curated MP-HP SSSOM; directional match S(d,m); enabled only if the programmatic mapping checks pass; manual spot check exported, not performed"
+    },
+    "admission_rules": {
+      "core_config": "one-SE rule on fold-0 dev, simplest first (rank, gate, lambda_A)",
+      "modality_kept": "paired permutation lowers dev Recall@10 by > 1 paired SE",
+      "late_fusion": "core enters late fusion iff it adds dev positives outside the V6 500",
+      "second_level": "fixed fusion and LightGBM both reported; LightGBM early-stopped on F_{j+1}",
+      "multimodal_claim": "'multimodal gain' may be claimed only if (i) late fusion beats the channel-only LightGBM and F7 on E1, (ii) paired permutations lower performance (E5), and (iii) the gain is not reproduced by the mask-only model or the raw concatenation"
+    },
+    "stopping_and_downgrade_rules": [
+      "if the same-resource fixed fusion beats the learned gate, keep the fixed fusion",
+      "if coverage rises but top-10 falls, report pool change and squeezed-out hits, do not claim",
+      "if permutation leaves a modality's effect unchanged, report it as not used",
+      "if the anchor stage gives no dev gain, report lambda_A = 0 as the selected configuration",
+      "the title contains 'multimodal' only if the multimodal_claim rule is met"
+    ],
+    "fit_budget": {
+      "main_chain": "5 folds x 3 seeds x (3 inner + 1 outer) = 60 core fits",
+      "variant_chains": "seed 42: core_altanchor, two_tower, core_oldres, core_strict = 4 x 20 = 80 fits",
+      "outer_only": "seed 42: core_bgctrl, core_image, core_mouse (if admitted) = 15 fits",
+      "second_level": "LightGBM late fusion 15, channel-only LightGBM 15, E2/E4/E5 variants seed 42 x 5 folds"
+    }
+  },
+  "frozen_inputs": {
+    "featurepack_v71.json": "d27677582e667e3b6027207f126e95791f65d09eb99aea5764c8138920f0c391",
+    "models_v71.json": "9d073fa70d325ddd7accb6c4f0d43075125ecade17ffa6a6d842e75c3875e349",
+    "resources_v71.json": "293e69077431d326d9f9265de21becbbdf62b4bac7b3a49a2eff6730bbfe7b4e",
+    "core_dev_selection_v71.json": "54b0e1bed0858f27c824214bfc90c2e3446e324a6113a0b67fa910b0b3ec8353"
+  },
+  "core_selection": {
+    "selected": {
+      "rank": 128,
+      "lambda_A": 0.2,
+      "gate": "global"
+    },
+    "modalities": {
+      "S": true,
+      "F": true,
+      "E": true
+    },
+    "admission": {
+      "dev_positives": 2941,
+      "in_v6_500": 1214,
+      "added_by_core_top500": 443,
+      "union_coverage_gain": 0.15062903774226455,
+      "admitted": true
+    }
+  },
+  "confirmation_set": {
+    "n_pairs": 2324,
+    "n_diseases": 618,
+    "by_source": {
+      "ClinVar": 1863,
+      "GenCC": 461
+    },
+    "sha256_pairs": "4af317d6a11192df125dd9aa7e3a9cc7f28c77c88c3de5581d8203f6c912dd06",
+    "file": "tables_v71/confirmation_set_v71.parquet",
+    "evaluation": "filtered: each method's ranked list minus the disease's CTD positives; pool misses count as misses"
+  },
+  "registered_utc": "2026-09-23T08:50:28Z",
+  "registered_before_any_v71_test_evaluation": true,
+  "protocol_id": "gpu8_v71",
+  "written_utc": "2026-09-23T08:50:28Z",
+  "payload_hash": "500c1ffa4e275bec01f7919f44c31fb9e7ccf161e9eaaaafefc3d3af302398a0"
+}

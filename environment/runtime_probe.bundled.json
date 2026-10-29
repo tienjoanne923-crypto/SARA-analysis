@@ -1,0 +1,64 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": {
+      "imported": true,
+      "version": "2.3.5"
+    },
+    "scipy": {
+      "imported": false,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'scipy'"
+    },
+    "pandas": {
+      "imported": true,
+      "version": "3.0.1"
+    },
+    "pyarrow": {
+      "imported": false,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'pyarrow'"
+    },
+    "lightgbm": {
+      "imported": false,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'lightgbm'"
+    },
+    "torch": {
+      "imported": false,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'torch'"
+    },
+    "pytest": {
+      "imported": false,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'pytest'"
+    },
+    "transformers": {
+      "imported": false,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'transformers'"
+    },
+    "tokenizers": {
+      "imported": false,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'tokenizers'"
+    },
+    "huggingface_hub": {
+      "imported": false,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'huggingface_hub'"
+    },
+    "safetensors": {
+      "imported": false,
+      "error_type": "ModuleNotFoundError",
+      "error": "No module named 'safetensors'"
+    }
+  },
+  "network_access": false,
+  "training": false,
+  "probe_date": "2026-10-29",
+  "bytecode_writes_disabled": true,
+  "offline_environment_variables": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_manifest": "gpu8/manifests_v71/resources_v71.json",
+  "original_recorded_value": "CC BY-SA4.0 (Human Protein Atlas)",
+  "current_official_general_database_licence": "CC BY4.0 for copyrightable database content, subject to third-party constraints",
+  "verified_primary_source": "https://www.proteinatlas.org/about/licence",
+  "audit_date": "2026-10-29",
+  "interpretation": "The BY-SA licence visible on the licence page applies to certain incorporated external resources, such as MetabolicAtlas, rather than the general HPA database statement.",
+  "handling": "Original historical manifest remains unchanged. This additive correction does not assert that every component of the downloaded consensus-expression file is cleared for unrestricted redistribution."
+}

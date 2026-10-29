@@ -1,0 +1,432 @@
+{
+  "fold": 2,
+  "controls": "background",
+  "student": null,
+  "w": {
+    "coverage": {
+      "aware_w0.3": 0.5442500161612125,
+      "plain_w0.3": 0.5444103001969972,
+      "aware_w0.5": 0.5458228282815222,
+      "plain_w0.5": 0.5462811651062807,
+      "aware_w0.7": 0.544157554490498,
+      "plain_w0.7": 0.5434451279904698,
+      "aware_w0.9": 0.45627245493827107,
+      "plain_w0.9": 0.45627245493827107,
+      "v6_500": 0.41483625197336216
+    },
+    "w": 0.5,
+    "rule": "max development coverage@500 of the aware RRF; tie -> larger w"
+  },
+  "summary": {
+    "fold": 2,
+    "seed": 42,
+    "tag": "main",
+    "B_minus_0": {
+      "best_iteration": 103,
+      "mu": -1.0651331658656773,
+      "sd": 0.5320718593025255,
+      "reload_maxabs": 0.0,
+      "train_contexts": [
+        "f2_inner1",
+        "f2_inner2"
+      ],
+      "checkpoint": "F_(j+1) in f2_inner0",
+      "seconds": 3.9491238594055176
+    },
+    "B_minus_1": {
+      "best_iteration": 44,
+      "mu": -0.6371927885409001,
+      "sd": 0.340708647827426,
+      "reload_maxabs": 0.0,
+      "train_contexts": [
+        "f2_inner0",
+        "f2_inner2"
+      ],
+      "checkpoint": "F_(j+1) in f2_inner1",
+      "seconds": 2.3017427921295166
+    },
+    "B_minus_2": {
+      "best_iteration": 17,
+      "mu": -0.24494108476075196,
+      "sd": 0.16459359253051958,
+      "reload_maxabs": 0.0,
+      "train_contexts": [
+        "f2_inner0",
+        "f2_inner1"
+      ],
+      "checkpoint": "F_(j+1) in f2_inner2",
+      "seconds": 2.0915279388427734
+    },
+    "B_outer": {
+      "best_iteration": 49,
+      "mu": -0.5937768855149371,
+      "sd": 0.3050541253665213,
+      "reload_maxabs": 0.0,
+      "seconds": 3.332907199859619
+    },
+    "pool_hashes": {
+      "f2_inner0": {
+        "oof": "6769b6787b9619c9b4e7400c9e8b08610107c85495cbf0ebab34971e97d91d78",
+        "val": "22bf2a0617e787e5e5ee4dd4894cd10067e10241b482d374fcc2d56b09908a65"
+      },
+      "f2_inner1": {
+        "oof": "acdedc5bee81add36d45121878def4d3cda202744cebc98e9592b870c0c54f84",
+        "val": "49b9308f2f1925bbecfad4e6ab43bddd2953e5a96f23ed9c3553db1dc5a4410b"
+      },
+      "f2_inner2": {
+        "oof": "cb7a29624876a15175b1a21fa7bc37fdf79e703911c1c43ddfd1b213ca1eaac2",
+        "val": "f1282f19ccd167d49bdab44955044be2807090788a614346d5011932a5e95094"
+      },
+      "f2_outer": {
+        "test": "97ff6235c089b2092e253c3bffe63d26850cbb69a648ab24cfe697adad7bee96",
+        "val": "3c8c18d716f6723a4780e8ff13cc111495b2ec0a31cb12c2d7231862349f88ad",
+        "dev": "2bb9f498b3f545ed522afd419fbaf035d6672586a5b00c6da6865a424b1544dc"
+      }
+    },
+    "underfit_trigger_config": [],
+    "corrector": [
+      {
+        "name": "C_b0_l0.03",
+        "beta": 0.0,
+        "lam": 0.03,
+        "dev_recall10": 0.10797312340533739,
+        "dev_cold_recall10": 0.03278688524590164,
+        "best_iteration": 78,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1575,
+          "skipped_no_positive_in_pool": 968,
+          "skipped_no_unlabelled": 0,
+          "rows": 105895,
+          "pairs": 326080,
+          "cold_positives_in_pairs": 551,
+          "diseases_with_cold_positive": 434,
+          "rows_gated_on": 103894,
+          "sample_hash": "15d22dc7714975d23e8c253d3d23f9343567633922f2d06206d257b11b3e1f68",
+          "seconds": 11.37729811668396,
+          "best_iteration": 78,
+          "val_recall10_best": 0.16786111372443885,
+          "val_recall10_round1": 0.11583746862899492,
+          "train_loss_first": 1742.5710453430997,
+          "train_loss_r150": 858.1502755119384,
+          "train_loss_last": 804.5010746563454,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      },
+      {
+        "name": "C_b0_l0.1",
+        "beta": 0.0,
+        "lam": 0.1,
+        "dev_recall10": 0.11609060930245588,
+        "dev_cold_recall10": 0.030054644808743168,
+        "best_iteration": 73,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1575,
+          "skipped_no_positive_in_pool": 968,
+          "skipped_no_unlabelled": 0,
+          "rows": 105895,
+          "pairs": 326080,
+          "cold_positives_in_pairs": 551,
+          "diseases_with_cold_positive": 434,
+          "rows_gated_on": 103894,
+          "sample_hash": "15d22dc7714975d23e8c253d3d23f9343567633922f2d06206d257b11b3e1f68",
+          "seconds": 11.247157335281372,
+          "best_iteration": 73,
+          "val_recall10_best": 0.1698349763959621,
+          "val_recall10_round1": 0.1163883607383286,
+          "train_loss_first": 1742.5710453430997,
+          "train_loss_r150": 968.939868666221,
+          "train_loss_last": 919.9096072253625,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      },
+      {
+        "name": "C_b1_l0.03",
+        "beta": 1.0,
+        "lam": 0.03,
+        "dev_recall10": 0.1076800706836709,
+        "dev_cold_recall10": 0.02459016393442623,
+        "best_iteration": 24,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1575,
+          "skipped_no_positive_in_pool": 968,
+          "skipped_no_unlabelled": 0,
+          "rows": 105895,
+          "pairs": 326080,
+          "cold_positives_in_pairs": 551,
+          "diseases_with_cold_positive": 434,
+          "rows_gated_on": 103894,
+          "sample_hash": "15d22dc7714975d23e8c253d3d23f9343567633922f2d06206d257b11b3e1f68",
+          "seconds": 11.378581047058105,
+          "best_iteration": 24,
+          "val_recall10_best": 0.1656500783332214,
+          "val_recall10_round1": 0.11589999716792512,
+          "train_loss_first": 1753.1928347697508,
+          "train_loss_r150": 859.2139035932029,
+          "train_loss_last": 806.407067320373,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      },
+      {
+        "name": "C_b1_l0.1",
+        "beta": 1.0,
+        "lam": 0.1,
+        "dev_recall10": 0.11419559055062063,
+        "dev_cold_recall10": 0.03278688524590164,
+        "best_iteration": 85,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1575,
+          "skipped_no_positive_in_pool": 968,
+          "skipped_no_unlabelled": 0,
+          "rows": 105895,
+          "pairs": 326080,
+          "cold_positives_in_pairs": 551,
+          "diseases_with_cold_positive": 434,
+          "rows_gated_on": 103894,
+          "sample_hash": "15d22dc7714975d23e8c253d3d23f9343567633922f2d06206d257b11b3e1f68",
+          "seconds": 11.237702369689941,
+          "best_iteration": 85,
+          "val_recall10_best": 0.16869896966439415,
+          "val_recall10_round1": 0.1163883607383286,
+          "train_loss_first": 1753.1928347697508,
+          "train_loss_r150": 973.0351429462229,
+          "train_loss_last": 923.0720465989709,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      },
+      {
+        "name": "C_b2_l0.03",
+        "beta": 2.0,
+        "lam": 0.03,
+        "dev_recall10": 0.10833055061115787,
+        "dev_cold_recall10": 0.03961748633879782,
+        "best_iteration": 118,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1575,
+          "skipped_no_positive_in_pool": 968,
+          "skipped_no_unlabelled": 0,
+          "rows": 105895,
+          "pairs": 326080,
+          "cold_positives_in_pairs": 551,
+          "diseases_with_cold_positive": 434,
+          "rows_gated_on": 103894,
+          "sample_hash": "15d22dc7714975d23e8c253d3d23f9343567633922f2d06206d257b11b3e1f68",
+          "seconds": 11.325772285461426,
+          "best_iteration": 118,
+          "val_recall10_best": 0.16432208034693496,
+          "val_recall10_round1": 0.11599838362994794,
+          "train_loss_first": 1759.9267583957308,
+          "train_loss_r150": 859.642500452778,
+          "train_loss_last": 804.1709756887942,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      },
+      {
+        "name": "C_b2_l0.1",
+        "beta": 2.0,
+        "lam": 0.1,
+        "dev_recall10": 0.11178781523256322,
+        "dev_cold_recall10": 0.030054644808743168,
+        "best_iteration": 74,
+        "underfit_rule": false,
+        "diag": {
+          "D_star": 1575,
+          "skipped_no_positive_in_pool": 968,
+          "skipped_no_unlabelled": 0,
+          "rows": 105895,
+          "pairs": 326080,
+          "cold_positives_in_pairs": 551,
+          "diseases_with_cold_positive": 434,
+          "rows_gated_on": 103894,
+          "sample_hash": "15d22dc7714975d23e8c253d3d23f9343567633922f2d06206d257b11b3e1f68",
+          "seconds": 11.260236024856567,
+          "best_iteration": 74,
+          "val_recall10_best": 0.1732245959753628,
+          "val_recall10_round1": 0.1163883607383286,
+          "train_loss_first": 1759.9267583957308,
+          "train_loss_r150": 972.098191056199,
+          "train_loss_last": 921.7804824432538,
+          "params": {
+            "metric": "None",
+            "num_leaves": 15,
+            "learning_rate": 0.05,
+            "min_data_in_leaf": 20,
+            "min_sum_hessian_in_leaf": 0.001,
+            "lambda_l2": 0.0,
+            "bagging_fraction": 1.0,
+            "bagging_freq": 0,
+            "feature_fraction": 1.0,
+            "deterministic": true,
+            "force_row_wise": true,
+            "num_threads": 10,
+            "seed": 42,
+            "verbosity": -1,
+            "boost_from_average": false
+          },
+          "objective": "gated pairwise PU softplus (custom), scaled by |D*|",
+          "underfit_rule": false
+        }
+      }
+    ],
+    "A": [
+      {
+        "name": "A_nl15_mc50",
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "dev_recall10": 0.14235859414205687,
+        "dev_cold_recall10": 0.023679417122040077,
+        "best_iteration": 78
+      },
+      {
+        "name": "A_nl15_mc200",
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "dev_recall10": 0.13074743365339328,
+        "dev_cold_recall10": 0.03597449908925319,
+        "best_iteration": 161
+      },
+      {
+        "name": "A_nl31_mc50",
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "dev_recall10": 0.13790135889739122,
+        "dev_cold_recall10": 0.030510018214936253,
+        "best_iteration": 155
+      },
+      {
+        "name": "A_nl31_mc200",
+        "num_leaves": 31,
+        "min_child_samples": 200,
+        "dev_recall10": 0.14526474695311423,
+        "dev_cold_recall10": 0.031876138433515486,
+        "best_iteration": 87
+      },
+      {
+        "name": "A_nl63_mc50",
+        "num_leaves": 63,
+        "min_child_samples": 50,
+        "dev_recall10": 0.14584735170625246,
+        "dev_cold_recall10": 0.03597449908925319,
+        "best_iteration": 66
+      },
+      {
+        "name": "A_nl63_mc200",
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "dev_recall10": 0.1323257058863914,
+        "dev_cold_recall10": 0.028233151183970854,
+        "best_iteration": 70
+      }
+    ],
+    "B_dev": {
+      "dev_recall10": 0.0982799771829156,
+      "dev_cold_recall10": 0.0
+    }
+  },
+  "ab": {
+    "best_A": "A_nl63_mc50",
+    "best_A_dev_recall10": 0.14584735170625246,
+    "best_A_dev_cold_recall10": 0.03597449908925319,
+    "kept_B_configs": [],
+    "chosen_B": null,
+    "deploy": "A",
+    "reason": "no corrector within the margin of the best A"
+  },
+  "underfit_31_leaf_trigger": false,
+  "seconds": 208.32424521446228,
+  "generated_utc": "2026-09-24T04:57:16Z"
+}

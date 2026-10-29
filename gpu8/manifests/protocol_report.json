@@ -1,0 +1,29 @@
+{
+  "n_labelled_diseases": 5758,
+  "n_dev": 864,
+  "n_external": 656,
+  "fold_sizes": {
+    "F0": 848,
+    "F1": 848,
+    "F2": 848,
+    "F3": 847,
+    "F4": 847
+  },
+  "n_contexts": 20,
+  "family_split": {
+    "n_train": 2556,
+    "n_val": 835,
+    "n_test": 847
+  },
+  "spec_hash": "1db407552a450f826510c85e94abc06bea80dd3043a173671e950e7f8a0e1f2c",
+  "support_eligibility": {
+    "diseases": 5758,
+    "eligible_1shot": 1713,
+    "eligible_3shot": 974,
+    "eligible_5shot": 715,
+    "single_positive_only": 4045,
+    "median_positives": 1.0,
+    "median_evidence_groups": 1.0,
+    "mean_frac_with_source": 0.4073161068631481
+  }
+}

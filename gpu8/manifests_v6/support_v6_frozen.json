@@ -1,0 +1,15 @@
+{
+  "alpha": 0.4,
+  "nu": 0.3,
+  "omega": 0.75,
+  "dev_cases": 400,
+  "dev_recall10_k5": {
+    "rwr_equal_ppi": 0.08407323090343204,
+    "rwr_equal_best_nu": 0.09897351821256307,
+    "joint": 0.09183032685061125
+  },
+  "rule": "alpha by rwr_equal on PPI at k=5 (S-fixed); nu at that alpha; omega for joint at (alpha, nu)",
+  "protocol_id": "gpu8_v6",
+  "written_utc": "2026-09-23T04:42:34Z",
+  "payload_hash": "c100838f9ed96549d1a450a8c97eaeec5abe1571cdcf2cf5c5afe2b575ffe244"
+}

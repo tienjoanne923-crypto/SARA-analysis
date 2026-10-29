@@ -1,0 +1,48 @@
+{
+  "selection": {
+    "attention": {
+      "preset": 0,
+      "config": {
+        "hidden": 32,
+        "heads": 2
+      },
+      "mean_val_recall10": 0.10694648664663028,
+      "mean_val_recall10_F": 0.10643867052066722,
+      "beats_F_on_dev": true
+    },
+    "bilinear": {
+      "preset": 0,
+      "config": {
+        "rank": 32
+      },
+      "mean_val_recall10": 0.10643867052066722,
+      "mean_val_recall10_F": 0.10643867052066722,
+      "beats_F_on_dev": false
+    },
+    "lightgbm": {
+      "preset": 0,
+      "config": {
+        "num_leaves": 31,
+        "min_child_samples": 100,
+        "learning_rate": 0.05
+      },
+      "mean_val_recall10": 0.11682905834397352,
+      "mean_val_recall10_F": 0.10643867052066722,
+      "beats_F_on_dev": true
+    },
+    "lr": {
+      "preset": 0,
+      "config": {
+        "C": 0.1
+      },
+      "mean_val_recall10": 0.09571125276747501,
+      "mean_val_recall10_F": 0.10643867052066722,
+      "beats_F_on_dev": false
+    }
+  },
+  "n_fits": 16,
+  "rule": "one-standard-error, simpler preset first",
+  "protocol_id": "gpu8_v6",
+  "written_utc": "2026-09-23T04:44:00Z",
+  "payload_hash": "dd264b66b325e756e897a7217dd831a1164e8db91d6b521ba49bc4872d980058"
+}

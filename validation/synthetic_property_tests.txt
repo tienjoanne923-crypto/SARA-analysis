@@ -1,0 +1,5 @@
+Executed 2026-10-29 in original Windows research environment.
+Command: gpu8/.venv/Scripts/python.exe -B scripts/run_property_checks.py
+Original test file: gpu8/tests/test_v8_properties.py
+Observed output: 28 passed in 3.01s
+Scope: software/numerical properties on synthetic inputs, including bounded toy optimization. No biological model fitting or full result reproduction.

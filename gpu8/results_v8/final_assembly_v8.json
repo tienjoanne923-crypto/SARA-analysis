@@ -1,0 +1,27 @@
+{
+  "generated_utc": "2026-09-24T14:24:43Z",
+  "figures": [
+    "fig1_problem_information_layers.png",
+    "fig2_algorithm_oof.png",
+    "fig3_strict500_overall_cold.png",
+    "fig4_go_mask_sequence.png",
+    "fig5_sources_time_external.png",
+    "fig6_hitflow_resources.png",
+    "figS1_dev_rrf_w.png"
+  ],
+  "manuscript": {
+    "markdown": "D:\\信\\manuscript_v8\\面向知识覆盖不均衡的疾病基因语义检索与可用性感知排序_V81_20260924.md",
+    "docx": "D:\\信\\manuscript_v8\\面向知识覆盖不均衡的疾病基因语义检索与可用性感知排序_V81_20260924.docx",
+    "omml": 135,
+    "tables": 11,
+    "images": 6,
+    "equation_failures": 0,
+    "missing_figures": []
+  },
+  "reports": {
+    "closure_rows": 33,
+    "status": "D:\\信\\gpu8\\reports_v8\\V81_现状结果与问题说明.md"
+  },
+  "ledger_rows": 1499,
+  "ledger_hash_ok": true
+}

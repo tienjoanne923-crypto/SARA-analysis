@@ -1,0 +1,8 @@
+{
+  "generated_utc": "2026-09-24T11:29:27Z",
+  "environment": "D:\\信\\gpu8\\.venv_repro (Python 3.12.10; torch 2.9.1+cu128; lightgbm 4.7.0)",
+  "outcome": "blocked before any computation",
+  "error": "ImportError: DLL load failed while importing _shortest_path: 应用程序控制策略已阻止此文件。",
+  "cause": "Windows application control policy refused to load scipy/sparse/csgraph/_shortest_path (.pyd) inside .venv_repro; system security settings were not changed and no file was unblocked",
+  "fallback": "the fold-0 seed-42 chain is re-run from the frozen inputs with fresh caches (V6 world 'repro', teacher arm 'repro') in the primary environment; this checks determinism of the pipeline, not independence of the environment"
+}

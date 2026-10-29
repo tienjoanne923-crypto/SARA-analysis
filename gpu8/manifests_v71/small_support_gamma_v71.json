@@ -1,0 +1,16 @@
+{
+  "gamma": 0.5,
+  "dev_recall10": {
+    "0.0": 0.1988009592326139,
+    "0.1": 0.20376498800959233,
+    "0.2": 0.20848920863309353,
+    "0.3": 0.20968824940047961,
+    "0.4": 0.21446043165467624,
+    "0.5": 0.2237170263788969
+  },
+  "n_dev_diseases": 139,
+  "rule": "gamma maximising dev Recall@10 (k=1), ties -> smaller gamma; gamma=0 allowed",
+  "protocol_id": "gpu8_v71",
+  "written_utc": "2026-09-23T10:42:19Z",
+  "payload_hash": "e805907fba2147f913843805c9cabb762b10d0eef0522c6f916d3798bdf9a09d"
+}

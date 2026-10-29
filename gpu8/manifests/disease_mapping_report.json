@@ -1,0 +1,19 @@
+{
+  "n_diseases": 13321,
+  "mondo_source_terms": 120469,
+  "mapping_type_counts": {
+    "mondo_exact_unique": 9507,
+    "unmapped": 3270,
+    "mondo_exact_multiple": 544
+  },
+  "n_equivalence_groups": 13089,
+  "n_family_groups": 3829,
+  "family_source_counts": {
+    "own_tree": 13321
+  },
+  "family_size_max": 884,
+  "family_size_p95": 6.0,
+  "family_size_median": 1.0,
+  "family_singletons": 3412,
+  "mapping_hash": "5db275970dbbfd6c212f7be19eddbd69cb8f83d583b003b89d6ca752b5ef52b7"
+}

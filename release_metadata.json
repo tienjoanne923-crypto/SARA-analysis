@@ -1,0 +1,30 @@
+{
+  "title": "SARA analysis code and provenance for disease gene retrieval under uneven knowledge coverage",
+  "package_version": "1.0.0-rc2",
+  "prepared_date": "2026-10-29",
+  "scientific_snapshot": "2026-10-18",
+  "english_revision": "2026-10-28",
+  "target_journal": "BioData Mining",
+  "creators": [
+    {
+      "family_name": "Xu",
+      "given_name": "Jialu",
+      "name_original": "徐嘉璐"
+    }
+  ],
+  "original_code_license": "MIT",
+  "github_repository": "https://github.com/tienjoanne923-crypto/SARA-analysis",
+  "published_version_doi": null,
+  "publicly_released": true,
+  "scope": "original analysis source, frozen settings, preprocessing scripts, hash/provenance metadata; no raw/processed data, weights or prediction arrays",
+  "independent_full_reproduction_completed": false,
+  "required_before_public_release": [],
+  "release_tag": "v1.0.0-rc2",
+  "github_release": "https://github.com/tienjoanne923-crypto/SARA-analysis/releases/tag/v1.0.0-rc2",
+  "is_prerelease": true,
+  "revision_lookup": "git rev-parse refs/tags/v1.0.0-rc2^{commit}",
+  "required_before_persistent_archive": [
+    "Connect Zenodo/figshare account",
+    "Archive the verified release and obtain a published version DOI"
+  ]
+}

@@ -1,0 +1,491 @@
+{
+  "generated_utc": "2026-09-24T03:46:35Z",
+  "release": "current",
+  "counts": {
+    "rows_read": 906445,
+    "not_qualifier": 1501,
+    "nd": 300,
+    "unmapped_entity": 58747,
+    "production_records": 845871
+  },
+  "production_equals_v71": {
+    "g_function_equal": true,
+    "g_function_maxabs": 0.0,
+    "mask_equal": true,
+    "anchors_equal": true
+  },
+  "no_pmid": {
+    "records_without_pmid": 357370,
+    "share": 0.4224875897152166,
+    "by_evidence": {
+      "IEA": 160592,
+      "TAS": 88332,
+      "IBA": 65969,
+      "ISS": 32260,
+      "IDA": 8757,
+      "ISA": 1426,
+      "IC": 15,
+      "ISO": 11,
+      "NAS": 4,
+      "IMP": 2,
+      "EXP": 1,
+      "IPI": 1
+    },
+    "genes_only_without_pmid": 1967,
+    "rule": "unknown provenance is kept in production but never counted as independent evidence"
+  },
+  "evidence_code_counts": {
+    "IPI": 291663,
+    "IEA": 160592,
+    "IDA": 109807,
+    "TAS": 105955,
+    "IBA": 65969,
+    "ISS": 34643,
+    "IMP": 26350,
+    "NAS": 18539,
+    "EXP": 15316,
+    "HDA": 9335,
+    "IGI": 2074,
+    "IC": 1502,
+    "ISA": 1430,
+    "HTP": 1131,
+    "IEP": 909,
+    "RCA": 470,
+    "HMP": 123,
+    "HEP": 44,
+    "ISO": 16,
+    "ISM": 3
+  },
+  "variants": {
+    "full": {
+      "citations": {
+        "deleted": 0,
+        "cited_by_deleted_records": 0,
+        "total": 54700,
+        "share": 0.0
+      },
+      "annotation_rows": {
+        "deleted": 0,
+        "total": 845871,
+        "share": 0.0
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 0,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 0,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 0,
+        "lost_all_go": 0,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 0,
+        "gene_lost_all_go": 0
+      }
+    },
+    "experimental": {
+      "citations": {
+        "deleted": 8126,
+        "cited_by_deleted_records": 12445,
+        "total": 54700,
+        "share": 0.14855575868372944
+      },
+      "annotation_rows": {
+        "deleted": 389119,
+        "total": 845871,
+        "share": 0.46002168179308667
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 154136,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 4771,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 18009,
+        "lost_all_go": 2178,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 30011,
+        "gene_lost_all_go": 438
+      }
+    },
+    "no_tas_nas": {
+      "citations": {
+        "deleted": 7588,
+        "cited_by_deleted_records": 11152,
+        "total": 54700,
+        "share": 0.13872029250457038
+      },
+      "annotation_rows": {
+        "deleted": 124494,
+        "total": 845871,
+        "share": 0.14717847047599456
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 23924,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 361,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 8964,
+        "lost_all_go": 13,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 23100,
+        "gene_lost_all_go": 5
+      }
+    },
+    "no_ic": {
+      "citations": {
+        "deleted": 22,
+        "cited_by_deleted_records": 722,
+        "total": 54700,
+        "share": 0.00040219378427787936
+      },
+      "annotation_rows": {
+        "deleted": 1502,
+        "total": 845871,
+        "share": 0.0017756844719821344
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 525,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 15,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 404,
+        "lost_all_go": 0,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 2244,
+        "gene_lost_all_go": 0
+      }
+    },
+    "no_mutant_genetic": {
+      "citations": {
+        "deleted": 3634,
+        "cited_by_deleted_records": 11154,
+        "total": 54700,
+        "share": 0.06643510054844606
+      },
+      "annotation_rows": {
+        "deleted": 28547,
+        "total": 845871,
+        "share": 0.03374864488793208
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 13947,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 546,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 5024,
+        "lost_all_go": 3,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 16086,
+        "gene_lost_all_go": 2
+      }
+    },
+    "iea_only": {
+      "citations": {
+        "deleted": 54700,
+        "cited_by_deleted_records": 54700,
+        "total": 54700,
+        "share": 1.0
+      },
+      "annotation_rows": {
+        "deleted": 685279,
+        "total": 845871,
+        "share": 0.8101459915282591
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 154542,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 5089,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 17999,
+        "lost_all_go": 677,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 30112,
+        "gene_lost_all_go": 105
+      }
+    }
+  },
+  "layer2_evaluation_conditioned": {
+    "citations": {
+      "deleted": 421,
+      "cited_by_deleted_records": 421,
+      "total": 54700,
+      "share": 0.007696526508226691
+    },
+    "annotation_rows": {
+      "deleted": 1358,
+      "total": 845871,
+      "share": 0.0016054457476376422
+    },
+    "unique_go": {
+      "gene_term_pairs_lost": 452,
+      "gene_term_pairs_total": 287621,
+      "term_ids_lost": 14,
+      "term_ids_total": 17833
+    },
+    "genes": {
+      "affected": 266,
+      "lost_all_go": 0,
+      "total_with_go": 18789
+    },
+    "query_relations": {
+      "total": 31577,
+      "gene_affected": 2152,
+      "gene_lost_all_go": 0
+    },
+    "evaluation_conditioned_audit": true
+  },
+  "layer2_matched_random": {
+    "citations": {
+      "deleted": 43,
+      "cited_by_deleted_records": 540,
+      "total": 54700,
+      "share": 0.0007861060329067642
+    },
+    "annotation_rows": {
+      "deleted": 1358,
+      "total": 845871,
+      "share": 0.0016054457476376422
+    },
+    "unique_go": {
+      "gene_term_pairs_lost": 343,
+      "gene_term_pairs_total": 287621,
+      "term_ids_lost": 5,
+      "term_ids_total": 17833
+    },
+    "genes": {
+      "affected": 212,
+      "lost_all_go": 0,
+      "total_with_go": 18789
+    },
+    "query_relations": {
+      "total": 31577,
+      "gene_affected": 1640,
+      "gene_lost_all_go": 0
+    },
+    "evaluation_conditioned_audit": true
+  },
+  "layer1_training_visible_outer": {
+    "f0_outer": {
+      "citations": {
+        "deleted": 245,
+        "cited_by_deleted_records": 245,
+        "total": 54700,
+        "share": 0.004478976234003657
+      },
+      "annotation_rows": {
+        "deleted": 792,
+        "total": 845871,
+        "share": 0.0009363129838947074
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 242,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 8,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 141,
+        "lost_all_go": 0,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 1097,
+        "gene_lost_all_go": 0
+      }
+    },
+    "f1_outer": {
+      "citations": {
+        "deleted": 244,
+        "cited_by_deleted_records": 244,
+        "total": 54700,
+        "share": 0.004460694698354662
+      },
+      "annotation_rows": {
+        "deleted": 733,
+        "total": 845871,
+        "share": 0.0008665623954480057
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 223,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 5,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 124,
+        "lost_all_go": 0,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 926,
+        "gene_lost_all_go": 0
+      }
+    },
+    "f2_outer": {
+      "citations": {
+        "deleted": 228,
+        "cited_by_deleted_records": 228,
+        "total": 54700,
+        "share": 0.00416819012797075
+      },
+      "annotation_rows": {
+        "deleted": 746,
+        "total": 845871,
+        "share": 0.0008819311691735501
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 250,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 4,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 148,
+        "lost_all_go": 0,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 1262,
+        "gene_lost_all_go": 0
+      }
+    },
+    "f3_outer": {
+      "citations": {
+        "deleted": 253,
+        "cited_by_deleted_records": 253,
+        "total": 54700,
+        "share": 0.004625228519195612
+      },
+      "annotation_rows": {
+        "deleted": 852,
+        "total": 845871,
+        "share": 0.0010072457857049125
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 293,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 7,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 173,
+        "lost_all_go": 0,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 1600,
+        "gene_lost_all_go": 0
+      }
+    },
+    "f4_outer": {
+      "citations": {
+        "deleted": 246,
+        "cited_by_deleted_records": 246,
+        "total": 54700,
+        "share": 0.004497257769652651
+      },
+      "annotation_rows": {
+        "deleted": 798,
+        "total": 845871,
+        "share": 0.0009434062640757279
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 269,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 8,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 170,
+        "lost_all_go": 0,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 1527,
+        "gene_lost_all_go": 0
+      }
+    }
+  },
+  "layer3_evidence_blocks": {
+    "generated_utc": "2026-09-24T03:47:07Z",
+    "n_relations": 31577,
+    "n_pmids": 12944,
+    "n_components": 11600,
+    "giant_component_relations": 4576,
+    "giant_share": 0.14491560312885962,
+    "relations_without_pmid": 4386,
+    "component_size_quantiles": {
+      "0.5": 1.0,
+      "0.9": 3.0,
+      "0.99": 19.0
+    },
+    "target_share": 0.1,
+    "blocks_chosen": 1489,
+    "relations_held": 3158,
+    "pmids_held": 1482,
+    "diseases_touched": 1233,
+    "rule": "PMID-relation connected components; giant component reported, never split or drawn; blocks drawn uniformly at random with a fixed seed until the target share",
+    "go_denominators": {
+      "citations": {
+        "deleted": 48,
+        "cited_by_deleted_records": 48,
+        "total": 54700,
+        "share": 0.0008775137111517368
+      },
+      "annotation_rows": {
+        "deleted": 179,
+        "total": 845871,
+        "share": 0.0002116161920671119
+      },
+      "unique_go": {
+        "gene_term_pairs_lost": 91,
+        "gene_term_pairs_total": 287621,
+        "term_ids_lost": 4,
+        "term_ids_total": 17833
+      },
+      "genes": {
+        "affected": 30,
+        "lost_all_go": 0,
+        "total_with_go": 18789
+      },
+      "query_relations": {
+        "total": 31577,
+        "gene_affected": 171,
+        "gene_lost_all_go": 0
+      }
+    }
+  }
+}

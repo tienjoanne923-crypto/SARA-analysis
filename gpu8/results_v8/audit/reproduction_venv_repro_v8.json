@@ -1,0 +1,48 @@
+{
+  "generated_utc": "2026-09-24T11:34:59Z",
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "D:\\信\\gpu8\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.9.1+cu128",
+    "cuda": true,
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.3"
+  },
+  "fold": 0,
+  "seed": 42,
+  "v6_pass": {
+    "f0_inner0": {
+      "rB_identical": true,
+      "V_maxabs": 0.0
+    },
+    "f0_inner1": {
+      "rB_identical": true,
+      "V_maxabs": 0.0
+    },
+    "f0_inner2": {
+      "rB_identical": true,
+      "V_maxabs": 0.0
+    },
+    "f0_outer": {
+      "rB_identical": true,
+      "V_maxabs": 0.0
+    }
+  },
+  "teacher_weights_maxabs": {
+    "f0_inner0": 0.0,
+    "f0_inner1": 0.0,
+    "f0_inner2": 0.0,
+    "f0_outer": 0.0
+  },
+  "pools_identical_share": 1.0,
+  "A_best_iteration": 108,
+  "deployed_scores_maxabs": 1.1920921005881269e-07,
+  "top10_identical_share": 1.0,
+  "tolerances": {
+    "weights": 0.001,
+    "scores": 0.0001
+  },
+  "seconds": 364.6174635887146,
+  "within_tolerance": true
+}

@@ -1,0 +1,95 @@
+{
+  "files": [
+    {
+      "model": "sapbert",
+      "revision": "090663c3ae57bf35ffe4d0d468a2a88d03051a4d",
+      "path": "gpu8/external/v71/models/sapbert/config.json",
+      "url": "https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext/resolve/090663c3ae57bf35ffe4d0d468a2a88d03051a4d/config.json",
+      "sha256": "c0fa35def52bf7d81865d23dba0417fdbb67d416fdde70cae5c7beab476b584e",
+      "bytes": 462,
+      "status": "matched"
+    },
+    {
+      "model": "sapbert",
+      "revision": "090663c3ae57bf35ffe4d0d468a2a88d03051a4d",
+      "path": "gpu8/external/v71/models/sapbert/pytorch_model.bin",
+      "url": "https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext/resolve/090663c3ae57bf35ffe4d0d468a2a88d03051a4d/pytorch_model.bin",
+      "sha256": "07f7672c7ac852d8efff83e4a7a63985bf50c03d5b57f6a7909c11fe66532137",
+      "bytes": 438012727,
+      "status": "matched"
+    },
+    {
+      "model": "sapbert",
+      "revision": "090663c3ae57bf35ffe4d0d468a2a88d03051a4d",
+      "path": "gpu8/external/v71/models/sapbert/vocab.txt",
+      "url": "https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext/resolve/090663c3ae57bf35ffe4d0d468a2a88d03051a4d/vocab.txt",
+      "sha256": "79489a52be45e6fa033521e8ce8e4f62aedc0a742ee2aa6fc04667e5b0b1454d",
+      "bytes": 226150,
+      "status": "matched"
+    },
+    {
+      "model": "sapbert",
+      "revision": "090663c3ae57bf35ffe4d0d468a2a88d03051a4d",
+      "path": "gpu8/external/v71/models/sapbert/tokenizer_config.json",
+      "url": "https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext/resolve/090663c3ae57bf35ffe4d0d468a2a88d03051a4d/tokenizer_config.json",
+      "sha256": "76eb84b4b5b0d1bdba02906d7fae249be541c41d72e2024094aea513f98f2be7",
+      "bytes": 198,
+      "status": "matched"
+    },
+    {
+      "model": "sapbert",
+      "revision": "090663c3ae57bf35ffe4d0d468a2a88d03051a4d",
+      "path": "gpu8/external/v71/models/sapbert/special_tokens_map.json",
+      "url": "https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext/resolve/090663c3ae57bf35ffe4d0d468a2a88d03051a4d/special_tokens_map.json",
+      "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "bytes": 112,
+      "status": "matched"
+    },
+    {
+      "model": "esm2_35m",
+      "revision": "6fbf070e65b0b7291e7bbcd451118c216cff79d8",
+      "path": "gpu8/external/v71/models/esm2_35m/config.json",
+      "url": "https://huggingface.co/facebook/esm2_t12_35M_UR50D/resolve/6fbf070e65b0b7291e7bbcd451118c216cff79d8/config.json",
+      "sha256": "ae07364efa51e0fa1d81da3fe608f6d948abdbbb69785ba6e1df379a458e58ee",
+      "bytes": 778,
+      "status": "matched"
+    },
+    {
+      "model": "esm2_35m",
+      "revision": "6fbf070e65b0b7291e7bbcd451118c216cff79d8",
+      "path": "gpu8/external/v71/models/esm2_35m/model.safetensors",
+      "url": "https://huggingface.co/facebook/esm2_t12_35M_UR50D/resolve/6fbf070e65b0b7291e7bbcd451118c216cff79d8/model.safetensors",
+      "sha256": "e35647818e0e064351d4531ed480d225a002567b4b2b93ad3a9246d753150fc0",
+      "bytes": 136008798,
+      "status": "matched"
+    },
+    {
+      "model": "esm2_35m",
+      "revision": "6fbf070e65b0b7291e7bbcd451118c216cff79d8",
+      "path": "gpu8/external/v71/models/esm2_35m/vocab.txt",
+      "url": "https://huggingface.co/facebook/esm2_t12_35M_UR50D/resolve/6fbf070e65b0b7291e7bbcd451118c216cff79d8/vocab.txt",
+      "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03",
+      "bytes": 93,
+      "status": "matched"
+    },
+    {
+      "model": "esm2_35m",
+      "revision": "6fbf070e65b0b7291e7bbcd451118c216cff79d8",
+      "path": "gpu8/external/v71/models/esm2_35m/tokenizer_config.json",
+      "url": "https://huggingface.co/facebook/esm2_t12_35M_UR50D/resolve/6fbf070e65b0b7291e7bbcd451118c216cff79d8/tokenizer_config.json",
+      "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad",
+      "bytes": 95,
+      "status": "matched"
+    },
+    {
+      "model": "esm2_35m",
+      "revision": "6fbf070e65b0b7291e7bbcd451118c216cff79d8",
+      "path": "gpu8/external/v71/models/esm2_35m/special_tokens_map.json",
+      "url": "https://huggingface.co/facebook/esm2_t12_35M_UR50D/resolve/6fbf070e65b0b7291e7bbcd451118c216cff79d8/special_tokens_map.json",
+      "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+      "bytes": 125,
+      "status": "matched"
+    }
+  ],
+  "model_licences": "See archived metadata and original model cards; no weights redistributed here."
+}

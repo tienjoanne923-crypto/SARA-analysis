@@ -1,0 +1,4 @@
+# Metadata-derived exact pins, without machine-local wheel paths.
+# Install requirements.torch-cu128.txt separately first.
+-r requirements.observed-main.txt
+-r requirements.observed-encoders.txt

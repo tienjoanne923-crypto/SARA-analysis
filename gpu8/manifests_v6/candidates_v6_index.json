@@ -1,0 +1,216 @@
+{
+  "generated_utc": "2026-09-23T04:13:30Z",
+  "retriever": {
+    "mode": "rrf",
+    "weights": {
+      "hier": 0.25,
+      "onto": 0.05,
+      "text": 0.25,
+      "gene_hpo": 0.15000000000000002,
+      "rwr_pheno": 0.3
+    }
+  },
+  "retriever_payload_hash": "faa687d235852b69b8dced0d3cab88cb099e37f237afb74dfb819aeb73137dfd",
+  "contexts": [
+    {
+      "context_id": "f0_inner0",
+      "n_targets": 848,
+      "rows": 424000,
+      "candidate_hash_500": "86f9e7c7799f25616e2be4a276291d01fbc7873275b4359de02fa6ad582789aa",
+      "reason_counts_500": {
+        "fused_signal": 354810,
+        "no_signal_degree_prior_fill": 69190
+      }
+    },
+    {
+      "context_id": "f0_inner1",
+      "n_targets": 847,
+      "rows": 423500,
+      "candidate_hash_500": "2efe7038ef478ebaebfcca4caf87a969e0ae90c5e0d52c189fbe0193c7184645",
+      "reason_counts_500": {
+        "fused_signal": 364165,
+        "no_signal_degree_prior_fill": 59335
+      }
+    },
+    {
+      "context_id": "f0_inner2",
+      "n_targets": 847,
+      "rows": 423500,
+      "candidate_hash_500": "80ac574eeaccacf827eeeb10f3ca219f1cec38e4e47e7f041e78ad5a117445de",
+      "reason_counts_500": {
+        "fused_signal": 366033,
+        "no_signal_degree_prior_fill": 57467
+      }
+    },
+    {
+      "context_id": "f0_outer",
+      "n_targets": 2560,
+      "rows": 1704000,
+      "candidate_hash_500": "f604d5f7d46179ea875fd7aac4481b82e3c7bd6c1eaaeccb90e44a67d005ed29",
+      "reason_counts_500": {
+        "fused_signal": 1129799,
+        "no_signal_degree_prior_fill": 150201
+      }
+    },
+    {
+      "context_id": "f1_inner0",
+      "n_targets": 848,
+      "rows": 424000,
+      "candidate_hash_500": "00a91ae9159f876969906400f81b3c7ea563e347b8cf8021c5dab494f437923d",
+      "reason_counts_500": {
+        "fused_signal": 367590,
+        "no_signal_degree_prior_fill": 56410
+      }
+    },
+    {
+      "context_id": "f1_inner1",
+      "n_targets": 847,
+      "rows": 423500,
+      "candidate_hash_500": "5d9b2de0331fcb2230049cfea07583a0af807d40f71d5a7d45e21ce54c0f387a",
+      "reason_counts_500": {
+        "fused_signal": 349807,
+        "no_signal_degree_prior_fill": 73693
+      }
+    },
+    {
+      "context_id": "f1_inner2",
+      "n_targets": 847,
+      "rows": 423500,
+      "candidate_hash_500": "9726cd0e43652e18c77bbb05ab845372613ec296600b85d2c3afa1cf2566e720",
+      "reason_counts_500": {
+        "fused_signal": 367678,
+        "no_signal_degree_prior_fill": 55822
+      }
+    },
+    {
+      "context_id": "f1_outer",
+      "n_targets": 2560,
+      "rows": 1704000,
+      "candidate_hash_500": "352998d01ad5e83f9d94587de646635de84ba5ab5342d6d4f3fd99c2fc6226ec",
+      "reason_counts_500": {
+        "fused_signal": 1119103,
+        "no_signal_degree_prior_fill": 160897
+      }
+    },
+    {
+      "context_id": "f2_inner0",
+      "n_targets": 848,
+      "rows": 424000,
+      "candidate_hash_500": "e30395be937fec8f85d72bcf2bae7e2e6f11a61a19f884374519950a3b9a00f8",
+      "reason_counts_500": {
+        "fused_signal": 366684,
+        "no_signal_degree_prior_fill": 57316
+      }
+    },
+    {
+      "context_id": "f2_inner1",
+      "n_targets": 848,
+      "rows": 424000,
+      "candidate_hash_500": "147efbaa6ece8223ffd12a753b8701597b5b1acb5ef694ed72ecfa137798a6f4",
+      "reason_counts_500": {
+        "fused_signal": 374681,
+        "no_signal_degree_prior_fill": 49319
+      }
+    },
+    {
+      "context_id": "f2_inner2",
+      "n_targets": 847,
+      "rows": 423500,
+      "candidate_hash_500": "05f5127127797d474572e5effb393cf91abd6f279e20fcbebf57872cb29720d3",
+      "reason_counts_500": {
+        "fused_signal": 368569,
+        "no_signal_degree_prior_fill": 54931
+      }
+    },
+    {
+      "context_id": "f2_outer",
+      "n_targets": 2559,
+      "rows": 1703500,
+      "candidate_hash_500": "83bb86e88b3abb4a0d5811a37395337f5201e088f66fe93dc4451712c641f5aa",
+      "reason_counts_500": {
+        "fused_signal": 1121318,
+        "no_signal_degree_prior_fill": 158182
+      }
+    },
+    {
+      "context_id": "f3_inner0",
+      "n_targets": 848,
+      "rows": 424000,
+      "candidate_hash_500": "4e4fd3b9710556eb5c10492e27d8656da23d32e33abfd7a96d80837efaa84144",
+      "reason_counts_500": {
+        "fused_signal": 384623,
+        "no_signal_degree_prior_fill": 39377
+      }
+    },
+    {
+      "context_id": "f3_inner1",
+      "n_targets": 848,
+      "rows": 424000,
+      "candidate_hash_500": "afe373f82b4971edd60a56426d848a13e37cba8184fd4d7ab5fb88a8dc6ef8e1",
+      "reason_counts_500": {
+        "fused_signal": 380591,
+        "no_signal_degree_prior_fill": 43409
+      }
+    },
+    {
+      "context_id": "f3_inner2",
+      "n_targets": 848,
+      "rows": 424000,
+      "candidate_hash_500": "46189db9f3966cb61a38b2551922075275486239d5dffaeb2535f9ab2d74b0b8",
+      "reason_counts_500": {
+        "fused_signal": 362693,
+        "no_signal_degree_prior_fill": 61307
+      }
+    },
+    {
+      "context_id": "f3_outer",
+      "n_targets": 2558,
+      "rows": 1702500,
+      "candidate_hash_500": "2f44f90b945c282133e95397416a76b8efafac101e6608c3e9502f1c9007ef90",
+      "reason_counts_500": {
+        "fused_signal": 1135103,
+        "no_signal_degree_prior_fill": 143897
+      }
+    },
+    {
+      "context_id": "f4_inner0",
+      "n_targets": 848,
+      "rows": 424000,
+      "candidate_hash_500": "32d8ae554ec0506ee378dfdc2f0ae4bd0a9b151ffcb6c4584cbe0fcf741ff7f4",
+      "reason_counts_500": {
+        "fused_signal": 370603,
+        "no_signal_degree_prior_fill": 53397
+      }
+    },
+    {
+      "context_id": "f4_inner1",
+      "n_targets": 848,
+      "rows": 424000,
+      "candidate_hash_500": "1a8ed08330da0da9044993b84806a3b5efba48e433c571dd6252baa0aea12ccd",
+      "reason_counts_500": {
+        "fused_signal": 367441,
+        "no_signal_degree_prior_fill": 56559
+      }
+    },
+    {
+      "context_id": "f4_inner2",
+      "n_targets": 847,
+      "rows": 423500,
+      "candidate_hash_500": "58b69dcc906b00efe8a11201c89833717d9abe1f8e164ece619cbaa297bc1ed0",
+      "reason_counts_500": {
+        "fused_signal": 366155,
+        "no_signal_degree_prior_fill": 57345
+      }
+    },
+    {
+      "context_id": "f4_outer",
+      "n_targets": 2559,
+      "rows": 1703000,
+      "candidate_hash_500": "ce21acc9bbd9a6909e2608c5ed413f0e8526893fa337963128f104ddc5a9dc05",
+      "reason_counts_500": {
+        "fused_signal": 1126628,
+        "no_signal_degree_prior_fill": 152872
+      }
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "generated_utc": "2026-09-24T14:23:42Z",
+  "tags": {
+    "bridge950": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "comparator_kdgene": {
+      "rows": 4238,
+      "methods": [
+        "kdgene"
+      ]
+    },
+    "comparator_sign": {
+      "rows": 4238,
+      "methods": [
+        "sign"
+      ]
+    },
+    "e4_blocks": {
+      "rows": 21190,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "channel_lgb_v6",
+        "deployed"
+      ]
+    },
+    "e4_blocks_random": {
+      "rows": 21190,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "channel_lgb_v6",
+        "deployed"
+      ]
+    },
+    "e4_experimental": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e4_layer1": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e4_layer1_random": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e4_layer2": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e4_layer2_random": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e4_no_mutant": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e4_no_tas_nas": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e4_rescore_iea_only": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e4_rescore_no_ic": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e5_linear": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e5_mlp": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e5_mlp_shuffled": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e5_nn": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e5_none": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e5_protst": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e5_teacher_sS": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e6_cold": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "e6_cold_gomask": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "expr_off": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "expr_random": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "main": {
+      "rows": 224614,
+      "methods": [
+        "A_nl15_mc200",
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl31_mc50",
+        "A_nl63_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.03",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b1_l0.1",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "F7_strict",
+        "F7_v6",
+        "channel_lgb_v6",
+        "deployed",
+        "standalone_r",
+        "standalone_sF",
+        "standalone_sF0",
+        "standalone_sS",
+        "v71_direct_strict",
+        "v71_direct_v6"
+      ]
+    },
+    "natural_student_on": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "plain_rrf": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    },
+    "protst_zeroshot": {
+      "rows": 4238,
+      "methods": [
+        "protst_zeroshot"
+      ]
+    },
+    "text_level2": {
+      "rows": 4238,
+      "methods": [
+        "standalone_sF"
+      ]
+    },
+    "text_short": {
+      "rows": 4238,
+      "methods": [
+        "standalone_sF"
+      ]
+    },
+    "two_tower": {
+      "rows": 4238,
+      "methods": [
+        "standalone_twotower"
+      ]
+    },
+    "v6pool": {
+      "rows": 16952,
+      "methods": [
+        "A_nl15_mc50",
+        "A_nl31_mc200",
+        "A_nl63_mc50",
+        "B",
+        "C_b0_l0.1",
+        "C_b1_l0.03",
+        "C_b2_l0.03",
+        "C_b2_l0.1",
+        "deployed"
+      ]
+    }
+  }
+}

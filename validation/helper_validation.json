@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-29",
+  "scope": "stdlib helper behavior; no downloads, biological preprocessing, fitting or numerical result reproduction",
+  "checks": [
+    {
+      "check": "14 stages listed without execution",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "single-stage plan without execution",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fixed-revision model plan and no download",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "missing preprocessing inputs fail closed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "preflight produced no research artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "audit path copies staged without execution",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "seven adapters alter path literals only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "embedded audit prefix markers retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input verifier catches changed and missing files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pinned model checker rejects missing/mismatched bytes",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": true
+}

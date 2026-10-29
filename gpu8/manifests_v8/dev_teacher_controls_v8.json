@@ -1,0 +1,45 @@
+{
+  "generated_utc": "2026-09-24T04:08:25Z",
+  "per_context": {
+    "f0_outer": {
+      "dev_sF_recall10": {
+        "reference": 0.09332709633638903,
+        "background": 0.10143177455009347
+      },
+      "controls": "background"
+    },
+    "f1_outer": {
+      "dev_sF_recall10": {
+        "reference": 0.08925545583590341,
+        "background": 0.10234024197322027
+      },
+      "controls": "background"
+    },
+    "f2_outer": {
+      "dev_sF_recall10": {
+        "reference": 0.08136368930478015,
+        "background": 0.09148187054300459
+      },
+      "controls": "background"
+    },
+    "f3_outer": {
+      "dev_sF_recall10": {
+        "reference": 0.08582778088755261,
+        "background": 0.0966538090726478
+      },
+      "controls": "background"
+    },
+    "f4_outer": {
+      "dev_sF_recall10": {
+        "reference": 0.0960309721397902,
+        "background": 0.1021805435362717
+      },
+      "controls": "background"
+    }
+  },
+  "seed": 42,
+  "rule": "higher development s_F full-background Recall@10; tie -> reference (V7.1 default)",
+  "protocol_id": "gpu8_v8final",
+  "written_utc": "2026-09-24T04:08:25Z",
+  "payload_hash": "991e0e4e5b1c56533bd2e8b9d036aa9b3e869ee55e381fda356413c3e1bce264"
+}

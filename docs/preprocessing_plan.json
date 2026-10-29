@@ -1,0 +1,1242 @@
+{
+  "schema_version": "1.0",
+  "prepared_date": "2026-10-29",
+  "scientific_baseline": "user-confirmed October 18 manuscript; no October 21/22 or P1 scientific extension",
+  "scope": "static source-verified CLI and dependency plan for local code-only archive",
+  "pipeline_executed": false,
+  "end_to_end_reproduction_passed": false,
+  "raw_processed_predictions_weights_in_code_only_archive": false,
+  "path_resolution": "source-file location, not current working directory; use complete disposable source tree",
+  "frozen_model_revisions": {
+    "sapbert": "090663c3ae57bf35ffe4d0d468a2a88d03051a4d",
+    "esm2_35m": "6fbf070e65b0b7291e7bbcd451118c216cff79d8"
+  },
+  "critical_gaps": [
+    "gpu8/caches_v8/encoders absent from original inspected tree",
+    "main seed42 formal CLI requires development pred_*.npz not selection.json alone",
+    "original model downloader fetches current head, not archived revision",
+    "input downloaders do not enforce frozen input SHA256",
+    "raw historical CTD association dump absent; exact raw historical regeneration unavailable",
+    "original requirements contains local wheel URL and omits separately installed transformer stack",
+    "base ingest silently changes background when legacy nodes_gene.csv is absent"
+  ],
+  "stages": [
+    {
+      "id": "inspect",
+      "tier": "A_inspection",
+      "purpose": "Parse original source without importing scientific modules",
+      "command_argv": [
+        [
+          "python",
+          "-c",
+          "import ast,pathlib; fs=list(pathlib.Path('gpu8/src').rglob('*.py')); [ast.parse(p.read_text(encoding='utf-8-sig'),filename=str(p)) for p in fs]; print(len(fs))"
+        ]
+      ],
+      "depends_on": [],
+      "required_inputs": [
+        "all released original sources",
+        "release file hash manifest"
+      ],
+      "expected_outputs": [],
+      "source_contract": [],
+      "writes_analysis_tree": false,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Use the release integrity verifier separately; parsing is not numerical reproduction."
+      ],
+      "blockers_in_code_only_release": []
+    },
+    {
+      "id": "synthetic_properties",
+      "tier": "A_synthetic_tests",
+      "purpose": "Test synthetic numerical and candidate-pool properties",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "pytest",
+          "-p",
+          "no:cacheprovider",
+          "gpu8/tests/test_v8_properties.py",
+          "-q"
+        ]
+      ],
+      "depends_on": [
+        "inspect"
+      ],
+      "required_inputs": [
+        "installed scientific dependencies"
+      ],
+      "expected_outputs": [
+        "test console report"
+      ],
+      "source_contract": [
+        "gpu8/tests/test_v8_properties.py"
+      ],
+      "writes_analysis_tree": false,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Pytest may use temporary directories. No biological result is established."
+      ],
+      "blockers_in_code_only_release": []
+    },
+    {
+      "id": "snapshot_acquisition",
+      "tier": "B_input_preparation",
+      "purpose": "Materialize original raw snapshots and check expected hashes",
+      "command_argv": [
+        [
+          "python",
+          "code/download_raw_data.py",
+          "--root",
+          ".",
+          "--only",
+          "association,phenotype,function,ontology,ppi",
+          "--string_version",
+          "12.0",
+          "--string_network",
+          "physical"
+        ],
+        [
+          "powershell",
+          "-File",
+          "gpu8/tools/download_external.ps1"
+        ],
+        [
+          "powershell",
+          "-File",
+          "gpu8/tools/download_external_v6.ps1"
+        ],
+        [
+          "powershell",
+          "-File",
+          "gpu8/tools/download_external_v71.ps1"
+        ]
+      ],
+      "depends_on": [
+        "inspect"
+      ],
+      "required_inputs": [
+        "upstream access and applicable terms",
+        "frozen source hashes"
+      ],
+      "expected_outputs": [
+        "association/*",
+        "phenotype/*",
+        "function/*",
+        "ontology/*",
+        "ppi/*",
+        "gpu8/external/*"
+      ],
+      "source_contract": [
+        "code/download_raw_data.py",
+        "gpu8/tools/download_external.ps1",
+        "gpu8/tools/download_external_v6.ps1",
+        "gpu8/tools/download_external_v71.ps1"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": false,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Commands list original acquisition CLIs, not a hash-enforcing downloader.",
+        "Mutable current/latest URLs may not supply the original snapshots.",
+        "V71 -Large replaces the default catalog with one HPA image feature file.",
+        "Some acquired resources are not needed for the minimal main chain."
+      ],
+      "blockers_in_code_only_release": [
+        "Raw data and historical snapshot payloads omitted.",
+        "Matching original bytes and redistribution/access terms must be established."
+      ]
+    },
+    {
+      "id": "legacy_background",
+      "tier": "B_input_preparation",
+      "purpose": "Rebuild the legacy gene list consumed by canonical ingestion",
+      "command_argv": [
+        [
+          "python",
+          "code/prepare_processed_data.py",
+          "--root",
+          ".",
+          "--out_dir",
+          "processed_data",
+          "--min_inference_score",
+          "50",
+          "--ppi_score_threshold",
+          "700",
+          "--max_ctd_rows",
+          "0",
+          "--max_pairs",
+          "0"
+        ]
+      ],
+      "depends_on": [
+        "snapshot_acquisition"
+      ],
+      "required_inputs": [
+        "root CTD/HPO/NCBI/DO/physical STRING snapshots"
+      ],
+      "expected_outputs": [
+        "processed_data/nodes_gene.csv",
+        "processed_data/processed_summary.json"
+      ],
+      "source_contract": [
+        "code/prepare_processed_data.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Original summary: inferred=false, no truncation, 8676 legacy gene nodes.",
+        "gpu8.ingest otherwise silently omits these legacy background genes if the file is absent."
+      ],
+      "blockers_in_code_only_release": [
+        "Raw snapshots omitted."
+      ]
+    },
+    {
+      "id": "base_ingestion",
+      "tier": "B_input_preparation",
+      "purpose": "Build canonical tables from verified snapshots",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8.ingest"
+        ]
+      ],
+      "depends_on": [
+        "legacy_background"
+      ],
+      "required_inputs": [
+        "gpu8/configs/frozen_config.json",
+        "processed_data/nodes_gene.csv",
+        "verified root raw snapshots",
+        "gpu8/external/hgnc/hgnc_complete_set.txt"
+      ],
+      "expected_outputs": [
+        "gpu8/tables/*.parquet",
+        "gpu8/tables/build_report.json",
+        "gpu8/manifests/resource_manifest.json"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8/ingest.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Also saves config and rebuilds resource manifest; use disposable tree.",
+        "CLI flags: --out_dir PATH, --max_ctd_rows INT, --no_secondary_ppi, --manifest_only. Defaults are full rows and secondary network when present.",
+        "--manifest_only writes a manifest and is not read-only."
+      ],
+      "blockers_in_code_only_release": [
+        "Raw and processed data omitted."
+      ]
+    },
+    {
+      "id": "disease_mapping",
+      "tier": "B_input_preparation",
+      "purpose": "Attach Mondo equivalence fields and assigned CTD-tree grouping keys",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8.mapping"
+        ]
+      ],
+      "depends_on": [
+        "base_ingestion"
+      ],
+      "required_inputs": [
+        "gpu8/tables/diseases.parquet",
+        "gpu8/tables/hierarchy.parquet",
+        "gpu8/external/mondo/mondo.obo",
+        "gpu8/external/mondo/mondo.sssom.tsv"
+      ],
+      "expected_outputs": [
+        "gpu8/tables/diseases.parquet",
+        "gpu8/manifests/disease_mapping_report.json"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8/mapping.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "CLI --tables_dir PATH changes tables, but audit outputs still follow self-located paths.",
+        "Compare exact role mappings; assigned grouping does not establish all shared-ancestor isolation."
+      ],
+      "blockers_in_code_only_release": [
+        "Processed base tables and Mondo raw files omitted."
+      ]
+    },
+    {
+      "id": "role_rebuild_optional",
+      "tier": "D_research_protocol_rebuild",
+      "purpose": "Regenerate splits/context definitions only in a separate protocol-reconstruction copy",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8.protocol"
+        ]
+      ],
+      "depends_on": [
+        "disease_mapping"
+      ],
+      "required_inputs": [
+        "mapped tables",
+        "gpu8/configs/frozen_config.json"
+      ],
+      "expected_outputs": [
+        "gpu8/manifests/splits_main_5fold.json",
+        "gpu8/manifests/splits_family.json",
+        "gpu8/manifests/contexts.json"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8/protocol.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": false,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "For frozen replay use released role records instead.",
+        "Writes/overwrites splits and timestamps. Compare membership and spec hash before use.",
+        "CLI supports --tables_dir PATH."
+      ],
+      "blockers_in_code_only_release": []
+    },
+    {
+      "id": "retrieval_preprocessing",
+      "tier": "B_input_preparation",
+      "purpose": "Rebuild strict phenotype mapping and masked disease text",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v6.phenotypes_v6"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v6.disease_text"
+        ]
+      ],
+      "depends_on": [
+        "disease_mapping"
+      ],
+      "required_inputs": [
+        "mapped base tables",
+        "frozen role records",
+        "Mondo OBO and SSSOM",
+        "HPOA and gene phenotype sources",
+        "HGNC dictionary"
+      ],
+      "expected_outputs": [
+        "gpu8/tables_v6/phenotypes_v6.parquet",
+        "gpu8/tables_v6/phenotypes_v6_all_rows.parquet",
+        "gpu8/tables_v6/hpoa_id_map.parquet",
+        "gpu8/tables_v6/disease_text.parquet"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v6/phenotypes_v6.py",
+        "gpu8/src/gpu8v6/disease_text.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [],
+      "blockers_in_code_only_release": [
+        "Biological inputs omitted."
+      ]
+    },
+    {
+      "id": "legacy_baseline_features_optional",
+      "tier": "B_optional_baseline_inputs",
+      "purpose": "Prepare older baseline features and cached context views",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v6.gene_features",
+          "--version",
+          "current"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v6.gene_features",
+          "--version",
+          "hist2023"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v6.disease_semantics"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8.contexts"
+        ]
+      ],
+      "depends_on": [
+        "retrieval_preprocessing"
+      ],
+      "required_inputs": [
+        "base data",
+        "frozen split/context definitions",
+        "GO/GOA",
+        "Reactome current/v86",
+        "GTEx v8",
+        "historical HGNC for hist2023"
+      ],
+      "expected_outputs": [
+        "gpu8/tables_v6/gene_features_*.npy",
+        "gpu8/tables_v6/disease_semantics.npz",
+        "gpu8/caches/*/views.npz",
+        "gpu8/manifests/context_index.json"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v6/gene_features.py",
+        "gpu8/src/gpu8v6/disease_semantics.py",
+        "gpu8/src/gpu8/contexts.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "gene_features --version choices are current and hist2023.",
+        "contexts accepts --only IDS..., --force, --tables_dir PATH.",
+        "Copied context_index contains absolute local paths; regenerate for views-dependent baselines.",
+        "Optional for minimal main path; required for baselines that read V5 context views."
+      ],
+      "blockers_in_code_only_release": [
+        "Raw and processed baseline inputs omitted."
+      ]
+    },
+    {
+      "id": "frozen_model_acquisition",
+      "tier": "B_input_preparation",
+      "purpose": "Acquire encoder files at manifest-pinned revisions and verify per-file SHA256",
+      "command_argv": [],
+      "depends_on": [
+        "inspect"
+      ],
+      "required_inputs": [
+        "gpu8/manifests_v71/models_v71.json",
+        "upstream model access and terms"
+      ],
+      "expected_outputs": [
+        "gpu8/external/v71/models/sapbert/*",
+        "gpu8/external/v71/models/esm2_35m/*"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v71/resources71.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Original resources71 --stage models is deliberately not used for exact replay: it queries current head and overwrites manifest.",
+        "A manifest-aware fetch method must pass revision per original record and validate all listed files."
+      ],
+      "blockers_in_code_only_release": [
+        "Pretrained weights omitted."
+      ]
+    },
+    {
+      "id": "canonical_encoder_features",
+      "tier": "B_input_preparation",
+      "purpose": "Prepare sequences, frozen language/protein embeddings, GO functions and expression",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v71.sequences71"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v71.encoders71",
+          "--device",
+          "cuda",
+          "--only",
+          "disease",
+          "hpo",
+          "go",
+          "esm"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v71.function71"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v71.expression71"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v71.featurepack71"
+        ]
+      ],
+      "depends_on": [
+        "retrieval_preprocessing",
+        "frozen_model_acquisition"
+      ],
+      "required_inputs": [
+        "base gene/disease indices",
+        "MANE v1.5 and UniProt",
+        "GO/GOA current",
+        "HPA consensus tissue expression",
+        "GTEx v8",
+        "frozen model files"
+      ],
+      "expected_outputs": [
+        "gpu8/tables_v71/sequences_v71.parquet",
+        "gpu8/tables_v71/disease_templates_v71.parquet",
+        "gpu8/caches_v71/encoders/*",
+        "gpu8/tables_v71/g_function.npy",
+        "gpu8/caches_v71/featurepack_v71.npz",
+        "gpu8/caches_v71/featurepack_v71_anchors.npz"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v71/sequences71.py",
+        "gpu8/src/gpu8v71/encoders71.py",
+        "gpu8/src/gpu8v71/function71.py",
+        "gpu8/src/gpu8v71/expression71.py",
+        "gpu8/src/gpu8v71/featurepack71.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "All encoder --only values are checked; device defaults cuda.",
+        "Image fields are optional in featurepack71; byte identity requires matching optional content, compare array hashes too."
+      ],
+      "blockers_in_code_only_release": [
+        "Model files, raw inputs and feature arrays omitted."
+      ]
+    },
+    {
+      "id": "segmented_disease_vectors",
+      "tier": "B_input_preparation",
+      "purpose": "Reconstruct SARA main segmented disease representations",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.textseg8",
+          "1"
+        ]
+      ],
+      "depends_on": [
+        "canonical_encoder_features"
+      ],
+      "required_inputs": [
+        "verified SapBERT model",
+        "mapped disease fields",
+        "original masked templates and indices"
+      ],
+      "expected_outputs": [
+        "gpu8/caches_v8/encoders/sapbert_disease_seg_l1.npy",
+        "gpu8/caches_v8/encoders/sapbert_disease_seg_l1.key.json",
+        "gpu8/tables_v8/disease_segments_l1.parquet"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/textseg8.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Level 2 optional sensitivity uses positional argument 2.",
+        "CLI exposes a positional level only and uses CUDA default.",
+        "Original local caches_v8/encoders absent; reconstructed files need explicit new hashes."
+      ],
+      "blockers_in_code_only_release": [
+        "Original segmented encoder cache is absent; reconstruction not executed."
+      ]
+    },
+    {
+      "id": "masks_and_evidence",
+      "tier": "B_input_preparation",
+      "purpose": "Rebuild label-free GO mask definitions and evidence policy artifacts",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.masks8"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v8final.evidence8"
+        ]
+      ],
+      "depends_on": [
+        "canonical_encoder_features"
+      ],
+      "required_inputs": [
+        "base index",
+        "feature pack",
+        "GO production records",
+        "association evidence",
+        "frozen masks manifest"
+      ],
+      "expected_outputs": [
+        "gpu8/tables_v8/go_masks_v8.parquet",
+        "gpu8/tables_v8/evidence_block_relations_v8.parquet",
+        "gpu8/tables_v8/evidence_block_pmids_v8.json",
+        "gpu8/results_v8/audit/evidence_policy_audit_v8.json"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/masks8.py",
+        "gpu8/src/gpu8v8final/evidence8.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Main Chain loads masks even when no student is deployed.",
+        "Compare rebuilt mask hashes to original; evidence audit rebuilds publication blocks."
+      ],
+      "blockers_in_code_only_release": [
+        "Source biological inputs omitted."
+      ]
+    },
+    {
+      "id": "retrieval_pass_main",
+      "tier": "B_input_preparation",
+      "purpose": "Recompute full-background seven-source retrieval for 20 role contexts",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.v6pass8",
+          "main"
+        ]
+      ],
+      "depends_on": [
+        "retrieval_preprocessing",
+        "masks_and_evidence"
+      ],
+      "required_inputs": [
+        "frozen V6 retrieval settings",
+        "original role records",
+        "base PPI/relations",
+        "strict gene phenotype and masked text inputs"
+      ],
+      "expected_outputs": [
+        "gpu8/caches_v8/v6pass/main/f*_*/V.npy",
+        "gpu8/caches_v8/v6pass/main/f*_*/rB.npy",
+        "gpu8/caches_v8/v6pass/main/f*_*/meta.json"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/v6pass8.py",
+        "gpu8/src/gpu8v8final/roles8.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "World names: main, e6cold, blocks, blocks_random; optional positional context IDs follow.",
+        "Existing meta.json causes context skipping; CUDA default, no --device CLI flag.",
+        "Large arrays; do not confuse process success in populated tree with fresh computation."
+      ],
+      "blockers_in_code_only_release": [
+        "Raw/processed inputs and retrieval caches omitted."
+      ]
+    },
+    {
+      "id": "formal_selected_52_62",
+      "tier": "C_frozen_refitting",
+      "purpose": "Refit main chain for seeds 52 and 62 using existing stored choices",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.formal8",
+          "--tag",
+          "main",
+          "--seeds",
+          "52",
+          "62",
+          "--folds",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "--threads",
+          "8"
+        ]
+      ],
+      "depends_on": [
+        "retrieval_pass_main",
+        "segmented_disease_vectors",
+        "masks_and_evidence"
+      ],
+      "required_inputs": [
+        "frozen selections",
+        "protocol_v8_registered.json",
+        "teacher controls/student selection records",
+        "feature packs and retrieval contexts"
+      ],
+      "expected_outputs": [
+        "gpu8/results_v8/formal/main/s52/fold*/*",
+        "gpu8/results_v8/formal/main/s62/fold*/*",
+        "gpu8/runs_v8/*"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/formal8.py",
+        "gpu8/src/gpu8v8final/chain8.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Includes teachers, OOF/final rankers and comparators; does not redo development choice grid.",
+        "Skips done.json folds and may reuse model cache. CUDA default is not exposed by formal CLI.",
+        "--table1 is an optional additional-comparator flag; not needed for default main run."
+      ],
+      "blockers_in_code_only_release": [
+        "Biological input tree and model inputs omitted; no clean refit performed."
+      ]
+    },
+    {
+      "id": "formal_seed42_reuse",
+      "tier": "C_frozen_refitting",
+      "purpose": "Use original seed42 formal path with its development prediction reuse dependency",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.formal8",
+          "--tag",
+          "main",
+          "--seeds",
+          "42",
+          "--folds",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "--threads",
+          "8"
+        ]
+      ],
+      "depends_on": [
+        "retrieval_pass_main",
+        "segmented_disease_vectors",
+        "masks_and_evidence"
+      ],
+      "required_inputs": [
+        "all inputs of formal_selected_52_62",
+        "results_v8/dev/fold*/pred_*.npz from original development fits"
+      ],
+      "expected_outputs": [
+        "gpu8/results_v8/formal/main/s42/fold*/*"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/formal8.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "For main seed42 the code copies development pred_*.npz instead of running fold_models.",
+        "selection.json alone cannot satisfy this path.",
+        "A separately documented adapter could refit stored selected settings, but no such adapter is assumed here."
+      ],
+      "blockers_in_code_only_release": [
+        "Original development predictions are omitted; exact CLI replay is not self-contained."
+      ]
+    },
+    {
+      "id": "saved_prediction_evaluation",
+      "tier": "C_saved_prediction_rescoring",
+      "purpose": "Recalculate main per-disease metrics from matching predictions",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.eval8",
+          "main"
+        ]
+      ],
+      "depends_on": [
+        "formal_selected_52_62",
+        "formal_seed42_reuse"
+      ],
+      "required_inputs": [
+        "frozen base labels and entity index",
+        "matching main prediction arrays and fold metadata"
+      ],
+      "expected_outputs": [
+        "gpu8/results_v8/eval/eval_test_main.parquet",
+        "gpu8/results_v8/eval/eval_index.json"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/eval8.py",
+        "gpu8/src/gpu8v8final/evaluate8.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Can run directly with supplied verified predictions instead of fresh fitting.",
+        "Positional tag limits scope; no tags scans all available arms.",
+        "Writes outputs; confidence intervals are conditional on fitted predictions."
+      ],
+      "blockers_in_code_only_release": [
+        "Prediction arrays and processed labels omitted."
+      ]
+    },
+    {
+      "id": "external_reanalysis_optional",
+      "tier": "C_optional_secondary",
+      "purpose": "Reevaluate external labels using stored predictions",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8.external_labels"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v8final.external8"
+        ]
+      ],
+      "depends_on": [
+        "saved_prediction_evaluation"
+      ],
+      "required_inputs": [
+        "GenCC and ClinVar original files",
+        "frozen tables_v71/confirmation_set_v71.parquet",
+        "main saved predictions",
+        "base labels and mapping"
+      ],
+      "expected_outputs": [
+        "gpu8/tables/external_labels.parquet",
+        "gpu8/results_v8/external/external618/*"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8/external_labels.py",
+        "gpu8/src/gpu8v71/register71.py",
+        "gpu8/src/gpu8v8final/external8.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "external8 reuses V7.1 confirmation set; first command alone does not create that exact confirmation set.",
+        "Frozen ClinVar first representative and strict posthoc subset must remain distinct.",
+        "External sources are not fully independent by provenance."
+      ],
+      "blockers_in_code_only_release": [
+        "External raw labels, frozen confirmation data and predictions omitted."
+      ]
+    },
+    {
+      "id": "historical_optional",
+      "tier": "C_optional_secondary",
+      "purpose": "Rebuild historical canonical tables then retrain historical SARA chain",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8.temporal",
+          "--step",
+          "tables"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v8final.hist8"
+        ]
+      ],
+      "depends_on": [
+        "canonical_encoder_features",
+        "masks_and_evidence"
+      ],
+      "required_inputs": [
+        "historical_2023q4 processed disease_gene_edges.csv",
+        "period-specific CTD vocabulary/HPO/DO",
+        "original GO/GOA 2023 files and HGNC",
+        "current fixed background/PPI and sequence pack",
+        "frozen settings"
+      ],
+      "expected_outputs": [
+        "gpu8/tables_historical/*",
+        "gpu8/results_v8/external/historical/*"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8/temporal.py",
+        "gpu8/src/gpu8v8final/temporal8.py",
+        "gpu8/src/gpu8v8final/hist8.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Temporal CLI --step choices tables, split, all.",
+        "Historical raw CTD gene-disease dump absent locally; processed historical edges survive.",
+        "The 2026 gene index/group definitions, MANE2025 sequences and selected hyperparameters postdate cutoff; retain limitations."
+      ],
+      "blockers_in_code_only_release": [
+        "Historical processed inputs omitted; no complete historical raw-data regeneration established."
+      ]
+    },
+    {
+      "id": "original_determinism_check_optional",
+      "tier": "C_optional_determinism",
+      "purpose": "Repeat original fold0 seed42 comparison against saved reference predictions",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.repro8"
+        ]
+      ],
+      "depends_on": [
+        "segmented_disease_vectors",
+        "retrieval_pass_main"
+      ],
+      "required_inputs": [
+        "matching source inputs",
+        "original teachers and development prediction references"
+      ],
+      "expected_outputs": [
+        "gpu8/results_v8/audit/reproduction_venv_repro_v8.json"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/repro8.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": true,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Existing recorded check used main interpreter after separate environment was blocked.",
+        "Is a determinism check; requires matching data and saved references, not a code-only verification."
+      ],
+      "blockers_in_code_only_release": [
+        "Reference fitted artifacts/predictions omitted."
+      ]
+    },
+    {
+      "id": "development_and_registration",
+      "tier": "D_research_development",
+      "purpose": "Repeat original method selection and write protocol record in a new research tree",
+      "command_argv": [
+        [
+          "python",
+          "-m",
+          "gpu8v8final.dev8",
+          "--stage",
+          "controls",
+          "--folds",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "--threads",
+          "8"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v8final.dev8",
+          "--stage",
+          "teachers",
+          "--folds",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "--threads",
+          "8"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v8final.dev8",
+          "--stage",
+          "devmask",
+          "--folds",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "--threads",
+          "8"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v8final.dev8",
+          "--stage",
+          "chain",
+          "--folds",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "--threads",
+          "8"
+        ],
+        [
+          "python",
+          "-m",
+          "gpu8v8final.register8"
+        ]
+      ],
+      "depends_on": [
+        "segmented_disease_vectors",
+        "retrieval_pass_main",
+        "masks_and_evidence"
+      ],
+      "required_inputs": [
+        "all development model inputs",
+        "original role definitions"
+      ],
+      "expected_outputs": [
+        "gpu8/results_v8/dev/fold*/selection.json",
+        "gpu8/manifests_v8/dev_*.json",
+        "gpu8/manifests_v8/protocol_v8_registered.json"
+      ],
+      "source_contract": [
+        "gpu8/src/gpu8v8final/dev8.py",
+        "gpu8/src/gpu8v8final/register8.py"
+      ],
+      "writes_analysis_tree": true,
+      "suitable_for_exact_frozen_replay_as_written": false,
+      "executed_for_this_archival_task": false,
+      "notes": [
+        "Not required to inspect archive and not a new preregistration or independent validation.",
+        "controls and devmask accept shared --folds CLI but internally run all five contexts; teachers and chain forward subset.",
+        "Existing selection.json is skipped by chain; existing registered protocol is returned unchanged.",
+        "Absent protocol plus existing test evaluations causes registration refusal; never remove original protocol to fake new timing."
+      ],
+      "blockers_in_code_only_release": [
+        "All real inputs omitted; fresh selection would repeat development on used cohorts."
+      ]
+    }
+  ],
+  "source_contract_hashes": [
+    {
+      "path": "code/download_raw_data.py",
+      "exists": true,
+      "sha256": "ff47220a44e394289f4892cc6c255d1ad07f930413b9f47ae67f6d0199fc3b4d"
+    },
+    {
+      "path": "code/prepare_processed_data.py",
+      "exists": true,
+      "sha256": "2aa2164cca0103e2c7d530796f689e22ddb545a4d31f3ff3bc8aa4729624be05"
+    },
+    {
+      "path": "gpu8/src/gpu8/contexts.py",
+      "exists": true,
+      "sha256": "748d9e5fa523aea79989a7a04a0e62ee727475d1222e0a53d54d92ae7d118a18"
+    },
+    {
+      "path": "gpu8/src/gpu8/external_labels.py",
+      "exists": true,
+      "sha256": "0e75e5c4ab8b504bc8134b5b27731ee011eb34dad89f6ffe29cf158216465f8c"
+    },
+    {
+      "path": "gpu8/src/gpu8/ingest.py",
+      "exists": true,
+      "sha256": "8663fd919bc79a483dff521d263d8904140e1f401e4615494a83b8aebcbc3a1a"
+    },
+    {
+      "path": "gpu8/src/gpu8/mapping.py",
+      "exists": true,
+      "sha256": "25a021866a327beee1df847c5c53cbdb33aa1f711d3842740dc44fc198bafa04"
+    },
+    {
+      "path": "gpu8/src/gpu8/protocol.py",
+      "exists": true,
+      "sha256": "0b15b1f7deb960d1a2155d1ada3b5efd6cb8e9b17c7ce2632111bb89a085e883"
+    },
+    {
+      "path": "gpu8/src/gpu8/temporal.py",
+      "exists": true,
+      "sha256": "24c284eb559a35ccfb9853bfc216ac0490e8ea83d46951bda81ee83db634880e"
+    },
+    {
+      "path": "gpu8/src/gpu8v6/disease_semantics.py",
+      "exists": true,
+      "sha256": "06666392881263a26ed366922c8ca852861c91ca6a297d67f21a64317fad80e1"
+    },
+    {
+      "path": "gpu8/src/gpu8v6/disease_text.py",
+      "exists": true,
+      "sha256": "a2f97c011e3290fe675be2ba65c4a160436e4b099d5df324f8636998222d6722"
+    },
+    {
+      "path": "gpu8/src/gpu8v6/gene_features.py",
+      "exists": true,
+      "sha256": "e1611b378da23bb4ca80f807e903078fc20dd4e485fac26d84edfc88e2dc2fa7"
+    },
+    {
+      "path": "gpu8/src/gpu8v6/phenotypes_v6.py",
+      "exists": true,
+      "sha256": "cd127b173f4d66142779e568224899b5799dc98e0ff19cf3fe2fda814b88b91b"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/encoders71.py",
+      "exists": true,
+      "sha256": "4717126f0ee9748df3662fb79c84bc760df6c4c92e8999eb98702e8ca4197373"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/expression71.py",
+      "exists": true,
+      "sha256": "2541152839448b7d632e035d63a01eb938c02d4d3364ebe10802e4b631a958d0"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/featurepack71.py",
+      "exists": true,
+      "sha256": "1d03e7d641ba8f7ea743f6b11a4b7aaf4ecf68f32c75285a41b3d06666d200c9"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/function71.py",
+      "exists": true,
+      "sha256": "d73a3c2f6f90c33226404900d99ef79f7712482c45b9658ce5fad92f72e3808b"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/register71.py",
+      "exists": true,
+      "sha256": "839504c66a7d6359cfc57c28b757d3862d30dd87fe3ad8b5671af28cd211f70f"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/resources71.py",
+      "exists": true,
+      "sha256": "9bc3a2932f1183fc0d1e1453979dacd237f716af587841f82fc6d56cba5f3b89"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/sequences71.py",
+      "exists": true,
+      "sha256": "2153482dbe0f001490defdb294082e165288919d0c8158316db93685843c995a"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/chain8.py",
+      "exists": true,
+      "sha256": "f4f15d3850f0b77bc48cd54b932773c174422897086647c5dadff87100bb96bc"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/dev8.py",
+      "exists": true,
+      "sha256": "77306267f56d23bfeb3aabb52f4a8444995da723645ee3d83c4b5282211bb424"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/eval8.py",
+      "exists": true,
+      "sha256": "f1d30168f32674379849a1e593d24f9e98b9a21aa5db4e46fb8b4bd93f07894e"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/evaluate8.py",
+      "exists": true,
+      "sha256": "27f364b62beca7c4983f82addcaf9000397a0298ceb226be438f96840a916217"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/evidence8.py",
+      "exists": true,
+      "sha256": "a300bb9ffe7ad9f33d6ac33dcd30da776a3d159277cb1efdabc8b464050f5e06"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/external8.py",
+      "exists": true,
+      "sha256": "17b9e8f1ade340c7874422f0d6b4cd5bf45dd0422fa2642189bf0a86526cbcbf"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/formal8.py",
+      "exists": true,
+      "sha256": "a2d2e58b3e2491da7534c8fff035f645a47e8388c7226e4547c3bcf459421365"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/hist8.py",
+      "exists": true,
+      "sha256": "6fa696318d8cde2fa38fe6fd195ccd521271dd5f52bf411be4b9c186484cca62"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/masks8.py",
+      "exists": true,
+      "sha256": "db5a5b446c6960d5d4f567a183ea6a5cef7187ea9e0fecd5b09a5ebdf9d6b616"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/register8.py",
+      "exists": true,
+      "sha256": "b86764a34012716229c62cc5fe8a5b230c1b43dcf7b1b0f58fab08ed5450a3ed"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/repro8.py",
+      "exists": true,
+      "sha256": "1ed490420c9ef7f1c84c196f0e08624af322c7d1ddfd2cf6bfd9d5dc95e6b9f7"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/roles8.py",
+      "exists": true,
+      "sha256": "40c34d4f4896dd52b6c1988a8f609329bcc3621c1ca466e0d4fb9702c13b6d6a"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/temporal8.py",
+      "exists": true,
+      "sha256": "4785f598cff12ee1b73464d972c5fd6b461e37f562bfdd9344df619f94cc76bb"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/textseg8.py",
+      "exists": true,
+      "sha256": "fa8c154c12cfbc36f02632f172926b3102811a6ab799115d90ebddb1ad91170d"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/v6pass8.py",
+      "exists": true,
+      "sha256": "959d7ed388e7df6b90acdb643e64695d1848f1feee2eefaa124a94ae770c4388"
+    },
+    {
+      "path": "gpu8/tests/test_v8_properties.py",
+      "exists": true,
+      "sha256": "836c039ee7fb70960c78e8c3087256b278b8ec62ab7b6decfc504ab0d73b7dc8"
+    },
+    {
+      "path": "gpu8/tools/download_external.ps1",
+      "exists": true,
+      "sha256": "071d21c3dc50d35b4eeacf4e300e99cf282ac9c9e832fb46c56a49c465079363"
+    },
+    {
+      "path": "gpu8/tools/download_external_v6.ps1",
+      "exists": true,
+      "sha256": "9b708aef846b872a8401763553492ff0f18b6c43bafe837b65f188f0e877b760"
+    },
+    {
+      "path": "gpu8/tools/download_external_v71.ps1",
+      "exists": true,
+      "sha256": "940ac6830b9ea675673eab0544de3c84dd3fc9ce87c13f054106ba2933807ecf"
+    }
+  ],
+  "reference_counts_for_diagnostics_only": {
+    "legacy_gene_nodes": 8676,
+    "background_genes": 19861,
+    "disease_records": 13321,
+    "positive_diseases": 5758,
+    "primary_pairs": 31577,
+    "dev_diseases": 864,
+    "split_holdout_diseases": 656,
+    "outer_test_diseases": 4238,
+    "fitting_contexts": 20
+  }
+}

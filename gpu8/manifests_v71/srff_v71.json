@@ -1,0 +1,14 @@
+{
+  "weights": {
+    "F": 0.1,
+    "E": 0.1,
+    "S": 0.8
+  },
+  "dev_recall10": 0.07227781972755362,
+  "n_grid": 66,
+  "k_ref": 5,
+  "decided_on": "development families x 5 outer contexts (full background)",
+  "protocol_id": "gpu8_v71",
+  "written_utc": "2026-09-23T09:04:56Z",
+  "payload_hash": "95b8ebbb06f3a76d2ddf7a9b917f9c12d39d2df86e5b7fbb96a05bac8e0a50fa"
+}

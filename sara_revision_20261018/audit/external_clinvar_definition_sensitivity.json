@@ -1,0 +1,484 @@
+{
+  "definitions": [
+    {
+      "definition": "frozen_original",
+      "source": "ClinVar",
+      "n_pairs": 1980,
+      "n_diseases": 571
+    },
+    {
+      "definition": "frozen_original",
+      "source": "union",
+      "n_pairs": 2324,
+      "n_diseases": 618
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "ClinVar",
+      "n_pairs": 1971,
+      "n_diseases": 569
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "union",
+      "n_pairs": 2315,
+      "n_diseases": 616
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "ClinVar",
+      "n_pairs": 1755,
+      "n_diseases": 534
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "union",
+      "n_pairs": 2103,
+      "n_diseases": 584
+    }
+  ],
+  "max_absolute_reproduction_error_original": 0.0,
+  "table": [
+    {
+      "definition": "exact_PLP",
+      "source": "ClinVar",
+      "method": "B",
+      "n_diseases": 569,
+      "n_pairs": 1971,
+      "recall10": 0.13779984462789602
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "ClinVar",
+      "method": "F7_v6",
+      "n_diseases": 569,
+      "n_pairs": 1971,
+      "recall10": 0.1331176195976242
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "ClinVar",
+      "method": "channel_lgb_v6",
+      "n_diseases": 569,
+      "n_pairs": 1971,
+      "recall10": 0.14118471456517742
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "ClinVar",
+      "method": "deployed",
+      "n_diseases": 569,
+      "n_pairs": 1971,
+      "recall10": 0.16464602883321497
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "ClinVar",
+      "method": "v71_direct_strict",
+      "n_diseases": 569,
+      "n_pairs": 1971,
+      "recall10": 0.17058154145721127
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "union",
+      "method": "B",
+      "n_diseases": 616,
+      "n_pairs": 2315,
+      "recall10": 0.13150572267191055
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "union",
+      "method": "F7_v6",
+      "n_diseases": 616,
+      "n_pairs": 2315,
+      "recall10": 0.130726976833399
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "union",
+      "method": "channel_lgb_v6",
+      "n_diseases": 616,
+      "n_pairs": 2315,
+      "recall10": 0.13392094833477158
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "union",
+      "method": "deployed",
+      "n_diseases": 616,
+      "n_pairs": 2315,
+      "recall10": 0.16911393204532446
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "union",
+      "method": "v71_direct_strict",
+      "n_diseases": 616,
+      "n_pairs": 2315,
+      "recall10": 0.1706912058357424
+    },
+    {
+      "definition": "frozen_original",
+      "source": "ClinVar",
+      "method": "B",
+      "n_diseases": 571,
+      "n_pairs": 1980,
+      "recall10": 0.13734118241358503
+    },
+    {
+      "definition": "frozen_original",
+      "source": "ClinVar",
+      "method": "F7_v6",
+      "n_diseases": 571,
+      "n_pairs": 1980,
+      "recall10": 0.13267562726186247
+    },
+    {
+      "definition": "frozen_original",
+      "source": "ClinVar",
+      "method": "channel_lgb_v6",
+      "n_diseases": 571,
+      "n_pairs": 1980,
+      "recall10": 0.14074220583476832
+    },
+    {
+      "definition": "frozen_original",
+      "source": "ClinVar",
+      "method": "deployed",
+      "n_diseases": 571,
+      "n_pairs": 1980,
+      "recall10": 0.16404968897371147
+    },
+    {
+      "definition": "frozen_original",
+      "source": "ClinVar",
+      "method": "v71_direct_strict",
+      "n_diseases": 571,
+      "n_pairs": 1980,
+      "recall10": 0.1705162082004882
+    },
+    {
+      "definition": "frozen_original",
+      "source": "union",
+      "method": "B",
+      "n_diseases": 618,
+      "n_pairs": 2324,
+      "recall10": 0.13110231186210536
+    },
+    {
+      "definition": "frozen_original",
+      "source": "union",
+      "method": "F7_v6",
+      "n_diseases": 618,
+      "n_pairs": 2324,
+      "recall10": 0.13032661340898702
+    },
+    {
+      "definition": "frozen_original",
+      "source": "union",
+      "method": "channel_lgb_v6",
+      "n_diseases": 618,
+      "n_pairs": 2324,
+      "recall10": 0.13353569314820013
+    },
+    {
+      "definition": "frozen_original",
+      "source": "union",
+      "method": "deployed",
+      "n_diseases": 618,
+      "n_pairs": 2324,
+      "recall10": 0.16854848565988642
+    },
+    {
+      "definition": "frozen_original",
+      "source": "union",
+      "method": "v71_direct_strict",
+      "n_diseases": 618,
+      "n_pairs": 2324,
+      "recall10": 0.17063048638858072
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "ClinVar",
+      "method": "B",
+      "n_diseases": 534,
+      "n_pairs": 1755,
+      "recall10": 0.12916114903005013
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "ClinVar",
+      "method": "F7_v6",
+      "n_diseases": 534,
+      "n_pairs": 1755,
+      "recall10": 0.13576671097712073
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "ClinVar",
+      "method": "channel_lgb_v6",
+      "n_diseases": 534,
+      "n_pairs": 1755,
+      "recall10": 0.13082806856981602
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "ClinVar",
+      "method": "deployed",
+      "n_diseases": 534,
+      "n_pairs": 1755,
+      "recall10": 0.15991389934131353
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "ClinVar",
+      "method": "v71_direct_strict",
+      "n_diseases": 534,
+      "n_pairs": 1755,
+      "recall10": 0.16767376912834536
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "union",
+      "method": "B",
+      "n_diseases": 584,
+      "n_pairs": 2103,
+      "recall10": 0.12340124932677744
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "union",
+      "method": "F7_v6",
+      "n_diseases": 584,
+      "n_pairs": 2103,
+      "recall10": 0.1323230715585816
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "union",
+      "method": "channel_lgb_v6",
+      "n_diseases": 584,
+      "n_pairs": 2103,
+      "recall10": 0.12428782178020276
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "union",
+      "method": "deployed",
+      "n_diseases": 584,
+      "n_pairs": 2103,
+      "recall10": 0.16561689152483805
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "union",
+      "method": "v71_direct_strict",
+      "n_diseases": 584,
+      "n_pairs": 2103,
+      "recall10": 0.1684521200708211
+    }
+  ],
+  "contrasts": [
+    {
+      "definition": "frozen_original",
+      "source": "ClinVar",
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "n_diseases": 571,
+      "n_families": 183,
+      "delta": 0.023307483138943135,
+      "ci_low": 0.003008451260572412,
+      "ci_high": 0.042437585545060066
+    },
+    {
+      "definition": "frozen_original",
+      "source": "ClinVar",
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "n_diseases": 571,
+      "n_families": 183,
+      "delta": -0.006466519226776734,
+      "ci_low": -0.01621685345366902,
+      "ci_high": 0.006150978642212106
+    },
+    {
+      "definition": "frozen_original",
+      "source": "ClinVar",
+      "a": "deployed",
+      "b": "B",
+      "n_diseases": 571,
+      "n_families": 183,
+      "delta": 0.026708506560126438,
+      "ci_low": 0.00883009653808521,
+      "ci_high": 0.04489306419639673
+    },
+    {
+      "definition": "frozen_original",
+      "source": "union",
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "n_diseases": 618,
+      "n_families": 201,
+      "delta": 0.03501279251168629,
+      "ci_low": 0.015952101871711373,
+      "ci_high": 0.054059362892692434
+    },
+    {
+      "definition": "frozen_original",
+      "source": "union",
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "n_diseases": 618,
+      "n_families": 201,
+      "delta": -0.0020820007286942973,
+      "ci_low": -0.012859762110698138,
+      "ci_high": 0.011223804816498005
+    },
+    {
+      "definition": "frozen_original",
+      "source": "union",
+      "a": "deployed",
+      "b": "B",
+      "n_diseases": 618,
+      "n_families": 201,
+      "delta": 0.03744617379778106,
+      "ci_low": 0.02035583223146472,
+      "ci_high": 0.05479175009569051
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "ClinVar",
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "n_diseases": 569,
+      "n_families": 183,
+      "delta": 0.023461314268037513,
+      "ci_low": 0.0030940083665317157,
+      "ci_high": 0.04280669977202096
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "ClinVar",
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "n_diseases": 569,
+      "n_families": 183,
+      "delta": -0.005935512623996309,
+      "ci_low": -0.015456043044458606,
+      "ci_high": 0.006203238903496693
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "ClinVar",
+      "a": "deployed",
+      "b": "B",
+      "n_diseases": 569,
+      "n_families": 183,
+      "delta": 0.02684618420531894,
+      "ci_low": 0.008870889429102956,
+      "ci_high": 0.045223735384927265
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "union",
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "n_diseases": 616,
+      "n_families": 201,
+      "delta": 0.03519298371055287,
+      "ci_low": 0.016051731542361978,
+      "ci_high": 0.05441561471977686
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "union",
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "n_diseases": 616,
+      "n_families": 201,
+      "delta": -0.001577273790417955,
+      "ci_low": -0.011900978064452915,
+      "ci_high": 0.011287060150820913
+    },
+    {
+      "definition": "exact_PLP",
+      "source": "union",
+      "a": "deployed",
+      "b": "B",
+      "n_diseases": 616,
+      "n_families": 201,
+      "delta": 0.03760820937341392,
+      "ci_low": 0.020407678839578697,
+      "ci_high": 0.05511792663655066
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "ClinVar",
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "n_diseases": 534,
+      "n_families": 176,
+      "delta": 0.0290858307714975,
+      "ci_low": 0.0099451380295721,
+      "ci_high": 0.04825048468650658
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "ClinVar",
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "n_diseases": 534,
+      "n_families": 176,
+      "delta": -0.007759869787031842,
+      "ci_low": -0.0165990365700716,
+      "ci_high": 0.004114514923148069
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "ClinVar",
+      "a": "deployed",
+      "b": "B",
+      "n_diseases": 534,
+      "n_families": 176,
+      "delta": 0.030752750311263382,
+      "ci_low": 0.012141361252217753,
+      "ci_high": 0.049779893165543175
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "union",
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "n_diseases": 584,
+      "n_families": 195,
+      "delta": 0.04132906974463529,
+      "ci_low": 0.02298393384289253,
+      "ci_high": 0.0602797568538928
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "union",
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "n_diseases": 584,
+      "n_families": 195,
+      "delta": -0.0028352285459830764,
+      "ci_low": -0.012750968417655724,
+      "ci_high": 0.010318488080187047
+    },
+    {
+      "definition": "pure_germline_exact_PLP",
+      "source": "union",
+      "a": "deployed",
+      "b": "B",
+      "n_diseases": 584,
+      "n_families": 195,
+      "delta": 0.04221564219806061,
+      "ci_low": 0.024435410814012522,
+      "ci_high": 0.060248544313414726
+    }
+  ],
+  "status": "post hoc sensitivity re-scoring saved predictions, no retraining or selection, source set frozen and not expanded"
+}

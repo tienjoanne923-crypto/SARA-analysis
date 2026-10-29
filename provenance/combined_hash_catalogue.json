@@ -1,0 +1,2778 @@
+{
+  "scope": "Deduplicated union of selected input provenance and October18 saved-analysis verification",
+  "n_unique_files": 307,
+  "overlap_between_catalogues": 7,
+  "not_a_complete_dependency_closure": true,
+  "files": [
+    {
+      "path": "association/CTD_diseases.tsv.gz",
+      "bytes": 1784838,
+      "sha256": "5307f517d79cfbb73aae5f733b3681a3a33b03d5a3f2d5e36c010c049236c73b",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "association/CTD_genes_diseases.tsv.gz",
+      "bytes": 3114049350,
+      "sha256": "dc6d892158c2b2ea66a4e84fdbaaa473df24004e10a231da8758f2164e57b9b1",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "data_snapshots/historical_2023q4/association/CTD_diseases.tsv.gz",
+      "bytes": 1741286,
+      "sha256": "9ab05d1de1a1a37dc8571106a6702dfbb8a5a5f0d0c63a3f4420366356c0484e",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "data_snapshots/historical_2023q4/ontology/doid.obo",
+      "bytes": 6530886,
+      "sha256": "8f90e1c91e67c4828364883a5737c4f8d824acb2468796fd8e87d8b649a40c15",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "data_snapshots/historical_2023q4/phenotype/hp.obo",
+      "bytes": 9597125,
+      "sha256": "d3c1280f2780628cc2adc41d43ad92eab8fa4c2bab0f421e6334c7b1e6cd4e52",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "data_snapshots/historical_2023q4/phenotype/phenotype.hpoa",
+      "bytes": 31698761,
+      "sha256": "b654dac338a33225834919ac99f62a2ae54710d051042fbc5eacdf19b44e54e2",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "function/Homo_sapiens.gene_info.gz",
+      "bytes": 5189840,
+      "sha256": "6d1f340d4e54ff26bb0713f5c2269bb486192650f3d5948a998c9d16f32c6ccc",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/caches_v71/featurepack_v71.npz",
+      "bytes": 308785522,
+      "sha256": "aa85675847111ba573fd17e452d4ca1865e225cdc0bf274d430fbee9b2846a5c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "cached_feature_input"
+    },
+    {
+      "path": "gpu8/configs/frozen_config.json",
+      "bytes": 2999,
+      "sha256": "a70a1881cf82c4341067f25b3ba0811cadeea6a4137e6fa68f186256933bcb89",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "configuration"
+    },
+    {
+      "path": "gpu8/external/clinvar/variant_summary.txt.gz",
+      "bytes": 443063763,
+      "sha256": "f25970aa49619fc73cdf8c878a3a20faaa69a0abd56cc8e14954f1d143e7e44e",
+      "catalogues": [
+        "input_manifest",
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/gencc/gencc-submissions.tsv",
+      "bytes": 25023343,
+      "sha256": "08ab83e29de26ce324d97af01362426857aa4d943fdea949edf8dcdb99929694",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/geo/GPL13158.annot.gz",
+      "bytes": 8313277,
+      "sha256": "d9eddd653c200c9ac1b282b441079a19e890914929b35792a4e99ce4eba3b0d0",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/geo/GPL570.annot.gz",
+      "bytes": 8471521,
+      "sha256": "d7cd44352127b1e34f3a720ebea86093ef255a38f1612a85a2962b71bde8f394",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/geo/GPL6244.annot.gz",
+      "bytes": 7193437,
+      "sha256": "99ee70f87e02c75ff1c8dc57b6c40c0482c7ef2760e004301315ac34344ac6dc",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/geo/GSE13355_series_matrix.txt.gz",
+      "bytes": 35921043,
+      "sha256": "087043c4a620828d65f3055840be9de25bd31306d5caf018ae28ce5d18de6194",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/geo/GSE30999_series_matrix.txt.gz",
+      "bytes": 12251771,
+      "sha256": "988d6ca437028a6e958da379908c62c8b9bb6db614108c182321488ae934574b",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/geo/GSE75214_series_matrix.txt.gz",
+      "bytes": 34902052,
+      "sha256": "4a20658754f5d4d50f9f938585afd466273d1aa141579d27f2fd4495a2647798",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/geo/GSE87466_series_matrix.txt.gz",
+      "bytes": 16168815,
+      "sha256": "91a6eb2f3d9b166b34b8854ecd527ac26bd26d86cae70f3ae7f1fe058adf597a",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/hgnc/hgnc_complete_set.txt",
+      "bytes": 16940274,
+      "sha256": "69bb5722d5a42bb355580deb2c9f197ce3d7f7d13807173b9674a7db65e52191",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/mondo/mondo.obo",
+      "bytes": 53134854,
+      "sha256": "50c8367f9bd9978321eedf84d4e2e79cb757efbed514c81effb00b9ad2e49994",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/mondo/mondo.sssom.tsv",
+      "bytes": 13113756,
+      "sha256": "317ac4bf93be1deff4406b4d7d18bb730ead3c4f5c7c814f75d24be7f6ef302f",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v6/clinvar/var_citations.txt",
+      "bytes": 230242166,
+      "sha256": "e838956bf39ae7d65522280ec8f86e28345d9859d1c433c6a5fba2b3b8faf25c",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v6/go/go-basic_2023-10-09.obo",
+      "bytes": 31134256,
+      "sha256": "3da20cc774d666b4338446bc81341eaf536885dc10ccb667480a79f6b964aa3c",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v6/go/go-basic_current.obo",
+      "bytes": 32227785,
+      "sha256": "b08d45b268b8c24ccb2513dbbbc7d4df9f6521c099b413f79eb31e06e0fa3bcc",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v6/go/goa_human_2023-10-09.gaf.gz",
+      "bytes": 11598113,
+      "sha256": "4811a64ee717cca2fa796755d36d0856ca493464d25172de36ded88ddae6c93f",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v6/go/goa_human_current.gaf.gz",
+      "bytes": 15041996,
+      "sha256": "db472faff1785878521693af62646546cea6af4a386609dd01c72c0554a46a30",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v6/gtex/GTEx_v8_gene_median_tpm.gct.gz",
+      "bytes": 6952331,
+      "sha256": "ee7201ff2f280b0de5657d4b08e9a240362d9757efed7f7bd5dba35a5f8617b8",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v6/hgnc/hgnc_complete_set_2023-10-01.txt",
+      "bytes": 16505942,
+      "sha256": "66f5e9ce5c1643dab6fa363b954fd15597ae0e23fc0a34c390f11b5f96a0cc55",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v6/hpo/genes_to_phenotype_v2023-10-09.txt",
+      "bytes": 18567187,
+      "sha256": "e8bba158820dc55151cd4ad2a23642326ee271b068c0cc74bc99754c2a1959cc",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v71/hpa/rna_tissue_consensus.tsv.zip",
+      "bytes": 5293680,
+      "sha256": "b001903da23f802c8dfbd1b6b3a8c20b831fedd4932f4bb721b06622d83ae60b",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v71/mane/MANE.GRCh38.v1.5.refseq_protein.faa.gz",
+      "bytes": 7180983,
+      "sha256": "b12307f98481b6d8c4e17d9ecd1856ee1f64a63db6507ff7529f669e26f6f372",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v71/mane/MANE.GRCh38.v1.5.summary.txt.gz",
+      "bytes": 1115288,
+      "sha256": "d10ace2720681a3b2e0eefd9da4f551274a6b4141ac9bfd6a2565dfb6e9ad55c",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v71/models/esm2_35m/config.json",
+      "bytes": 778,
+      "sha256": "ae07364efa51e0fa1d81da3fe608f6d948abdbbb69785ba6e1df379a458e58ee",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "model_snapshot"
+    },
+    {
+      "path": "gpu8/external/v71/models/esm2_35m/model.safetensors",
+      "bytes": 136008798,
+      "sha256": "e35647818e0e064351d4531ed480d225a002567b4b2b93ad3a9246d753150fc0",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "model_snapshot"
+    },
+    {
+      "path": "gpu8/external/v71/models/esm2_35m/special_tokens_map.json",
+      "bytes": 125,
+      "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "model_snapshot"
+    },
+    {
+      "path": "gpu8/external/v71/models/esm2_35m/tokenizer_config.json",
+      "bytes": 95,
+      "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "model_snapshot"
+    },
+    {
+      "path": "gpu8/external/v71/models/esm2_35m/vocab.txt",
+      "bytes": 93,
+      "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "model_snapshot"
+    },
+    {
+      "path": "gpu8/external/v71/models/sapbert/config.json",
+      "bytes": 462,
+      "sha256": "c0fa35def52bf7d81865d23dba0417fdbb67d416fdde70cae5c7beab476b584e",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "model_snapshot"
+    },
+    {
+      "path": "gpu8/external/v71/models/sapbert/pytorch_model.bin",
+      "bytes": 438012727,
+      "sha256": "07f7672c7ac852d8efff83e4a7a63985bf50c03d5b57f6a7909c11fe66532137",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "model_snapshot"
+    },
+    {
+      "path": "gpu8/external/v71/models/sapbert/special_tokens_map.json",
+      "bytes": 112,
+      "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "model_snapshot"
+    },
+    {
+      "path": "gpu8/external/v71/models/sapbert/tokenizer_config.json",
+      "bytes": 198,
+      "sha256": "76eb84b4b5b0d1bdba02906d7fae249be541c41d72e2024094aea513f98f2be7",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "model_snapshot"
+    },
+    {
+      "path": "gpu8/external/v71/models/sapbert/vocab.txt",
+      "bytes": 226150,
+      "sha256": "79489a52be45e6fa033521e8ce8e4f62aedc0a742ee2aa6fc04667e5b0b1454d",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "model_snapshot"
+    },
+    {
+      "path": "gpu8/external/v71/uniprot/RELEASE.metalink",
+      "bytes": 2595,
+      "sha256": "8ba110f3babf72be900eed666ba20cea91f2f02f0ce911f3c177f046f20592bb",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/external/v71/uniprot/UP000005640_9606.fasta.gz",
+      "bytes": 7728297,
+      "sha256": "64299d01e8f41fb6ef03cdf7ec051d3d4e5f041003b6b0fa75b09d439af79dce",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "gpu8/manifests/contexts.json",
+      "bytes": 1214585,
+      "sha256": "314fad53637c18daa753ccce8ab55375e4cc3ef208df1485e06beb661d7c3f2c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "protocol_or_split_manifest"
+    },
+    {
+      "path": "gpu8/manifests/splits_main_5fold.json",
+      "bytes": 358713,
+      "sha256": "abfee5c65efbdc54cc7f0cd89035680bc551a0bafba877ebc1e1f5d3110d15b9",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "protocol_or_split_manifest"
+    },
+    {
+      "path": "gpu8/results/external/clinvar_variant_level.csv",
+      "bytes": 5599752,
+      "sha256": "6b825b8388ba38540ba07094af0873b158b344f940968d68aaa6048d8e22ac19",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results/external/external_labels_audit.json",
+      "bytes": 1610,
+      "sha256": "1a9803323fc723bb7f142bcf65e0ec277985c9ca194afaec9eb0dc5273e62426",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/eval/eval_test_main.parquet",
+      "bytes": 1579534,
+      "sha256": "acc51c3c04991492e7b015aeb692808ae34da814eb1322a00686846775cea6ab",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/external/external618/external_pairs_fields.parquet",
+      "bytes": 33713,
+      "sha256": "6fc551e63f613087d048c6287d4bbf1ee49ee5bbb005d25c10da25a7dbf9f1c8",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/external/external618/external_per_disease.parquet",
+      "bytes": 32584,
+      "sha256": "770eb230330c42e351838ef0071afd0879a074c1dd47584acddaedcbd96e38aa",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pools_f0_inner0_oof.npz",
+      "bytes": 897759,
+      "sha256": "55e8d2734b7e3a01e2202063e888e98091aabf61ae4b60ddf14226ef41577e22",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pools_f0_inner1_oof.npz",
+      "bytes": 892296,
+      "sha256": "aa321c4884e8d1b44f9d8a49762246205d74904bfb6c5d173e14cccf295d5be3",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pools_f0_inner2_oof.npz",
+      "bytes": 894133,
+      "sha256": "81d7c56b2b54443c54f8e617aa0c97d077728c954c6c070852f1da6b65b645ff",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pred_B__test.npz",
+      "bytes": 2162514,
+      "sha256": "242a43d54805b7b672aad15fda979e1723d19c4230b80c9bb474ce915ae7f99b",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pred_F7_v6__test.npz",
+      "bytes": 1500698,
+      "sha256": "d96729d4d93b1650217a8b111b3212ceca45a3e729af3072b7d1e86650408e92",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pred_channel_lgb_v6__test.npz",
+      "bytes": 1782395,
+      "sha256": "645530f5af1275da8c9e29365d54bd1506a6cd2908cbe20f73f8c192e4def12e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pred_deployed__test.npz",
+      "bytes": 2396216,
+      "sha256": "a71128649599d6389487780ea2ede6edbc9fe376dfabc5e2972dad43a862a7ec",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold0/pred_v71_direct_strict__test.npz",
+      "bytes": 2306863,
+      "sha256": "4fdbf4a61577b4867bdaf624ddc949b78ebfc5728f89512a997e51a9e4216dc6",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pools_f1_inner0_oof.npz",
+      "bytes": 897007,
+      "sha256": "c176cacdee9932983b9c2b716c451d101a4b7524ff41a54547680a0f3ffaffdb",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pools_f1_inner1_oof.npz",
+      "bytes": 886826,
+      "sha256": "c8c9175d2f7d1807843017b313fa78641dc362931ef6bc6d7b0fc7b5d17a74ff",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pools_f1_inner2_oof.npz",
+      "bytes": 890224,
+      "sha256": "b0bc337930be5cca1b39089434fd45777b7fde75d85261170421b800f5f3f7a2",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pred_B__test.npz",
+      "bytes": 2183881,
+      "sha256": "7e328dfc6fe6e4dc0405bc56ad81d39f25633b461f88cd97f266ceea2cbebc0d",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pred_F7_v6__test.npz",
+      "bytes": 1540794,
+      "sha256": "b60a6dadc2781e97c2ee8089f312e01037979a540a8198136023ac13ed0cf09e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pred_channel_lgb_v6__test.npz",
+      "bytes": 1680119,
+      "sha256": "75b4afca8a1d6b7deed4cf61ee8c0ac62be31808ce7d9f5ecddf6a44c32caaaf",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pred_deployed__test.npz",
+      "bytes": 2371425,
+      "sha256": "f582fad237079cb8696bcabdc4baf928297b9d01ff41fe18192e7cbc4efc7c4c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold1/pred_v71_direct_strict__test.npz",
+      "bytes": 2394624,
+      "sha256": "107514f75a7c6427a85b987b4f5c04a477436d0536326390346be8c3183d5ce8",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pools_f2_inner0_oof.npz",
+      "bytes": 892944,
+      "sha256": "2c4a5e5c772492c7faa9cce88e56e9b41bdfb1c513db446ed017c0f87e465b34",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pools_f2_inner1_oof.npz",
+      "bytes": 889505,
+      "sha256": "8007b1d2a8cbfb00ec1897a07d17ddb3617e239031e94005fdae6ac4461ca730",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pools_f2_inner2_oof.npz",
+      "bytes": 892304,
+      "sha256": "53aeec5f349dfcb45daf250c2fdc9f5820e085d36715cc393be6b1b423ce1790",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pred_B__test.npz",
+      "bytes": 2060345,
+      "sha256": "36c87964c74a0ea5c67898cf3876fd0a0a517585e280e4b19bb01890ccefbd8d",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pred_F7_v6__test.npz",
+      "bytes": 1452963,
+      "sha256": "31036a0708a2e9aca6f9df4b774cfdfe472620ff2cad5875acc4d9cc53060427",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pred_channel_lgb_v6__test.npz",
+      "bytes": 1661116,
+      "sha256": "beb857afc5a66067d5e2074debb2a1732374c2011ac8a518988299e2389762c9",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pred_deployed__test.npz",
+      "bytes": 2370902,
+      "sha256": "10452891439c48600b130073922845d0c8a5020c957657c1c3b74f796fd39f16",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold2/pred_v71_direct_strict__test.npz",
+      "bytes": 2393937,
+      "sha256": "643b5d67f06cd45828bb6d2f8eacdb84fa9844abd8a6ef545522384cc34df7ed",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pools_f3_inner0_oof.npz",
+      "bytes": 889745,
+      "sha256": "c22096a51c8d267f6ec032cdc20aa044c2c761d20f9e6da1249d4a43ba8e7e53",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pools_f3_inner1_oof.npz",
+      "bytes": 890430,
+      "sha256": "edef3c5d55ea74b58b961e2f8cd6b13345ccc94dbc5eb39933ef36864f6fea4c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pools_f3_inner2_oof.npz",
+      "bytes": 886495,
+      "sha256": "5120e16f3e3b464aedf56cf7847f202bdbb4ac8b70c581538992a0254e573664",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pred_B__test.npz",
+      "bytes": 2177691,
+      "sha256": "57887eb59d24d247e4a257b7d784ea62b888f3f7cdba69d56a0d077268cf1763",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pred_F7_v6__test.npz",
+      "bytes": 1483852,
+      "sha256": "36ca11282be490218582d6623cf5ee15c6db7a47567c5c97bd3639fe5defd58e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pred_channel_lgb_v6__test.npz",
+      "bytes": 1622058,
+      "sha256": "c482e47e9b42edb7c50d555fba76065b83e9661ab0b24daae3cc0563950344fc",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pred_deployed__test.npz",
+      "bytes": 2104015,
+      "sha256": "798a3dfd06fea2c728c5bf88375a83d69ebcf62d75c0356e33303d9cf4e10ce5",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold3/pred_v71_direct_strict__test.npz",
+      "bytes": 2374613,
+      "sha256": "1877090db0ba7316fa3c411edb00356556acbf282f8ec63702c8633a85cbcc1f",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pools_f4_inner0_oof.npz",
+      "bytes": 888804,
+      "sha256": "0175ecbe3c256d63073eaf5b8da8ac2c08f2ccb84f7352addfbf1fb4abedeab6",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pools_f4_inner1_oof.npz",
+      "bytes": 891617,
+      "sha256": "326314f9e426a472e8cb9bfe04b90cf40df8ef26bd9295f351b260ca6317dde5",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pools_f4_inner2_oof.npz",
+      "bytes": 888825,
+      "sha256": "dc8aa2f8d647c49e43dce3618bc0233d9107ac7cfd5735d2e4f1b6f49059c753",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pred_B__test.npz",
+      "bytes": 2183385,
+      "sha256": "97a825ce912d068ee8afdd5fb2c7d713536f41d48c2831d1de315dfc636d1530",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pred_F7_v6__test.npz",
+      "bytes": 1489106,
+      "sha256": "a80dd5946df48ef2e2b3bc0cef1576a4b56cb5ae1dc98a277f5c98708383e915",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pred_channel_lgb_v6__test.npz",
+      "bytes": 1975595,
+      "sha256": "e6dd629904fbd59a544f645bb7d80d65c2342031aa5ab9345045952becf1dc9f",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pred_deployed__test.npz",
+      "bytes": 2378375,
+      "sha256": "b80b11227ee835261b0561c69669d51d7fe5d37ef29650efcbbccef031a5333d",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s42/fold4/pred_v71_direct_strict__test.npz",
+      "bytes": 2377162,
+      "sha256": "d285efebed82081a17b197f27231e24cebde18aaea209c2a1a73cfa4425d77d8",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pools_f0_inner0_oof.npz",
+      "bytes": 893598,
+      "sha256": "4af366cac9d60631b8dfc7d07a2b7805bb497131876dcc71701f261157d37af0",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pools_f0_inner1_oof.npz",
+      "bytes": 891110,
+      "sha256": "5ac10a4eb1b330dbf717b9109f36518aa02db695baf4b3d3a0b515cca7927b14",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pools_f0_inner2_oof.npz",
+      "bytes": 897342,
+      "sha256": "5cf9d09bc2dab69386d8ba15a6c76538e10a039a877c30cb66ab131f587488a0",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pred_B__test.npz",
+      "bytes": 2196573,
+      "sha256": "9a8042413c74d3f84d8098a86c2d413e4c5956b5d4f5f4bf5620d42d8f053448",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pred_F7_v6__test.npz",
+      "bytes": 1500698,
+      "sha256": "d96729d4d93b1650217a8b111b3212ceca45a3e729af3072b7d1e86650408e92",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pred_channel_lgb_v6__test.npz",
+      "bytes": 1983916,
+      "sha256": "7df9d419a3442569f0b44bc75c706993c103a8992aa07b1bb6664304dc7e4108",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pred_deployed__test.npz",
+      "bytes": 2375140,
+      "sha256": "ec86864cd40ea2f21c685243766982b9b215f5de10c1b09fcb27a8e8eaf995f5",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold0/pred_v71_direct_strict__test.npz",
+      "bytes": 2232230,
+      "sha256": "e76c2835ee23519bf2501ce96d0478fcbacfd790578a798609f271a9ec0b519a",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pools_f1_inner0_oof.npz",
+      "bytes": 897313,
+      "sha256": "e21192201e559a9b20f254d78433b0e4eae233645317dac22ae83de582984e73",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pools_f1_inner1_oof.npz",
+      "bytes": 887245,
+      "sha256": "563f7edb2c7a4fb2b931fff187a040540674ab89238a52cc973d5535cbab31fc",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pools_f1_inner2_oof.npz",
+      "bytes": 889669,
+      "sha256": "9c9f1857e38208af0069445db929f013624cba00705e7afa1f2328429a828902",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pred_B__test.npz",
+      "bytes": 2271022,
+      "sha256": "da8fa0bd0c295198ad7afcd92af009b61d956d3b399b1890f09377b31da089f4",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pred_F7_v6__test.npz",
+      "bytes": 1540794,
+      "sha256": "b60a6dadc2781e97c2ee8089f312e01037979a540a8198136023ac13ed0cf09e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pred_channel_lgb_v6__test.npz",
+      "bytes": 1612621,
+      "sha256": "bfd54297abca6db6b5b73097dd1df4dba5e81ed1ad8fe09f3941a256b9b1a23d",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pred_deployed__test.npz",
+      "bytes": 2275388,
+      "sha256": "f2288e421b3687311db3c4d5a0bc577ae595a611ebe8e87fb32f74dbb21fa9b5",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold1/pred_v71_direct_strict__test.npz",
+      "bytes": 2361708,
+      "sha256": "07e319fba52d70b633658ace4cbfa0a7c84476c0495042b313651be27b83a543",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pools_f2_inner0_oof.npz",
+      "bytes": 892784,
+      "sha256": "bce5bacbb7f7a0cb02ff7305685d7e3628793cad519766a69535098469e68187",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pools_f2_inner1_oof.npz",
+      "bytes": 888316,
+      "sha256": "48e5b5ad1333ba0c6b28b52050afa2432c8073d88ce64cd7554d9e8d712912ce",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pools_f2_inner2_oof.npz",
+      "bytes": 892309,
+      "sha256": "24f08d79d986f2a9010b0576b0589133c1159f1e55123bf5a6010f168b6ca3d9",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pred_B__test.npz",
+      "bytes": 2092500,
+      "sha256": "449a70e4a13cb2f9676fa4857ae271c97ab8bfc006d748a8fe88e0c929599d67",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pred_F7_v6__test.npz",
+      "bytes": 1452963,
+      "sha256": "31036a0708a2e9aca6f9df4b774cfdfe472620ff2cad5875acc4d9cc53060427",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pred_channel_lgb_v6__test.npz",
+      "bytes": 1788466,
+      "sha256": "4abe8be5a29962b0203cdf72afeb81950f1d2b76e453bf480d0b3d718fb48db0",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pred_deployed__test.npz",
+      "bytes": 2303558,
+      "sha256": "545b9dbc86f12690f904cc25f56b7e21e5563abc6ced6e6b7b580e5676f383f2",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold2/pred_v71_direct_strict__test.npz",
+      "bytes": 2355014,
+      "sha256": "07c65a3aeeb3e0afb615785c2933d9ef11ff95cd23877f573d1c142b805bbb04",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pools_f3_inner0_oof.npz",
+      "bytes": 890825,
+      "sha256": "146c76c2d11d050a357148ee3b0fc17471b7bf601c356856b4eb6c3fb5b16ac6",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pools_f3_inner1_oof.npz",
+      "bytes": 891470,
+      "sha256": "0f7db8721273f95c9867ee021577ee24cd8f63250d04ad02592dd7dc7e95ba1a",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pools_f3_inner2_oof.npz",
+      "bytes": 883859,
+      "sha256": "db787ae02704898697dfb0fc8892c5beb157c0b6047567bbba9888f9d0b327be",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pred_B__test.npz",
+      "bytes": 2113922,
+      "sha256": "0388895218789819c655991c8d23fa1351cf686cd9c1748b4da91fcf625b6058",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pred_F7_v6__test.npz",
+      "bytes": 1483852,
+      "sha256": "36ca11282be490218582d6623cf5ee15c6db7a47567c5c97bd3639fe5defd58e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pred_channel_lgb_v6__test.npz",
+      "bytes": 1521777,
+      "sha256": "275de2247fead39c281283fcd4d3438d6c74570e6be43660f23a246572892f92",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pred_deployed__test.npz",
+      "bytes": 2381271,
+      "sha256": "0fab32d2c9eacc22f155d6f598b8a953d7b4644e436cc88961ca929c17968835",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold3/pred_v71_direct_strict__test.npz",
+      "bytes": 2025042,
+      "sha256": "c9a071df1137792c04b4ba2ef381c65c9dea37dffc4b736ac3a386ca13859f43",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pools_f4_inner0_oof.npz",
+      "bytes": 889861,
+      "sha256": "2b1a34f37e43099c06be8c791e5ca38208db6e739c8bbb10c58f5cd78ae75c69",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pools_f4_inner1_oof.npz",
+      "bytes": 890181,
+      "sha256": "8dd647cea7a2ad59d9b70cff0b77ba808ab439d7f006c057f75a629e7db2cf68",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pools_f4_inner2_oof.npz",
+      "bytes": 888837,
+      "sha256": "b89a56755a422e7948585716eb1fdbb07f92fbd80fb11b0de6a0ef846a8dbb89",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pred_B__test.npz",
+      "bytes": 2092979,
+      "sha256": "024dace174c9bc69a3c72a36b787909be2d95050ea834993a59343d9b8c7f10a",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pred_F7_v6__test.npz",
+      "bytes": 1489106,
+      "sha256": "a80dd5946df48ef2e2b3bc0cef1576a4b56cb5ae1dc98a277f5c98708383e915",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pred_channel_lgb_v6__test.npz",
+      "bytes": 1694301,
+      "sha256": "86a7eef2a4bf091c4ca61498e383288c24b64f29db94fd2f392f82db5386a3f8",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pred_deployed__test.npz",
+      "bytes": 2388555,
+      "sha256": "5ed2b02b98370cb23f5bcba01f8919610eefb7eebca7d2a2b43cd910be297dec",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s52/fold4/pred_v71_direct_strict__test.npz",
+      "bytes": 2389294,
+      "sha256": "b5b92ec68ef67ddc513a2c1e2f60f4cf660fb25d15be7102a819f4d3329fa926",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pools_f0_inner0_oof.npz",
+      "bytes": 892573,
+      "sha256": "5c13d20b1df56209eb7d230b54b733e7aded804c63dd6d6a0a59de81bd6aefd6",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pools_f0_inner1_oof.npz",
+      "bytes": 892053,
+      "sha256": "d23b8ca47a82313c3204fb2d56d0a67cfa3bde36ab1f61642cf62a3e778ed620",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pools_f0_inner2_oof.npz",
+      "bytes": 898695,
+      "sha256": "cd8d4486ba2d50ab5596f294252cd6ed8f2206f8d2d80171d311cdc488e0ee75",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pred_B__test.npz",
+      "bytes": 2185021,
+      "sha256": "e6ddc972858736b4875d2f5adc1fa72607f7f6afc764428ef7d0e7d22d8f3e59",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pred_F7_v6__test.npz",
+      "bytes": 1500698,
+      "sha256": "d96729d4d93b1650217a8b111b3212ceca45a3e729af3072b7d1e86650408e92",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pred_channel_lgb_v6__test.npz",
+      "bytes": 1832486,
+      "sha256": "835c1be83b68f92339f53cc792a52467d302351645a4de047e83c20dd9b1f329",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pred_deployed__test.npz",
+      "bytes": 2171270,
+      "sha256": "df6a6230f2b9dc603f5be135fd415a85480f2e92e468e40eb7d860f6c4871103",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold0/pred_v71_direct_strict__test.npz",
+      "bytes": 2405503,
+      "sha256": "a4c25853875aca796f8523f8a6cf5aa69294f3a506492c83f56d08c0d3220bad",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pools_f1_inner0_oof.npz",
+      "bytes": 895816,
+      "sha256": "ebcee1388067526f487ce08db074c8e363af5c4de68b90128a6aa9aaa1d68816",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pools_f1_inner1_oof.npz",
+      "bytes": 888742,
+      "sha256": "ab926772ae987f55d39ad45f69fc9514ba0f6d8f146e64f11e12b22adfa73f4c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pools_f1_inner2_oof.npz",
+      "bytes": 891668,
+      "sha256": "34c90f5a7ff1a58af3304957c1d491033dd77030ef3fab14fdb4d71b4ffcba3e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pred_B__test.npz",
+      "bytes": 2132505,
+      "sha256": "c23c5da81bddf36e082d49f338e37e4834e6b65ed988277ba623372eb86abf4d",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pred_F7_v6__test.npz",
+      "bytes": 1540794,
+      "sha256": "b60a6dadc2781e97c2ee8089f312e01037979a540a8198136023ac13ed0cf09e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pred_channel_lgb_v6__test.npz",
+      "bytes": 1974046,
+      "sha256": "a7c98b9ddacb50aead76886be5c9ccc349d65b1ab93307a88b7924d0c11ecf5b",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pred_deployed__test.npz",
+      "bytes": 2328743,
+      "sha256": "4e6b0067610cfff7b110405f0338f2a6c602512b63a730ed079abd8da4bee021",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold1/pred_v71_direct_strict__test.npz",
+      "bytes": 2393359,
+      "sha256": "d5f90d33a91dd4a8c8fd7df4c9e068a39d8e67f1eb857945396065bd239e42b6",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pools_f2_inner0_oof.npz",
+      "bytes": 893095,
+      "sha256": "7beea14cefdf2206db188f787e8a0ac14264d495d0566c7101dd62de8024d11b",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pools_f2_inner1_oof.npz",
+      "bytes": 890230,
+      "sha256": "8d341cf2efb30db6e936bbb16e8a1aa36a6d747fa994b1ffea3d199271d543ae",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pools_f2_inner2_oof.npz",
+      "bytes": 891598,
+      "sha256": "c03b18fd077652faa416bb97c781a211eb9661ee7001235b219aef513ff6b784",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pred_B__test.npz",
+      "bytes": 2060823,
+      "sha256": "c27c74c3b72b2aac6130cb9a26a5f90a5fe4be9041ffe97a940c0eb645e91894",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pred_F7_v6__test.npz",
+      "bytes": 1452963,
+      "sha256": "31036a0708a2e9aca6f9df4b774cfdfe472620ff2cad5875acc4d9cc53060427",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pred_channel_lgb_v6__test.npz",
+      "bytes": 1785392,
+      "sha256": "cabdbf8c2cada61801d95c3be5402e0f70e395cf61162507534eda377a15668c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pred_deployed__test.npz",
+      "bytes": 2381663,
+      "sha256": "42e67b057d1f6eab728ced06de31c07fe69f0aa49408ef76a639dbbcea481c91",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold2/pred_v71_direct_strict__test.npz",
+      "bytes": 2368819,
+      "sha256": "dab009ec139fd6319742b569f8484a38b13ee90e76438106970c4c527bcd80d8",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pools_f3_inner0_oof.npz",
+      "bytes": 888666,
+      "sha256": "4906e985a42c676621d0baad8dcbf9d4bbf39745a6e7c7eccb45493003015b6f",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pools_f3_inner1_oof.npz",
+      "bytes": 890840,
+      "sha256": "29f9e6d3c928640ab353635c426edf4682df08fef19b221a888bdae7f1b89f92",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pools_f3_inner2_oof.npz",
+      "bytes": 886998,
+      "sha256": "a75f401c95b04368b12f54b163871ab3068e9b848fd3cb602658afc7946dcb03",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pred_B__test.npz",
+      "bytes": 2073515,
+      "sha256": "be3ef07381096fa15e6fda29b47f1c98ccdd5db9a57378e8ff120a49f9da6906",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pred_F7_v6__test.npz",
+      "bytes": 1483852,
+      "sha256": "36ca11282be490218582d6623cf5ee15c6db7a47567c5c97bd3639fe5defd58e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pred_channel_lgb_v6__test.npz",
+      "bytes": 1731572,
+      "sha256": "cf32dbc2322d09cbc2de3c37beb4a395cecdb937a6a7f2c24f75450d7240cc1f",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pred_deployed__test.npz",
+      "bytes": 2345514,
+      "sha256": "71c8cff7d04397727468244bfcc7b2864cf1f4a72f9537b089979abeaad755be",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold3/pred_v71_direct_strict__test.npz",
+      "bytes": 2390570,
+      "sha256": "87a6ff098817f95444c90d6f54942b982b62418e7d9d590950439df90683cbd7",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pools_f4_inner0_oof.npz",
+      "bytes": 891403,
+      "sha256": "b85658932eb711bae81671841f95c2fde3d3cbd420ee0d819ef8a08be3c60075",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pools_f4_inner1_oof.npz",
+      "bytes": 889593,
+      "sha256": "f4aa5e3953ce14c307f18edef3561622f6a438756143f2efc4678e7b8994aeeb",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pools_f4_inner2_oof.npz",
+      "bytes": 889433,
+      "sha256": "ed49e1fe1331c876d68a221e8687a6835d248ee57a9bca9eb4e4bbd30799d897",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pred_B__test.npz",
+      "bytes": 1936771,
+      "sha256": "1feb2a14044445a459ce678b59d90c158442fd8fb91432f7a9192e67d4f32a66",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pred_F7_v6__test.npz",
+      "bytes": 1489106,
+      "sha256": "a80dd5946df48ef2e2b3bc0cef1576a4b56cb5ae1dc98a277f5c98708383e915",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pred_channel_lgb_v6__test.npz",
+      "bytes": 1713138,
+      "sha256": "4ef72f8ca9c25fe4b4774e3a08ad06e0cb73b34dcf5e549f5d1723b31c3a0377",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pred_deployed__test.npz",
+      "bytes": 2363647,
+      "sha256": "6ecebeedcf4d5aacf8e0ee9335d6dd8a68f5ea1fd99cc138b0b7e6151546e221",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/formal/main/s62/fold4/pred_v71_direct_strict__test.npz",
+      "bytes": 2385818,
+      "sha256": "d1a254e09a2ffa961ecd0ba644fcaec01f6cb86c6093b0c7f54239b913fd31a1",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/results_v8/pub/query_ranks.parquet",
+      "bytes": 2667350,
+      "sha256": "879f1ad0f21bf1b96949318329f12c0997ade4a1d400d032505e06cad2a0cec5",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "saved_prediction_or_analysis_output"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner0__background__s42/result.json",
+      "bytes": 2230,
+      "sha256": "2f2165df82c2077ab2b3a07b2c6873d3bd2e2e135c9a66cdef74e49d4808bc97",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner0__background__s52/result.json",
+      "bytes": 2231,
+      "sha256": "ff8c335d3edf6e79ffa6a637b1b88a74a9097fad494b1ca8cdd86c0dd7a0e46c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner0__background__s62/result.json",
+      "bytes": 2231,
+      "sha256": "45d6fbf10ea2dc5ac8a46bbe012ca07dacdba714413396a8bfe21bdbbf4170a2",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner1__background__s42/result.json",
+      "bytes": 2230,
+      "sha256": "0b6db28715bd70ec4145cf6d9437492d9d2747545fcc94c688b93d284ebb0e09",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner1__background__s52/result.json",
+      "bytes": 2233,
+      "sha256": "0e21b48563fda545f789813158f84a10591e97d217ba6b1493ddb7e027a2fc62",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner1__background__s62/result.json",
+      "bytes": 2235,
+      "sha256": "350d0e2ae9fcef2c8f0affe1b6fd1aa59994777615ca3e732a84a5eeb53f0b5c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner2__background__s42/result.json",
+      "bytes": 2230,
+      "sha256": "5e571c5f8d27780caee857f42499de3aa6b230b2bd89e21d1fa29a8afb4c959e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner2__background__s52/result.json",
+      "bytes": 2234,
+      "sha256": "4e89ca0fb633ef44c344b4fed13c809bfa312332c5069330ff8273079df31963",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_inner2__background__s62/result.json",
+      "bytes": 2234,
+      "sha256": "e654e92f1b57ee06f8a06166b81f42ef3b3d1828b6f30babdf7d954b8474b3ba",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_outer__background__s42/result.json",
+      "bytes": 2229,
+      "sha256": "a48d21efdb8417425f15ef13682c4369d497a62295ab6761d11adb4a481b4a15",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_outer__background__s52/result.json",
+      "bytes": 2230,
+      "sha256": "33e4c76c0124a6383565f5aa85bfc67b2019434ebc4dbbfcbadbca90e51e1fe5",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_outer__background__s62/result.json",
+      "bytes": 2231,
+      "sha256": "1afbb3bacbf2d5b3079158b3b6ecd185b09447ec150da03060fbf889886a9f61",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f0_outer__reference__s42/result.json",
+      "bytes": 2221,
+      "sha256": "2b0b5cae5a1786e059c034fb56302d4d659c7be385b84f0f98b414f093252550",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner0__background__s42/result.json",
+      "bytes": 2232,
+      "sha256": "55f234819463bb2ba22f20899fa398f36806238db5d235bf171ebe01f95e7a95",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner0__background__s52/result.json",
+      "bytes": 2232,
+      "sha256": "724345253778281146ff5328d413261da4c276caced2e607a7249bd19e0838a0",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner0__background__s62/result.json",
+      "bytes": 2235,
+      "sha256": "855456b9da1a7833e57dbe54ba40b3850f15d630f138d26cc0ff51ddcd021c14",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner1__background__s42/result.json",
+      "bytes": 2231,
+      "sha256": "fa2d269ca1da7e8b784b5720f76c15ec2218183a834ac5b74505a295a881d8f5",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner1__background__s52/result.json",
+      "bytes": 2233,
+      "sha256": "d9fbab7053721c6715c435ab155ee6085803a5839d2afd5015a9ccf3c76d884f",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner1__background__s62/result.json",
+      "bytes": 2231,
+      "sha256": "f8862ce9171c8e480f0a6141522ab58a0ae9fe05f5987e6ea6de6f4150d6d32c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner2__background__s42/result.json",
+      "bytes": 2232,
+      "sha256": "272dfb9ce87f4e14eab31267640aeda6ba340a617d7b5a8733fe023a9c51f638",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner2__background__s52/result.json",
+      "bytes": 2233,
+      "sha256": "34e8451f7eddb861818ddd389ea589d0fcd82140d3c2f282fc4bb55782dd783e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_inner2__background__s62/result.json",
+      "bytes": 2233,
+      "sha256": "7dbe9197831a1790f0d6b65b43feaca90a3b48337cb1bb40298b23b027256a8a",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_outer__background__s42/result.json",
+      "bytes": 2229,
+      "sha256": "c4e9c91f7ddab427b1c4de6d2aee18eba753d38eaaaabc77e4450c666a2756f2",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_outer__background__s52/result.json",
+      "bytes": 2231,
+      "sha256": "b2ed2d585e55fbaf393b5d55f7549e2c84b728d4f14702bc3937210d3e14be36",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_outer__background__s62/result.json",
+      "bytes": 2232,
+      "sha256": "8f180a754f63be70c859bf2880ec56565248adc38f237fa89a4d010ea9648266",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f1_outer__reference__s42/result.json",
+      "bytes": 2226,
+      "sha256": "e0c13ab0d074257273c1f9c1c42806d7fb049e74fc8a683283b8a3cce8566fe6",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner0__background__s42/result.json",
+      "bytes": 2226,
+      "sha256": "0ec3ab8caf3f9df93e44cb153a6ffbb8a8ff33622925ca76d85f9dd24828aa83",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner0__background__s52/result.json",
+      "bytes": 2236,
+      "sha256": "aca7573dff072bc1cda3354cfdb6778b8effb16f7619ba84dee6278108bc44aa",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner0__background__s62/result.json",
+      "bytes": 2234,
+      "sha256": "e0ca6d8286eda7e5d4653d80105146f85909443683d95ba976615c4b159044ed",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner1__background__s42/result.json",
+      "bytes": 2232,
+      "sha256": "3ab3fed9cd3cc4a6be0132723a8dfa29e18b20f0f1027984f274f8e89cf20452",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner1__background__s52/result.json",
+      "bytes": 2232,
+      "sha256": "e367c58100bffbef8283be4d9efea1c1980ec5416e32e7a1407e529ef0932d75",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner1__background__s62/result.json",
+      "bytes": 2236,
+      "sha256": "f1d50054118c1bf6afaf49a2a12bb5931fe2d1a1fdc741e383ecdd52f24000c9",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner2__background__s42/result.json",
+      "bytes": 2233,
+      "sha256": "c4f4ac229e86ebdd1cf6b0248063c1ad55feef74b96e9cade47fbc3098657f1e",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner2__background__s52/result.json",
+      "bytes": 2232,
+      "sha256": "e3996e71fc5e60ee25183c7cf78a1604ac07e627b1a0590638e1a0e33f8dbc57",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_inner2__background__s62/result.json",
+      "bytes": 2232,
+      "sha256": "2935cbb90923059fb7c193b6dbaff1b426ba4ff093f528ba7b205e697d3e1c4c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_outer__background__s42/result.json",
+      "bytes": 2231,
+      "sha256": "34b3fd8e30a08d81d1cb954709a3c0ce6ea4fec5c4ef618be41e2a10663b3e40",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_outer__background__s52/result.json",
+      "bytes": 2234,
+      "sha256": "cc00513c81b9fc7820727f382ea711b8f07384c26d07349544cf22d4f1d843df",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_outer__background__s62/result.json",
+      "bytes": 2233,
+      "sha256": "5581894d98464a40d54a643478479d7bc8485645f951f393b8024ad2feae4b6a",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f2_outer__reference__s42/result.json",
+      "bytes": 2227,
+      "sha256": "6633792469d83d148abcb62a3829cb684ccfb0d286f69bd5897c087781c0b1a9",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner0__background__s42/result.json",
+      "bytes": 2231,
+      "sha256": "070f8cb081d450f387d8cfa1acd606707e345131b575022fcc8a7770e409fac7",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner0__background__s52/result.json",
+      "bytes": 2235,
+      "sha256": "3ab0a218f1d9c3770cbd1e5b9f25dc5c0262607922ac78e4ab953882d248fedf",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner0__background__s62/result.json",
+      "bytes": 2235,
+      "sha256": "834016bc27bd88445568b8fbb629aa4784515a2681fecdc071bc529e5f38d769",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner1__background__s42/result.json",
+      "bytes": 2231,
+      "sha256": "1869ae987f45d87a25df82be6d1e994004f05ad2c4cd87225a8b4a51b30f3b6a",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner1__background__s52/result.json",
+      "bytes": 2234,
+      "sha256": "f5e0aca4dcf519b77a741d000b18853663ce3400e10006781c32c68b5870fea8",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner1__background__s62/result.json",
+      "bytes": 2234,
+      "sha256": "6f3d58770670578737eb8e07f95611d6593b5c975bc469040933d531cf246faf",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner2__background__s42/result.json",
+      "bytes": 2231,
+      "sha256": "06d95b7c0a2c78eb19a463aef4b053382325724dc0a23344ae14440f1df07f3a",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner2__background__s52/result.json",
+      "bytes": 2233,
+      "sha256": "6a7ffc0cd2f97623264e201c42508ef8843b425b319351378c333c10745ed2d0",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_inner2__background__s62/result.json",
+      "bytes": 2233,
+      "sha256": "ebb0a2a8a271ed9b8a8b130b708bb4ee6fbb4bce2bab66bf79f32328984ca44b",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_outer__background__s42/result.json",
+      "bytes": 2230,
+      "sha256": "6bb8b33626eb46ead31dc8818284d82affb20421ed2524caed9cd493658092aa",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_outer__background__s52/result.json",
+      "bytes": 2231,
+      "sha256": "4ef26edb11585c1c59ea3297a0d7f4903560a0cb88def635e9d79ee35f01a634",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_outer__background__s62/result.json",
+      "bytes": 2230,
+      "sha256": "d244e42e1b90d4467af1a3c1e967cd637f7769a4b0b718e448c7e46f2cfc297d",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f3_outer__reference__s42/result.json",
+      "bytes": 2225,
+      "sha256": "3730354f4b05941ea4c5cab3034f978c36f73c5f8c1e77bdd20cc2257a44a688",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner0__background__s42/result.json",
+      "bytes": 2232,
+      "sha256": "4e7191e22a1983f498f20668d9884ccc5caf414c58a42830375cc89cf51ef706",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner0__background__s52/result.json",
+      "bytes": 2233,
+      "sha256": "4f512936602b3071c96da84d8d6886ed4618f24a6907dea52f71a5c96c8e35dd",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner0__background__s62/result.json",
+      "bytes": 2227,
+      "sha256": "6f8ba3814bdb37d079aa322da90c8fe814b6a496a0f9f10d4fc308a9e707c801",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner1__background__s42/result.json",
+      "bytes": 2232,
+      "sha256": "8444c1af5993c710ee4363be0feb41000daef859924b956e5d484e1d32ca3537",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner1__background__s52/result.json",
+      "bytes": 2236,
+      "sha256": "0b296c0b724c8a342015b33e9e6acbe9eeeb00a9a8696111461dc9af71e5c1e1",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner1__background__s62/result.json",
+      "bytes": 2233,
+      "sha256": "d301d2027e1f4a76e192ac55da0f5ac7f0fd69b209368209aafc493d9f4c8c3c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner2__background__s42/result.json",
+      "bytes": 2233,
+      "sha256": "3db2833651c8f861a95e8261fecf3d03ba16a776ae2b8d7f989aefa966cb9d8c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner2__background__s52/result.json",
+      "bytes": 2234,
+      "sha256": "1344608e8639736e8ef7cd198ee04ff41d72b461ccafc40a1209622c7057c339",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_inner2__background__s62/result.json",
+      "bytes": 2228,
+      "sha256": "1c2c36988a8cdb3a25ff344a22dffe74f5b7c4f47a01c4ee375b43093d854e15",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_outer__background__s42/result.json",
+      "bytes": 2231,
+      "sha256": "f46ab460ed89632996241ddcb3944c538586ae59afb2d99458ec2c2b259a5f16",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_outer__background__s52/result.json",
+      "bytes": 2232,
+      "sha256": "7d27dcfda16c1a8e2a4bc3b7a306b31e0652df6d0e14d81a68fe85ffdaacbebe",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_outer__background__s62/result.json",
+      "bytes": 2235,
+      "sha256": "d9b4d7ebfa06a3d882450141cdd4835266b6d3980b39332469f76e53d065e12a",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/runs_v8/V8T__main__f4_outer__reference__s42/result.json",
+      "bytes": 2228,
+      "sha256": "25a97b4377c8f7192ed553f868a485d714b7b5507789142dead4af8ebdb7fc70",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "fitting_log"
+    },
+    {
+      "path": "gpu8/src/gpu8/external_labels.py",
+      "bytes": 17981,
+      "sha256": "0e75e5c4ab8b504bc8134b5b27731ee011eb34dad89f6ffe29cf158216465f8c",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/src/gpu8/mapping.py",
+      "bytes": 12397,
+      "sha256": "25a021866a327beee1df847c5c53cbdb33aa1f711d3842740dc44fc198bafa04",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/src/gpu8/protocol.py",
+      "bytes": 13223,
+      "sha256": "0b15b1f7deb960d1a2155d1ada3b5efd6cb8e9b17c7ce2632111bb89a085e883",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/evaluate71.py",
+      "bytes": 19931,
+      "sha256": "ea360842f6d4e8eef315e58effe7a32cf223f9c67164e6e5325a0068683e1346",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/src/gpu8v71/register71.py",
+      "bytes": 10019,
+      "sha256": "839504c66a7d6359cfc57c28b757d3862d30dd87fe3ad8b5671af28cd211f70f",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/chain8.py",
+      "bytes": 23870,
+      "sha256": "f4f15d3850f0b77bc48cd54b932773c174422897086647c5dadff87100bb96bc",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/external8.py",
+      "bytes": 9140,
+      "sha256": "17b9e8f1ade340c7874422f0d6b4cd5bf45dd0422fa2642189bf0a86526cbcbf",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/feats8.py",
+      "bytes": 8869,
+      "sha256": "5c32e299ef998bdcd74115253df3936eacec1d24a4b2864d46c3a017b2c5c8fa",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/models8.py",
+      "bytes": 17993,
+      "sha256": "df96740597a2c82db386532fe567dd5df3211407977d0dd5bccbcb967afd08be",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/roles8.py",
+      "bytes": 8767,
+      "sha256": "40c34d4f4896dd52b6c1988a8f609329bcc3621c1ca466e0d4fb9702c13b6d6a",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/src/gpu8v8final/teacher8.py",
+      "bytes": 12302,
+      "sha256": "d1d9ec81a161947d381c9965af025f9cf9d1f5a77968b0b838bbf20a69f9d904",
+      "catalogues": [
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "code"
+    },
+    {
+      "path": "gpu8/tables/build_report.json",
+      "bytes": 3254,
+      "sha256": "f22ac9db76cd2a788138293a8552592a7207c9381bba9c0ef2de80ab7db4991d",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "preprocessing_audit"
+    },
+    {
+      "path": "gpu8/tables/diseases.parquet",
+      "bytes": 3008996,
+      "sha256": "0d87ad92f2a2de9bc711378fd20bece071c9f8b908231b8e641b5a5d2391ce8d",
+      "catalogues": [
+        "input_manifest",
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables/do_terms.parquet",
+      "bytes": 1592965,
+      "sha256": "08e8803ed24dd18e73de441e0ff4f5e632a7d4398832c37b1028198544964b13",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables/evidence.parquet",
+      "bytes": 796719,
+      "sha256": "871941c470433f85c15a07e2f80514fbcec910116fee1c7bab6d459c7ede0c02",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables/external_labels.parquet",
+      "bytes": 798114,
+      "sha256": "f445966706b1a4eadd4b3221afec4c466eb1217a51f85a8962c7ab5d3f77cf69",
+      "catalogues": [
+        "input_manifest",
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables/gene_alias_ambiguity.csv",
+      "bytes": 100838,
+      "sha256": "e9020d93a4675b2f0b90389e58b18e9ac149985287d54730ad00800ba0b4b5ab",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "preprocessing_audit"
+    },
+    {
+      "path": "gpu8/tables/genes.parquet",
+      "bytes": 726456,
+      "sha256": "871f20a9a5ebb3fc19ed7e83738a4f468e6f0b19c366338b9ec12f2494b90436",
+      "catalogues": [
+        "input_manifest",
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables/hierarchy.parquet",
+      "bytes": 166619,
+      "sha256": "869a2727d04d679de97507c2ae8f25badfcea34087b9844d1f0330336c9237c3",
+      "catalogues": [
+        "input_manifest",
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables/hpo_terms.parquet",
+      "bytes": 2038479,
+      "sha256": "7b5543e07c1342f00ecbbea70563465607ad9f74e6b5147d93246e3ba6926dc0",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables/phenotypes.parquet",
+      "bytes": 841623,
+      "sha256": "f3679b16089ef5d1d74745babcc2e5a5b88b1500c760469c35243d315cbad2e0",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables/ppi.parquet",
+      "bytes": 1506103,
+      "sha256": "038a5e96ac0d7c19dd59e7544f5daeccdc3478347b5a812ee760fc027db41e23",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables/relations.parquet",
+      "bytes": 449710,
+      "sha256": "a1ac99822cc2f1458cb55538d4a633afcec59332958b08117dfd8e2d119c801c",
+      "catalogues": [
+        "input_manifest",
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_historical/diseases.parquet",
+      "bytes": 2715003,
+      "sha256": "8e7a767ac57dc0bbf85c6569cc38673726b578e099b9c413c7dfd2e7651b5582",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_historical/evidence.parquet",
+      "bytes": 787787,
+      "sha256": "a8e961690f458db3990dfa2f0d8e9ce7a28e6b7b26eb5f00d20cfdd4e3fa15ce",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_historical/genes.parquet",
+      "bytes": 726456,
+      "sha256": "871f20a9a5ebb3fc19ed7e83738a4f468e6f0b19c366338b9ec12f2494b90436",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_historical/hierarchy.parquet",
+      "bytes": 162605,
+      "sha256": "e4d5de836b8ccba29ad9b9e8cca02c673ec04afc77c9eba31df546bd1ac18822",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_historical/historical_build_report.json",
+      "bytes": 981,
+      "sha256": "d829a50d63a578959da2ab5ad669bfa8eb57f37169c2d728ec97eb39020c571d",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "preprocessing_audit"
+    },
+    {
+      "path": "gpu8/tables_historical/phenotypes.parquet",
+      "bytes": 750571,
+      "sha256": "e98898053633b777430b3502d638dcc6c204c90f25de8a655668ad86b4dbae7c",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_historical/ppi.parquet",
+      "bytes": 1506103,
+      "sha256": "038a5e96ac0d7c19dd59e7544f5daeccdc3478347b5a812ee760fc027db41e23",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_historical/relations.parquet",
+      "bytes": 406053,
+      "sha256": "52ae5bc4776f456094d8887acbdacdb85256399ec4b77e53729eb57c63c56c0b",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/disease_hpo_class.parquet",
+      "bytes": 125424,
+      "sha256": "5a49289c277d77ebf81aa924760f16adfa67eecdcf17089f666e9b3013f3e432",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/disease_semantics.npz",
+      "bytes": 7608629,
+      "sha256": "161b8e272e7c029e237995404a299352df56d63f4602ba1a6f77f504b31d8624",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/disease_text.parquet",
+      "bytes": 10034334,
+      "sha256": "303b310b1900879749a8702c9a9cb46d900954134cc3012bc0fdb9aeae712aa9",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/gene_features_current_names.json",
+      "bytes": 1383,
+      "sha256": "3e8a00fa9740020a6b312c6d5c11782b56d07a6216b99d95b788d0de486954bd",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/gene_features_hist2023_names.json",
+      "bytes": 1383,
+      "sha256": "3e8a00fa9740020a6b312c6d5c11782b56d07a6216b99d95b788d0de486954bd",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/gene_function_bridge_current.npz",
+      "bytes": 460301,
+      "sha256": "5adc560624542df1d96d8bd789fd3d3f8616b27af2e6174bf1bb888e7045a5c3",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/gene_function_bridge_hist2023.npz",
+      "bytes": 514527,
+      "sha256": "eb084e35c2ebd0e8525a0a7a3c0b1acc1e51d7068e860b3c17fee101ae11f1fa",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/go_reference_pmids_current.parquet",
+      "bytes": 1095260,
+      "sha256": "0879b96c1b566347f80e10697538464b6ea587c71c5bd9818b6d2ddb11009ee7",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/go_reference_pmids_hist2023.parquet",
+      "bytes": 916132,
+      "sha256": "a98015ba46baee5758ce572b54684644341a175757f257410d403b9738d98aec",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/hpoa_id_map.parquet",
+      "bytes": 129346,
+      "sha256": "496129494c6ed38477ea15631e9851ac27ea2e30cd21c01d7a2812655b18b648",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/phenotypes_v6.parquet",
+      "bytes": 835373,
+      "sha256": "2c3729657220815f9393ffedcecfb65cdedb2275b834f67b2bcdd6e4fb3e1a8b",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v6/phenotypes_v6_all_rows.parquet",
+      "bytes": 1011936,
+      "sha256": "8994cf461c35f1d48affaa3a5a2051cca67573022522c4721af806b299d88965",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v71/anchor_incidence.npz",
+      "bytes": 794259,
+      "sha256": "db7f952dac49574a92ddfc604fb709a28fd7793e153b4ccf6cef3b57e9dc9d3c",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v71/anchor_terms.parquet",
+      "bytes": 89527,
+      "sha256": "80789071488a6206bf6584d77ac77ea861aa89c55586cc1a77226073baafd073",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v71/confirmation_set_v71.parquet",
+      "bytes": 30479,
+      "sha256": "05d5dc8588ace63c8a057433b3a8e2a32c6115f27be539bf74caccb20a491a9d",
+      "catalogues": [
+        "input_manifest",
+        "oct18_saved_analysis_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v71/d_tissue_audit.parquet",
+      "bytes": 175159,
+      "sha256": "8fc87b368ad646379222c8db7b8a0cb868975a19060557b336570824e07510d4",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v71/disease_templates_v71.parquet",
+      "bytes": 2827373,
+      "sha256": "52bf0a48ca0da2ea5158a64a12344af939140769c7d4e03eff23d29f44f37ee7",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v71/go_term_texts_v71.parquet",
+      "bytes": 5562484,
+      "sha256": "05af8b528359467a26d13266705d56fd4db3c34d8a9ef9c441d93d7142c22195",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v71/hpo_term_texts_v71.parquet",
+      "bytes": 1514791,
+      "sha256": "26cba3bd48bffc1a0c860614d1eb962e604853703b4779cd0cc6338f22a66b64",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v71/sequences_v71.parquet",
+      "bytes": 12780094,
+      "sha256": "af14ff73c53e992d3ffc6d45bd666ab789f669748854bf11daabb03b7411c8e0",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v71/tissue_alias_table_v71.csv",
+      "bytes": 3859,
+      "sha256": "e6952293510a03b165e202e923a6035406f18bfd97d0a776e329ae9b54c4c2f8",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v71/tissue_order_v71.json",
+      "bytes": 711,
+      "sha256": "801ba5c0b221663f8216be9692a2a983193c8be08f1614d1b95d69148c190fd7",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v8/disease_segment_summary_l1.parquet",
+      "bytes": 1029340,
+      "sha256": "d529b0aa3a6eb11f79666d9e6bebcb4337c34d35df6848041db6459d270f4cce",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v8/disease_segment_summary_l2.parquet",
+      "bytes": 1032702,
+      "sha256": "42f2419f1207e404d4f0aa4a6f5b77165d61457ddcd69435489ecfa52cae20e6",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v8/disease_segments_l1.parquet",
+      "bytes": 2957611,
+      "sha256": "1dd7daf4569ee7d998fafc6f36abf441e7a957159fcbe3ee5e3f5be2d9ca7e83",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v8/disease_segments_l2.parquet",
+      "bytes": 2955266,
+      "sha256": "b196fa7a10a05acc36e6b46a3a6b4b1783cfebd4b2886e55f06beb9691beecfb",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v8/evidence_block_pmids_v8.json",
+      "bytes": 20601,
+      "sha256": "1de05f4966d24b6341ce8e6fc4e21abfa5d70585e956250d371e822e4c0ac1b1",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v8/evidence_block_relations_v8.parquet",
+      "bytes": 47946,
+      "sha256": "db1d66bfd93dfe3586c77b12e3149d223412c3097d065cffe52666a6b8d8c04f",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v8/go_masks_v8.parquet",
+      "bytes": 88160,
+      "sha256": "ef0b0f26fd365cf03631f64e851e952e6353a6a5b957fc54081a2ae5bdb14898",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v8/go_records_current_v8.parquet",
+      "bytes": 22806543,
+      "sha256": "1d7c2238775ef1f9fdbf57e48345142e60bea337e4ea0a5a0e16626bdfbdb24b",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v8/go_term_texts_2023.parquet",
+      "bytes": 3034989,
+      "sha256": "20a7bdf3d3784bb392152dad4071812464c2e92f2b377af12aadd17dbc8b1813",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "gpu8/tables_v8/hpo_term_ids_2023.parquet",
+      "bytes": 116773,
+      "sha256": "1431b5d12e2055b0eb75b1122533b0eb094e9feffa300be692d9f752d18e84d3",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "processed_input"
+    },
+    {
+      "path": "ontology/doid.obo",
+      "bytes": 7112256,
+      "sha256": "296e09427e31da16e6ccaf6526b509c8b4a5fdf43f5e9b4a7024069d1b88c52f",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "phenotype/genes_to_phenotype.txt",
+      "bytes": 20821704,
+      "sha256": "507a17bff9c49e6329fbd88b1f91734fa7e9fdea5c06304044c0892eb6ab248c",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "phenotype/hp.obo",
+      "bytes": 10703106,
+      "sha256": "8d6c23798667d4506767ce643fc3c028f0d1c85e7e1d8810e491181a345d53cd",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "phenotype/phenotype.hpoa",
+      "bytes": 35240241,
+      "sha256": "84e4eccac44d2e1587db11446ec0f104e1508239506f642afa72e44bd9610c8f",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "ppi/9606.protein.aliases.v12.0.txt.gz",
+      "bytes": 19777800,
+      "sha256": "b65f730b993ed0c1bd72edf4565d3d425db42861101b29699704810e8f125680",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "ppi/9606.protein.info.v12.0.txt.gz",
+      "bytes": 1970090,
+      "sha256": "144de4b0d98c6a7dfde6ddc2591cf88657f27b989eadff4f501450c3ed1f0f1c",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    },
+    {
+      "path": "ppi/9606.protein.physical.links.v12.0.txt.gz",
+      "bytes": 8954065,
+      "sha256": "1ca87209a93cf7685e9c2997fbcfbfc69fedc6a803ccc1df917318a651df0823",
+      "catalogues": [
+        "input_manifest"
+      ],
+      "kind": "source_input"
+    }
+  ]
+}

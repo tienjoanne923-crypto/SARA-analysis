@@ -1,0 +1,382 @@
+{
+  "generated_utc": "2026-09-24T06:14:20Z",
+  "status": "external re-analysis of the V7.1 confirmation set",
+  "fields": {
+    "pairs": 2441,
+    "diseases": 618,
+    "by_source": {
+      "ClinVar": 1980,
+      "GenCC": 461
+    },
+    "seen_in_training_disease": 0,
+    "same_relation_seen": 104,
+    "shared_original_evidence": {
+      "unknown": 2029,
+      "no": 282,
+      "yes": 130
+    }
+  },
+  "table": [
+    {
+      "method": "B",
+      "subset": "ClinVar",
+      "n_diseases": 571,
+      "n_pairs": 1980,
+      "recall10": 0.13734118241358503,
+      "hit10": 0.23584354932866314,
+      "recall50": 0.23176929193621598,
+      "in_list": 0.5100610879866196
+    },
+    {
+      "method": "B",
+      "subset": "GenCC",
+      "n_diseases": 163,
+      "n_pairs": 461,
+      "recall10": 0.08918133809714093,
+      "hit10": 0.12678936605316973,
+      "recall50": 0.19109164114044688,
+      "in_list": 0.49249511127601864
+    },
+    {
+      "method": "B",
+      "subset": "independent_evidence",
+      "n_diseases": 109,
+      "n_pairs": 282,
+      "recall10": 0.07471183250999765,
+      "hit10": 0.09480122324159022,
+      "recall50": 0.151747022114852,
+      "in_list": 0.42538022677352183
+    },
+    {
+      "method": "B",
+      "subset": "no_neighbour_relation",
+      "n_diseases": 603,
+      "n_pairs": 2224,
+      "recall10": 0.11427878590566365,
+      "hit10": 0.20453289110005526,
+      "recall50": 0.20427985816834812,
+      "in_list": 0.48282831529033177
+    },
+    {
+      "method": "B",
+      "subset": "union",
+      "n_diseases": 618,
+      "n_pairs": 2324,
+      "recall10": 0.13110231186210536,
+      "hit10": 0.2297734627831715,
+      "recall50": 0.2274509073049235,
+      "in_list": 0.5034167365918893
+    },
+    {
+      "method": "F7_v6",
+      "subset": "ClinVar",
+      "n_diseases": 571,
+      "n_pairs": 1980,
+      "recall10": 0.13267562726186247,
+      "hit10": 0.2329246935201401,
+      "recall50": 0.25874184976387327,
+      "in_list": 0.41965672499723605
+    },
+    {
+      "method": "F7_v6",
+      "subset": "GenCC",
+      "n_diseases": 163,
+      "n_pairs": 461,
+      "recall10": 0.11639106315962672,
+      "hit10": 0.15950920245398773,
+      "recall50": 0.18196828333338855,
+      "in_list": 0.3693611966542497
+    },
+    {
+      "method": "F7_v6",
+      "subset": "independent_evidence",
+      "n_diseases": 109,
+      "n_pairs": 282,
+      "recall10": 0.0874617737003058,
+      "hit10": 0.11009174311926606,
+      "recall50": 0.1515559835288893,
+      "in_list": 0.30170898294880116
+    },
+    {
+      "method": "F7_v6",
+      "subset": "no_neighbour_relation",
+      "n_diseases": 603,
+      "n_pairs": 2224,
+      "recall10": 0.11136066872295917,
+      "hit10": 0.1956882255389718,
+      "recall50": 0.23027773920459832,
+      "in_list": 0.3784111273726659
+    },
+    {
+      "method": "F7_v6",
+      "subset": "union",
+      "n_diseases": 618,
+      "n_pairs": 2324,
+      "recall10": 0.13032661340898702,
+      "hit10": 0.22815533980582525,
+      "recall50": 0.24756121571884193,
+      "in_list": 0.4039522400340761
+    },
+    {
+      "method": "channel_lgb_v6",
+      "subset": "ClinVar",
+      "n_diseases": 571,
+      "n_pairs": 1980,
+      "recall10": 0.14074220583476832,
+      "hit10": 0.2434325744308231,
+      "recall50": 0.24648025032882906,
+      "in_list": 0.41965672499723605
+    },
+    {
+      "method": "channel_lgb_v6",
+      "subset": "GenCC",
+      "n_diseases": 163,
+      "n_pairs": 461,
+      "recall10": 0.09487361806485987,
+      "hit10": 0.13496932515337423,
+      "recall50": 0.21431265674034972,
+      "in_list": 0.3693611966542497
+    },
+    {
+      "method": "channel_lgb_v6",
+      "subset": "independent_evidence",
+      "n_diseases": 109,
+      "n_pairs": 282,
+      "recall10": 0.0821453775582216,
+      "hit10": 0.10703363914373089,
+      "recall50": 0.17638884308694822,
+      "in_list": 0.30170898294880116
+    },
+    {
+      "method": "channel_lgb_v6",
+      "subset": "no_neighbour_relation",
+      "n_diseases": 603,
+      "n_pairs": 2224,
+      "recall10": 0.11540520360860626,
+      "hit10": 0.2084024322830293,
+      "recall50": 0.2201122584391955,
+      "in_list": 0.3784111273726659
+    },
+    {
+      "method": "channel_lgb_v6",
+      "subset": "union",
+      "n_diseases": 618,
+      "n_pairs": 2324,
+      "recall10": 0.13353569314820013,
+      "hit10": 0.23678532901833874,
+      "recall50": 0.2427894289657733,
+      "in_list": 0.4039522400340761
+    },
+    {
+      "method": "deployed",
+      "subset": "ClinVar",
+      "n_diseases": 571,
+      "n_pairs": 1980,
+      "recall10": 0.16404968897371147,
+      "hit10": 0.2679509632224168,
+      "recall50": 0.31945890141829775,
+      "in_list": 0.5100610879866196
+    },
+    {
+      "method": "deployed",
+      "subset": "GenCC",
+      "n_diseases": 163,
+      "n_pairs": 461,
+      "recall10": 0.1523932648535991,
+      "hit10": 0.2085889570552147,
+      "recall50": 0.27981576844925055,
+      "in_list": 0.49249511127601864
+    },
+    {
+      "method": "deployed",
+      "subset": "independent_evidence",
+      "n_diseases": 109,
+      "n_pairs": 282,
+      "recall10": 0.11472202618991609,
+      "hit10": 0.14678899082568808,
+      "recall50": 0.2469682360662383,
+      "in_list": 0.42538022677352183
+    },
+    {
+      "method": "deployed",
+      "subset": "no_neighbour_relation",
+      "n_diseases": 603,
+      "n_pairs": 2224,
+      "recall10": 0.15058528281202754,
+      "hit10": 0.2476506357103372,
+      "recall50": 0.2931096659550255,
+      "in_list": 0.48282831529033177
+    },
+    {
+      "method": "deployed",
+      "subset": "union",
+      "n_diseases": 618,
+      "n_pairs": 2324,
+      "recall10": 0.16854848565988642,
+      "hit10": 0.27346278317152106,
+      "recall50": 0.3155296628963101,
+      "in_list": 0.5034167365918893
+    },
+    {
+      "method": "v71_direct_strict",
+      "subset": "ClinVar",
+      "n_diseases": 571,
+      "n_pairs": 1980,
+      "recall10": 0.1705162082004882,
+      "hit10": 0.276707530647986,
+      "recall50": 0.317001289003109,
+      "in_list": 0.5100610879866196
+    },
+    {
+      "method": "v71_direct_strict",
+      "subset": "GenCC",
+      "n_diseases": 163,
+      "n_pairs": 461,
+      "recall10": 0.14858731166114283,
+      "hit10": 0.1983640081799591,
+      "recall50": 0.2949212695500975,
+      "in_list": 0.49249511127601864
+    },
+    {
+      "method": "v71_direct_strict",
+      "subset": "independent_evidence",
+      "n_diseases": 109,
+      "n_pairs": 282,
+      "recall10": 0.10515172900494002,
+      "hit10": 0.1345565749235474,
+      "recall50": 0.26286085516986657,
+      "in_list": 0.42538022677352183
+    },
+    {
+      "method": "v71_direct_strict",
+      "subset": "no_neighbour_relation",
+      "n_diseases": 603,
+      "n_pairs": 2224,
+      "recall10": 0.1516663420802576,
+      "hit10": 0.2482034273079049,
+      "recall50": 0.291062191203963,
+      "in_list": 0.48282831529033177
+    },
+    {
+      "method": "v71_direct_strict",
+      "subset": "union",
+      "n_diseases": 618,
+      "n_pairs": 2324,
+      "recall10": 0.17063048638858072,
+      "hit10": 0.2766990291262136,
+      "recall50": 0.31355355689454484,
+      "in_list": 0.5034167365918893
+    }
+  ],
+  "contrasts": [
+    {
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "subset": "union",
+      "n": 618,
+      "delta": 0.03501279251168629,
+      "ci_low": 0.015952101871711373,
+      "ci_high": 0.054059362892692434
+    },
+    {
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "subset": "GenCC",
+      "n": 163,
+      "delta": 0.05751964678873923,
+      "ci_low": 0.027529573050358993,
+      "ci_high": 0.08896476953352882
+    },
+    {
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "subset": "ClinVar",
+      "n": 571,
+      "delta": 0.023307483138943135,
+      "ci_low": 0.003008451260572412,
+      "ci_high": 0.042437585545060066
+    },
+    {
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "subset": "independent_evidence",
+      "n": 109,
+      "delta": 0.03257664863169451,
+      "ci_low": -0.00013690580203313304,
+      "ci_high": 0.07180751557632398
+    },
+    {
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "subset": "union",
+      "n": 618,
+      "delta": -0.0020820007286942973,
+      "ci_low": -0.012859762110698138,
+      "ci_high": 0.011223804816498005
+    },
+    {
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "subset": "GenCC",
+      "n": 163,
+      "delta": 0.003805953192456262,
+      "ci_low": -0.017637796181274444,
+      "ci_high": 0.026296555901696085
+    },
+    {
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "subset": "ClinVar",
+      "n": 571,
+      "delta": -0.006466519226776734,
+      "ci_low": -0.01621685345366902,
+      "ci_high": 0.006150978642212106
+    },
+    {
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "subset": "independent_evidence",
+      "n": 109,
+      "delta": 0.009570297184976083,
+      "ci_low": -0.013860466308382974,
+      "ci_high": 0.038154838988172325
+    },
+    {
+      "a": "deployed",
+      "b": "B",
+      "subset": "union",
+      "n": 618,
+      "delta": 0.03744617379778106,
+      "ci_low": 0.02035583223146472,
+      "ci_high": 0.05479175009569051
+    },
+    {
+      "a": "deployed",
+      "b": "B",
+      "subset": "GenCC",
+      "n": 163,
+      "delta": 0.06321192675645818,
+      "ci_low": 0.02947735118268868,
+      "ci_high": 0.09829368500273675
+    },
+    {
+      "a": "deployed",
+      "b": "B",
+      "subset": "ClinVar",
+      "n": 571,
+      "delta": 0.026708506560126438,
+      "ci_low": 0.00883009653808521,
+      "ci_high": 0.04489306419639673
+    },
+    {
+      "a": "deployed",
+      "b": "B",
+      "subset": "independent_evidence",
+      "n": 109,
+      "delta": 0.040010193679918454,
+      "ci_low": 0.0017673444976076566,
+      "ci_high": 0.08547008547008547
+    }
+  ],
+  "new_source": "unobtainable this round (declared at registration)"
+}

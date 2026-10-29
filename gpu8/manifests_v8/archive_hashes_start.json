@@ -1,0 +1,141 @@
+{
+  "generated_utc": "2026-09-24T03:33:29Z",
+  "tag": "start",
+  "hashes": {
+    "results": {
+      "exists": true,
+      "n_files": 66,
+      "digest": "aaf6d59894253d0502b98839f194cca3780906e0746515907719f34d6f7053f5"
+    },
+    "runs": {
+      "exists": true,
+      "n_files": 693,
+      "digest": "daa0f19810f77c2a105a043359ca83ce1d96f8a7379a4ab540ced90d0396938e"
+    },
+    "manifests": {
+      "exists": true,
+      "n_files": 19,
+      "digest": "be2f21009367d0ce266e796c7fdd407df77219db1010654818d1f7ecbbcb3ba2"
+    },
+    "caches": {
+      "exists": true,
+      "n_files": 240,
+      "digest": "cddb41094698610d3201c5df5f6a669ee69e5a56330760d07674b7831598216b"
+    },
+    "tables": {
+      "exists": true,
+      "n_files": 12,
+      "digest": "119d963e7d07cc2b2b8f6590378135ae31cf0a3e164d6c3d2ecb4fb9e5b75fdd"
+    },
+    "reports": {
+      "exists": true,
+      "n_files": 19,
+      "digest": "621d9d9ada75001351f7139339c8a377d873941bc23ad255d128d1633b196602"
+    },
+    "configs": {
+      "exists": true,
+      "n_files": 2,
+      "digest": "5a9fdd6893809bb750fd6d601085d8890422930ab700f663cf5431854496aac6"
+    },
+    "results_v6": {
+      "exists": true,
+      "n_files": 98,
+      "digest": "32d26a291af2d7413fce70d903b5eca028aa8683cedb94d03edfd0b1a01b09ae"
+    },
+    "runs_v6": {
+      "exists": true,
+      "n_files": 334,
+      "digest": "13846d55f3249ead1e3f7d1562bf5cced90f421ed317b518fbcda4760e0956c3"
+    },
+    "manifests_v6": {
+      "exists": true,
+      "n_files": 10,
+      "digest": "6d605cda355b0e83ace50dbac22df7af28d50e5503b1486cba30db875b60ccf3"
+    },
+    "caches_v6": {
+      "exists": true,
+      "n_files": 103,
+      "digest": "77c3beb570daa58d50d06948845a31af13efd35b0d88e9ff4cc282c35f64ba2c"
+    },
+    "tables_v6": {
+      "exists": true,
+      "n_files": 14,
+      "digest": "24844cf1cc53f9485439be50bb4bcf049c309714a8730b96e7f8295576ae1c4d"
+    },
+    "reports_v6": {
+      "exists": true,
+      "n_files": 9,
+      "digest": "9a0e2ff91b3aec1a566029e88e7f6b02547299d8803ead998f5d164f867e80b8"
+    },
+    "results_v71": {
+      "exists": true,
+      "n_files": 80,
+      "digest": "02b82e5d6593e1246b7388cb6eb9c233ebae95b2d44b51eff7f52f7d113f7feb"
+    },
+    "runs_v71": {
+      "exists": true,
+      "n_files": 1119,
+      "digest": "22f6624a9b257cd67d95b760a9c2e6873c9fc6e01fcda51dd5dac64a8d9b17dd"
+    },
+    "manifests_v71": {
+      "exists": true,
+      "n_files": 11,
+      "digest": "9df2551981c4d9b42786ccdf7faad896f4c530894d83d12f2eeb5bb1d4cf1eba"
+    },
+    "caches_v71": {
+      "exists": true,
+      "n_files": 217,
+      "digest": "472d74c8e7330304c52cd7db5515561b3b10875424f65c24251d10021cca938d"
+    },
+    "tables_v71": {
+      "exists": true,
+      "n_files": 25,
+      "digest": "186b30d05abb05cd4995f1747cf5677e1c24963c893f570599c4ddb9d7570588"
+    },
+    "reports_v71": {
+      "exists": true,
+      "n_files": 12,
+      "digest": "b57a0b2b4ae4ffa25bfbb02c1a2711a6f285fa8753360e1c87f872c9bec1b056"
+    },
+    "src/gpu8": {
+      "exists": true,
+      "n_files": 42,
+      "digest": "ac666295f7048aa4b89fa07ae1b1834de516b7abd90cb18a4bb7c14f46e83eb9"
+    },
+    "src/gpu8v6": {
+      "exists": true,
+      "n_files": 50,
+      "digest": "23571aa299df909b29dc53b73037ef7e2b7a7fb82934b96ffbee461992b87615"
+    },
+    "src/gpu8v71": {
+      "exists": true,
+      "n_files": 37,
+      "digest": "51f180bfd99583da0135e2ca74a76b0866ba3fd16f0c05a6120a1623d9c4f9c0"
+    },
+    ".venv/Lib/site-packages": {
+      "exists": true,
+      "n_files": 25756,
+      "digest": "6ccd8187b8525794a95c8872b29b78596eb28ed67b2e787106dff5a133cb49ad"
+    },
+    "ROOT/code": {
+      "exists": true,
+      "n_files": 100,
+      "digest": "968df12aaf92294b47853a7d377a615b47c09bb17d333e15b17a50a8e8747868"
+    },
+    "ROOT/results": {
+      "exists": true,
+      "n_files": 2655,
+      "digest": "776c43ef7440ec573f175bf9b7a837da41db70fd7119ad0ed926f394aabbd9e1"
+    },
+    "ROOT/manuscript_v6": {
+      "exists": true,
+      "n_files": 3,
+      "digest": "deadba03c31d8b896380c939c4008f2aeacd7752ab44164e56ca5bd918499558"
+    },
+    "ROOT/manuscript_v71": {
+      "exists": true,
+      "n_files": 17,
+      "digest": "9a0c23d19b477f78e559a29174f55ae2ba14a74bf178250ca5f25d6e84bfff65"
+    }
+  }
+}

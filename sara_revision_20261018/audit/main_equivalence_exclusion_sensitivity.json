@@ -1,0 +1,141 @@
+{
+  "status": "post hoc denominator sensitivity on existing saved predictions, no retraining; does not correct training-context overlap",
+  "excluded_test_ids": [
+    "MESH:C536106",
+    "MESH:C548016",
+    "MESH:D004646",
+    "MESH:D011656",
+    "OMIM:300495"
+  ],
+  "n_excluded_test_diseases": 5,
+  "n_excluded_test_positive_pairs": 27,
+  "max_abs_reproduction_error_rank_vs_archived_eval": 0.0,
+  "table": [
+    {
+      "analysis": "original",
+      "method": "B",
+      "n_diseases": 4238,
+      "n_pairs": 23442,
+      "n_families": 1260,
+      "recall10": 0.12055826429216222
+    },
+    {
+      "analysis": "original",
+      "method": "channel_lgb_v6",
+      "n_diseases": 4238,
+      "n_pairs": 23442,
+      "n_families": 1260,
+      "recall10": 0.12115565140336018
+    },
+    {
+      "analysis": "original",
+      "method": "deployed",
+      "n_diseases": 4238,
+      "n_pairs": 23442,
+      "n_families": 1260,
+      "recall10": 0.16629916788749433
+    },
+    {
+      "analysis": "original",
+      "method": "v71_direct_strict",
+      "n_diseases": 4238,
+      "n_pairs": 23442,
+      "n_families": 1260,
+      "recall10": 0.1678650325739288
+    },
+    {
+      "analysis": "exclude_cross_role_equivalence_groups",
+      "method": "B",
+      "n_diseases": 4233,
+      "n_pairs": 23415,
+      "n_families": 1257,
+      "recall10": 0.12066129397673442
+    },
+    {
+      "analysis": "exclude_cross_role_equivalence_groups",
+      "method": "channel_lgb_v6",
+      "n_diseases": 4233,
+      "n_pairs": 23415,
+      "n_families": 1257,
+      "recall10": 0.12125938671882207
+    },
+    {
+      "analysis": "exclude_cross_role_equivalence_groups",
+      "method": "deployed",
+      "n_diseases": 4233,
+      "n_pairs": 23415,
+      "n_families": 1257,
+      "recall10": 0.1664496643191015
+    },
+    {
+      "analysis": "exclude_cross_role_equivalence_groups",
+      "method": "v71_direct_strict",
+      "n_diseases": 4233,
+      "n_pairs": 23415,
+      "n_families": 1257,
+      "recall10": 0.1680042542046563
+    }
+  ],
+  "contrasts": [
+    {
+      "analysis": "original",
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "n_diseases": 4238,
+      "n_families": 1260,
+      "delta": 0.04514351648413413,
+      "ci_low": 0.02902405289600524,
+      "ci_high": 0.06111846051712785
+    },
+    {
+      "analysis": "original",
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "n_diseases": 4238,
+      "n_families": 1260,
+      "delta": -0.0015658646864344704,
+      "ci_low": -0.005598852312692154,
+      "ci_high": 0.0031075960303836524
+    },
+    {
+      "analysis": "original",
+      "a": "deployed",
+      "b": "B",
+      "n_diseases": 4238,
+      "n_families": 1260,
+      "delta": 0.04574090359533211,
+      "ci_low": 0.028773688328386563,
+      "ci_high": 0.06269347360821649
+    },
+    {
+      "analysis": "exclude_cross_role_equivalence_groups",
+      "a": "deployed",
+      "b": "channel_lgb_v6",
+      "n_diseases": 4233,
+      "n_families": 1257,
+      "delta": 0.0451902776002794,
+      "ci_low": 0.028387613472035254,
+      "ci_high": 0.06133789699623624
+    },
+    {
+      "analysis": "exclude_cross_role_equivalence_groups",
+      "a": "deployed",
+      "b": "v71_direct_strict",
+      "n_diseases": 4233,
+      "n_families": 1257,
+      "delta": -0.0015545898855548613,
+      "ci_low": -0.005506668340697111,
+      "ci_high": 0.003173846005549733
+    },
+    {
+      "analysis": "exclude_cross_role_equivalence_groups",
+      "a": "deployed",
+      "b": "B",
+      "n_diseases": 4233,
+      "n_families": 1257,
+      "delta": 0.045788370342367046,
+      "ci_low": 0.028226485287938644,
+      "ci_high": 0.06313884682594333
+    }
+  ]
+}

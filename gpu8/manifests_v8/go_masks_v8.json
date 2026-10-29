@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-09-24T03:48:33Z",
+  "eligible_genes": 18784,
+  "G_mask_dev": 1883,
+  "G_mask_test": 3757,
+  "hash_dev": "f8f944b003ae0c6cf0587313d87f5d1beee53debcb57f8d5b31be13b9ce44126",
+  "hash_test": "4ed7d0a3cc89d9fbfc89d2a3663ca1450e0327d6e9bb43830c40d0475f487f76",
+  "rule": "genes with production GO and sequence; strata = GO-term decile x physical PPI degree decile; stable hash order inside strata; first 10% dev, next 20% test",
+  "labels_read": false,
+  "protocol_id": "gpu8_v8final",
+  "written_utc": "2026-09-24T03:48:33Z",
+  "payload_hash": "cfaa78fdaf6562418821cc4d0294c00cdbbab53127dcfb15667d89324ac78aa7"
+}

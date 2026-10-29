@@ -1,0 +1,128 @@
+{
+  "grid": [
+    {
+      "rank": 64,
+      "lambda_A": 0.0,
+      "gate": "global",
+      "name": "r64_lam0.0_global",
+      "dev_recall10": 0.09314810645864467,
+      "dev_valid_share": 1.0,
+      "within_one_se_of_best": false
+    },
+    {
+      "rank": 64,
+      "lambda_A": 0.0,
+      "gate": "small",
+      "name": "r64_lam0.0_small",
+      "dev_recall10": 0.08524742828652215,
+      "dev_valid_share": 1.0,
+      "within_one_se_of_best": false
+    },
+    {
+      "rank": 64,
+      "lambda_A": 0.2,
+      "gate": "global",
+      "name": "r64_lam0.2_global",
+      "dev_recall10": 0.09868787381358607,
+      "dev_valid_share": 1.0,
+      "within_one_se_of_best": false
+    },
+    {
+      "rank": 64,
+      "lambda_A": 0.2,
+      "gate": "small",
+      "name": "r64_lam0.2_small",
+      "dev_recall10": 0.09477097880849011,
+      "dev_valid_share": 1.0,
+      "within_one_se_of_best": false
+    },
+    {
+      "rank": 128,
+      "lambda_A": 0.0,
+      "gate": "global",
+      "name": "r128_lam0.0_global",
+      "dev_recall10": 0.09520522605339171,
+      "dev_valid_share": 1.0,
+      "within_one_se_of_best": false
+    },
+    {
+      "rank": 128,
+      "lambda_A": 0.0,
+      "gate": "small",
+      "name": "r128_lam0.0_small",
+      "dev_recall10": 0.10131823274592662,
+      "dev_valid_share": 1.0,
+      "within_one_se_of_best": false
+    },
+    {
+      "rank": 128,
+      "lambda_A": 0.2,
+      "gate": "global",
+      "name": "r128_lam0.2_global",
+      "dev_recall10": 0.10911446340557011,
+      "dev_valid_share": 1.0,
+      "within_one_se_of_best": true
+    },
+    {
+      "rank": 128,
+      "lambda_A": 0.2,
+      "gate": "small",
+      "name": "r128_lam0.2_small",
+      "dev_recall10": 0.09185957694640126,
+      "dev_valid_share": 1.0,
+      "within_one_se_of_best": false
+    }
+  ],
+  "best": "r128_lam0.2_global",
+  "selected": {
+    "rank": 128,
+    "lambda_A": 0.2,
+    "gate": "global"
+  },
+  "selected_run": "V71DEV__r128_lam0.2_global__f0__s42",
+  "rule": "one-SE (paired per-disease SE vs the best) then simplest: rank, gate, lambda_A",
+  "modalities": {
+    "S": true,
+    "F": true,
+    "E": true
+  },
+  "modality_check": {
+    "normal_dev_recall10": 0.10911446340557011,
+    "draws": 5,
+    "S": {
+      "perm_mean_drop": 0.01744083099294835,
+      "perm_se": 0.006711852857167336,
+      "perm_share_of_draws_lower": 1.0,
+      "shutdown_drop": 0.014464551509375102
+    },
+    "F": {
+      "perm_mean_drop": 0.10244671896981684,
+      "perm_se": 0.009982029419628988,
+      "perm_share_of_draws_lower": 1.0,
+      "shutdown_drop": 0.07100829709112022
+    },
+    "E": {
+      "perm_mean_drop": 0.019606975873359155,
+      "perm_se": 0.004739324045699634,
+      "perm_share_of_draws_lower": 1.0,
+      "shutdown_drop": 0.011753156433287582
+    },
+    "keep": {
+      "S": true,
+      "F": true,
+      "E": true
+    },
+    "rule": "keep a modality iff its paired permutation lowers dev Recall@10 by > 1 paired SE"
+  },
+  "admission": {
+    "dev_positives": 2941,
+    "in_v6_500": 1214,
+    "added_by_core_top500": 443,
+    "union_coverage_gain": 0.15062903774226455,
+    "admitted": true
+  },
+  "evaluated_on": "development families (864), full background, fit f0_outer, early stop F1",
+  "protocol_id": "gpu8_v71",
+  "written_utc": "2026-09-23T08:49:53Z",
+  "payload_hash": "54b0e1bed0858f27c824214bfc90c2e3446e324a6113a0b67fa910b0b3ec8353"
+}

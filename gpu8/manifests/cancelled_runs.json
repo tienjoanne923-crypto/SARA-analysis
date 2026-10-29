@@ -1,0 +1,17 @@
+{
+  "n_cancelled": 6,
+  "run_ids": [
+    "E02__b7_kdgene__family__ffamily__s42",
+    "E02__b7_kdgene__family__ffamily__s52",
+    "E02__b7_kdgene__family__ffamily__s62",
+    "E09__b7_kdgene__ppi2__fppi2__s42",
+    "E09__b7_kdgene__ppi2__fppi2__s52",
+    "E09__b7_kdgene__ppi2__fppi2__s62"
+  ],
+  "reason": "Cancelled before completion: each KDGene fit costs about 40 minutes of wall-clock on this machine, and the comparator is already the weakest method on the main five folds. KDGene was therefore run on the two alternative splits that carry scientific weight (temporal and external confirmation) and cancelled on the two completeness splits (family isolation and second interaction network). No conclusion about KDGene on those two splits is stated anywhere.",
+  "status_counts": {
+    "done": 159,
+    "cancelled": 6,
+    "planned": 3
+  }
+}

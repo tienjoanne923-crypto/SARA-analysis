@@ -1,0 +1,371 @@
+{
+  "inputs": {
+    "src\\gpu8\\mapping.py": {
+      "bytes": 12397,
+      "sha256": "25a021866a327beee1df847c5c53cbdb33aa1f711d3842740dc44fc198bafa04"
+    },
+    "src\\gpu8\\external_labels.py": {
+      "bytes": 17981,
+      "sha256": "0e75e5c4ab8b504bc8134b5b27731ee011eb34dad89f6ffe29cf158216465f8c"
+    },
+    "src\\gpu8\\protocol.py": {
+      "bytes": 13223,
+      "sha256": "0b15b1f7deb960d1a2155d1ada3b5efd6cb8e9b17c7ce2632111bb89a085e883"
+    },
+    "src\\gpu8v71\\register71.py": {
+      "bytes": 10019,
+      "sha256": "839504c66a7d6359cfc57c28b757d3862d30dd87fe3ad8b5671af28cd211f70f"
+    },
+    "src\\gpu8v8final\\external8.py": {
+      "bytes": 9140,
+      "sha256": "17b9e8f1ade340c7874422f0d6b4cd5bf45dd0422fa2642189bf0a86526cbcbf"
+    },
+    "tables_v71\\confirmation_set_v71.parquet": {
+      "bytes": 30479,
+      "sha256": "05d5dc8588ace63c8a057433b3a8e2a32c6115f27be539bf74caccb20a491a9d"
+    },
+    "results_v8\\external\\external618\\external_pairs_fields.parquet": {
+      "bytes": 33713,
+      "sha256": "6fc551e63f613087d048c6287d4bbf1ee49ee5bbb005d25c10da25a7dbf9f1c8"
+    }
+  },
+  "upstream_clinvar_saved_audit": {
+    "rows_seen": 9056310,
+    "kept_assembly": 4494430,
+    "kept_germline": 4179188,
+    "kept_pathogenic": 326333,
+    "kept_review": 299852,
+    "kept_single_gene": 298019,
+    "kept_mapped_gene": 297943,
+    "unique_variant_condition": 85697
+  },
+  "clinvar_retained_dedup_rows": 85697,
+  "clinvar_retained_stars": {
+    "2": 51040,
+    "1": 30151,
+    "3": 4469,
+    "4": 37
+  },
+  "clinvar_retained_types": {
+    "single nucleotide variant": 66354,
+    "Deletion": 11096,
+    "Duplication": 4238,
+    "Microsatellite": 2976,
+    "Indel": 582,
+    "Insertion": 396,
+    "copy number gain": 31,
+    "copy number loss": 20,
+    "Inversion": 4
+  },
+  "clinvar_retained_ge2_types": {
+    "single nucleotide variant": 45498,
+    "Deletion": 5448,
+    "Duplication": 2169,
+    "Microsatellite": 2119,
+    "Indel": 197,
+    "Insertion": 111,
+    "Inversion": 4
+  },
+  "clinvar_filter": {
+    "source": "variant_summary.txt.gz",
+    "assembly": "GRCh38",
+    "origin": "OriginSimple.lower().startswith(germline)",
+    "clinical": "contains pathogenic or likely pathogenic; exclude conflict,uncertain,benign",
+    "review": "initial >=1; high tier >=2 on retained gene-condition representative",
+    "dedup_key": [
+      "GeneID",
+      "normalised condition CURIE"
+    ],
+    "dedup_order": "first qualifying source row retained, not maximum-star aggregation",
+    "multi_gene": "missing GeneID or -1 rejected; other IDs outside project gene background rejected; no Type-specific CNV exclusion"
+  },
+  "truth_funnel": [
+    {
+      "source": "GenCC",
+      "stage": "mapped_external_source_rows",
+      "records": 22082,
+      "unique_pairs": 8479,
+      "diseases": 4559
+    },
+    {
+      "source": "GenCC",
+      "stage": "high_tier",
+      "records": 13251,
+      "unique_pairs": 4925,
+      "diseases": 3809
+    },
+    {
+      "source": "GenCC",
+      "stage": "five_fold_diseases",
+      "records": 9460,
+      "unique_pairs": 3410,
+      "diseases": 2624
+    },
+    {
+      "source": "GenCC",
+      "stage": "subtract_same_disease_CTD",
+      "records": 558,
+      "unique_pairs": 461,
+      "diseases": 163
+    },
+    {
+      "source": "GenCC",
+      "stage": "background_and_labelled_then_unique",
+      "records": 461,
+      "unique_pairs": 461,
+      "diseases": 163
+    },
+    {
+      "source": "GenCC",
+      "stage": "final_explicit_truth_subtraction",
+      "records": 461,
+      "unique_pairs": 461,
+      "diseases": 163
+    },
+    {
+      "source": "ClinVar",
+      "stage": "mapped_external_source_rows",
+      "records": 12160,
+      "unique_pairs": 12033,
+      "diseases": 4498
+    },
+    {
+      "source": "ClinVar",
+      "stage": "high_tier",
+      "records": 8199,
+      "unique_pairs": 8199,
+      "diseases": 3288
+    },
+    {
+      "source": "ClinVar",
+      "stage": "five_fold_diseases",
+      "records": 4505,
+      "unique_pairs": 4505,
+      "diseases": 2164
+    },
+    {
+      "source": "ClinVar",
+      "stage": "subtract_same_disease_CTD",
+      "records": 1980,
+      "unique_pairs": 1980,
+      "diseases": 571
+    },
+    {
+      "source": "ClinVar",
+      "stage": "background_and_labelled_then_unique",
+      "records": 1980,
+      "unique_pairs": 1980,
+      "diseases": 571
+    },
+    {
+      "source": "ClinVar",
+      "stage": "final_explicit_truth_subtraction",
+      "records": 1980,
+      "unique_pairs": 1980,
+      "diseases": 571
+    },
+    {
+      "source": "union",
+      "stage": "mapped_external_source_rows",
+      "records": 34242,
+      "unique_pairs": 15422,
+      "diseases": 5049
+    },
+    {
+      "source": "union",
+      "stage": "high_tier",
+      "records": 21450,
+      "unique_pairs": 10228,
+      "diseases": 4468
+    },
+    {
+      "source": "union",
+      "stage": "five_fold_diseases",
+      "records": 13965,
+      "unique_pairs": 5898,
+      "diseases": 2954
+    },
+    {
+      "source": "union",
+      "stage": "subtract_same_disease_CTD",
+      "records": 2538,
+      "unique_pairs": 2324,
+      "diseases": 618
+    },
+    {
+      "source": "union",
+      "stage": "background_and_labelled_then_unique",
+      "records": 2324,
+      "unique_pairs": 2324,
+      "diseases": 618
+    },
+    {
+      "source": "union",
+      "stage": "final_explicit_truth_subtraction",
+      "records": 2324,
+      "unique_pairs": 2324,
+      "diseases": 618
+    }
+  ],
+  "confirmation": {
+    "records": 2324,
+    "unique_pairs": 2324,
+    "diseases": 618
+  },
+  "scoring_source_records": {
+    "records": 2441,
+    "unique_pairs": 2324,
+    "diseases": 618
+  },
+  "confirmation_CTD_overlap": 0,
+  "unique_pair_difference_source_dedup": 117,
+  "family_assignment": {
+    "reconstructed_all_current_matches": true,
+    "n_diseases": 13321,
+    "sources": {
+      "own_tree": 13321
+    },
+    "all_have_own_tree": true,
+    "family_labels_cross_roles": 0,
+    "strict_equivalence_groups_cross_roles": 4,
+    "family_source": "CTD vocabulary tree_numbers; parents from CTD ParentIDs, not DO or Mondo is_a",
+    "equivalence_before_family": true,
+    "equivalence_members_collapsed_before_branch_choice": false,
+    "frozen_split_seed": 20260922,
+    "fold_counts": {
+      "F0": 848,
+      "F1": 848,
+      "F2": 848,
+      "F3": 847,
+      "F4": 847
+    }
+  },
+  "relation_seen_split": [
+    {
+      "source": "union_source_records",
+      "n": 2441,
+      "hierarchy_only": 104,
+      "family_only": 0,
+      "both": 0,
+      "neither": 2337
+    },
+    {
+      "source": "union_unique_pairs",
+      "n": 2324,
+      "hierarchy_only": 100,
+      "family_only": 0,
+      "both": 0,
+      "neither": 2224
+    },
+    {
+      "source": "GenCC",
+      "n": 461,
+      "hierarchy_only": 13,
+      "family_only": 0,
+      "both": 0,
+      "neither": 448
+    },
+    {
+      "source": "ClinVar",
+      "n": 1980,
+      "hierarchy_only": 91,
+      "family_only": 0,
+      "both": 0,
+      "neither": 1889
+    }
+  ],
+  "same_relation_reproduces_original": true,
+  "candidate_count_summary": [
+    {
+      "method": "B",
+      "n_runs": 1854,
+      "n_diseases": 618,
+      "before_min": 500,
+      "before_median": 500.0,
+      "before_mean": 500.0,
+      "before_max": 500,
+      "after_min": 377,
+      "after_p25": 497.0,
+      "after_median": 499.0,
+      "after_mean": 495.3872707659115,
+      "after_p75": 499.0,
+      "after_max": 500,
+      "removed_ctd_mean": 4.612729234088458,
+      "runs_under10": 0,
+      "runs_empty": 0
+    },
+    {
+      "method": "F7_v6",
+      "n_runs": 1854,
+      "n_diseases": 618,
+      "before_min": 500,
+      "before_median": 500.0,
+      "before_mean": 500.0,
+      "before_max": 500,
+      "after_min": 388,
+      "after_p25": 497.0,
+      "after_median": 499.0,
+      "after_mean": 495.80582524271847,
+      "after_p75": 500.0,
+      "after_max": 500,
+      "removed_ctd_mean": 4.194174757281553,
+      "runs_under10": 0,
+      "runs_empty": 0
+    },
+    {
+      "method": "channel_lgb_v6",
+      "n_runs": 1854,
+      "n_diseases": 618,
+      "before_min": 500,
+      "before_median": 500.0,
+      "before_mean": 500.0,
+      "before_max": 500,
+      "after_min": 388,
+      "after_p25": 497.0,
+      "after_median": 499.0,
+      "after_mean": 495.80582524271847,
+      "after_p75": 500.0,
+      "after_max": 500,
+      "removed_ctd_mean": 4.194174757281553,
+      "runs_under10": 0,
+      "runs_empty": 0
+    },
+    {
+      "method": "deployed",
+      "n_runs": 1854,
+      "n_diseases": 618,
+      "before_min": 500,
+      "before_median": 500.0,
+      "before_mean": 500.0,
+      "before_max": 500,
+      "after_min": 377,
+      "after_p25": 497.0,
+      "after_median": 499.0,
+      "after_mean": 495.3872707659115,
+      "after_p75": 499.0,
+      "after_max": 500,
+      "removed_ctd_mean": 4.612729234088458,
+      "runs_under10": 0,
+      "runs_empty": 0
+    },
+    {
+      "method": "v71_direct_strict",
+      "n_runs": 1854,
+      "n_diseases": 618,
+      "before_min": 500,
+      "before_median": 500.0,
+      "before_mean": 500.0,
+      "before_max": 500,
+      "after_min": 377,
+      "after_p25": 497.0,
+      "after_median": 499.0,
+      "after_mean": 495.3872707659115,
+      "after_p75": 499.0,
+      "after_max": 500,
+      "removed_ctd_mean": 4.612729234088458,
+      "runs_under10": 0,
+      "runs_empty": 0
+    }
+  ],
+  "diseases_without_external_new_truth": 0
+}

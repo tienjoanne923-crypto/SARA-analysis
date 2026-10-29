@@ -1,0 +1,388 @@
+{
+  "generated_utc": "2026-09-24T11:11:41Z",
+  "1_label_removal": {
+    "pass": true,
+    "v6_order_identical": true,
+    "v6_values_maxabs": 0.0,
+    "pools_identical": true,
+    "deployed_score_maxabs": 1.1920921005881269e-07,
+    "n_checked_diseases": 40,
+    "fold": 0
+  },
+  "2_filter_before_aggregation": {
+    "pass": true,
+    "f0_inner0": {
+      "equal": true,
+      "forbidden_rows": 112219
+    },
+    "f0_outer": {
+      "equal": true,
+      "forbidden_rows": 93993
+    }
+  },
+  "3_4_oof_lineage": {
+    "check3_pass": true,
+    "check4_pass": true,
+    "rows": [
+      {
+        "context": "f0_inner0",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f0_inner1",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f0_inner2",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f0_inner0",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f0_inner1",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f0_inner2",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f1_inner0",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f1_inner1",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f1_inner2",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f1_inner0",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f1_inner1",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f1_inner2",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f2_inner0",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f2_inner1",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f2_inner2",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f2_inner0",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f2_inner1",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f2_inner2",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f3_inner0",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f3_inner1",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f3_inner2",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f3_inner0",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f3_inner1",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f3_inner2",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f4_inner0",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f4_inner1",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f4_inner2",
+        "oof_in_teacher_reference": 0,
+        "checkpoint_overlaps_oof": 0,
+        "checkpoint_overlaps_train": 0
+      },
+      {
+        "context": "f4_inner0",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f4_inner1",
+        "B_minus_trained_on_own_block": false
+      },
+      {
+        "context": "f4_inner2",
+        "B_minus_trained_on_own_block": false
+      }
+    ]
+  },
+  "5_go_mask": {
+    "pass": true,
+    "dev": {
+      "function_mask_on": 0,
+      "anchor_rows_nonempty": 0,
+      "function_vectors_nonzero": 0
+    },
+    "test": {
+      "function_mask_on": 0,
+      "anchor_rows_nonempty": 0,
+      "function_vectors_nonzero": 0
+    },
+    "student_training_excludes_both_mask_sets": "by construction (hashed split of sequence & GO genes outside dev U test)",
+    "note": "re-run after fixing the check (the first attempt raised inside the check: pack built without a world)"
+  },
+  "6_e6": {
+    "pass": true,
+    "f0_inner0": {
+      "positives_masked": 0,
+      "controls_masked": 0
+    },
+    "f0_outer": {
+      "positives_masked": 0,
+      "controls_masked": 0
+    },
+    "second_level": "RowBlock.train_ok excludes masked genes from every training table"
+  },
+  "7_budget": {
+    "pass": true,
+    "files": 180,
+    "bad": []
+  },
+  "8_fallback": {
+    "pass": true,
+    "max_abs_diff": 0.0,
+    "per_fold": {
+      "fold0": {
+        "C_b0_l0.03": {
+          "rows_a0": 10182,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421818
+        },
+        "C_b0_l0.1": {
+          "rows_a0": 10182,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421818
+        },
+        "C_b1_l0.03": {
+          "rows_a0": 10182,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421818
+        },
+        "C_b1_l0.1": {
+          "rows_a0": 10182,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421818
+        },
+        "C_b2_l0.03": {
+          "rows_a0": 10182,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421818
+        },
+        "C_b2_l0.1": {
+          "rows_a0": 10182,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421818
+        }
+      },
+      "fold1": {
+        "C_b0_l0.03": {
+          "rows_a0": 10897,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421103
+        },
+        "C_b0_l0.1": {
+          "rows_a0": 10897,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421103
+        },
+        "C_b1_l0.03": {
+          "rows_a0": 10897,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421103
+        },
+        "C_b1_l0.1": {
+          "rows_a0": 10897,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421103
+        },
+        "C_b2_l0.03": {
+          "rows_a0": 10897,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421103
+        },
+        "C_b2_l0.1": {
+          "rows_a0": 10897,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421103
+        }
+      },
+      "fold2": {
+        "C_b0_l0.03": {
+          "rows_a0": 10957,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421043
+        },
+        "C_b0_l0.1": {
+          "rows_a0": 10957,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421043
+        },
+        "C_b1_l0.03": {
+          "rows_a0": 10957,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421043
+        },
+        "C_b1_l0.1": {
+          "rows_a0": 10957,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421043
+        },
+        "C_b2_l0.03": {
+          "rows_a0": 10957,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421043
+        },
+        "C_b2_l0.1": {
+          "rows_a0": 10957,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 421043
+        }
+      },
+      "fold3": {
+        "C_b0_l0.03": {
+          "rows_a0": 11162,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420838
+        },
+        "C_b0_l0.1": {
+          "rows_a0": 11162,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420838
+        },
+        "C_b1_l0.03": {
+          "rows_a0": 11162,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420838
+        },
+        "C_b1_l0.1": {
+          "rows_a0": 11162,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420838
+        },
+        "C_b2_l0.03": {
+          "rows_a0": 11162,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420838
+        },
+        "C_b2_l0.1": {
+          "rows_a0": 11162,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420838
+        }
+      },
+      "fold4": {
+        "C_b0_l0.03": {
+          "rows_a0": 11256,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420744
+        },
+        "C_b0_l0.1": {
+          "rows_a0": 11256,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420744
+        },
+        "C_b1_l0.03": {
+          "rows_a0": 11256,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420744
+        },
+        "C_b1_l0.1": {
+          "rows_a0": 11256,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420744
+        },
+        "C_b2_l0.03": {
+          "rows_a0": 11256,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420744
+        },
+        "C_b2_l0.1": {
+          "rows_a0": 11256,
+          "max_abs_diff_a0": 0.0,
+          "rows_a1": 420744
+        }
+      }
+    }
+  },
+  "9_batch_invariance": {
+    "pass": true,
+    "max_abs_diff_semantic": 3.5762786865234375e-07,
+    "note": "row-wise normalisation only; no batch statistics anywhere in scoring"
+  },
+  "10_seeds": {
+    "pass": true,
+    "rule": "per-disease mean over seeds (union would give 1.0)"
+  },
+  "all_pass": true,
+  "check5_rerun_utc": "2026-09-24T11:28:35Z"
+}

@@ -1,0 +1,30 @@
+{
+  "generated_utc": "2026-09-23T08:52:50Z",
+  "checks": {
+    "ids_valid_share": 0.9840153452685422,
+    "bridge_rows": 1495,
+    "bridge_predicates": {
+      "skos:exactMatch": 617,
+      "skos:broadMatch": 420,
+      "skos:narrowMatch": 310,
+      "skos:relatedMatch": 142,
+      "skos:closeMatch": 6
+    },
+    "impc_calls": 65780,
+    "calls_on_1to1_project_genes": 63646,
+    "calls_mapped_share": 0.7749897872607863,
+    "calls_mapped_direct_share": 0.44487686226816664,
+    "genes_with_model": 7261,
+    "one_to_one_classes": 18782,
+    "dev_pairs_pos": 509,
+    "dev_auc_known_vs_other": 0.5582705974996899,
+    "diseases_with_hpo": 6279
+  },
+  "admitted": true,
+  "manual_spot_check": "exported (100 rows), not performed",
+  "missing_rule": "untested / no 1:1 orthologue / no HPO -> mask False; not 0",
+  "limits": "knockout calls do not represent gain-of-function or dominant-negative mechanisms",
+  "protocol_id": "gpu8_v71",
+  "written_utc": "2026-09-23T08:52:50Z",
+  "payload_hash": "df15a8b3da284aa375a19844324c86c9bbded0dc5694d3825622896a8f029536"
+}

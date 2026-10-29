@@ -1,0 +1,208 @@
+{
+  "generated_utc": "2026-09-23T08:40:38Z",
+  "shapes": {
+    "d_text": [
+      13321,
+      768
+    ],
+    "d_text_mask": [
+      13321
+    ],
+    "d_hpo": [
+      13321,
+      768
+    ],
+    "d_hpo_mask": [
+      13321
+    ],
+    "g_sequence": [
+      19861,
+      480
+    ],
+    "g_sequence_mask": [
+      19861
+    ],
+    "g_function": [
+      19861,
+      768
+    ],
+    "g_function_mask": [
+      19861
+    ],
+    "g_expression": [
+      19861,
+      51
+    ],
+    "g_expression_mask": [
+      19861,
+      51
+    ],
+    "g_expression_gtex": [
+      19861,
+      51
+    ],
+    "g_expression_gtex_mask": [
+      19861,
+      51
+    ],
+    "d_tissue": [
+      13321,
+      51
+    ],
+    "d_tissue_mask": [
+      13321
+    ],
+    "anchor_vectors": [
+      10903,
+      768
+    ],
+    "g_image": [
+      19861,
+      1024
+    ],
+    "g_image_mask": [
+      19861
+    ]
+  },
+  "hashes": {
+    "d_text": "6ee53ebce0b2d732d853981e94bb18b9560f976e3656bbcf47162da96c045ff6",
+    "d_text_mask": "bd290d7f835c2707ac8e3363a2bd9c2e8ded9b58f1f24184c10d00d7d4e785b5",
+    "d_hpo": "f5243e617da1722c2ef922b46763554ecf7524a3b46e8514d0285ddc72b3f219",
+    "d_hpo_mask": "8bb86e229268e69250c1fd9c2a4aed52b8a9120eaba1ccd53081424c4cd832bf",
+    "g_sequence": "eec65717e1d9c41a9433412366935d39b87c32f85a61853a92410c8f93d09fdd",
+    "g_sequence_mask": "7deeff398d6715e5eaf979dde97890e55441539108ce8696f52cd7da209f44c1",
+    "g_function": "df1deaf68157ff182926cdad1a64f6805d25bd19290e4f6de6a178b9ed5ab2f7",
+    "g_function_mask": "67a17b8a8eb09ea82c8d809ac8d93abc8abe424b5116d44f9f92238b05cd6dd3",
+    "g_expression": "0aa8a0f4b4eb01ada7618006666e13568276c5dfa82d2ff8bfae948d2f6b31be",
+    "g_expression_mask": "6405402cc53b980250805d17eaa90d03863ff12b9f46b2270597fef396417019",
+    "g_expression_gtex": "f4e505a9ba82d96ebea2051afa3ac06e3e73cbab80bae271851e3b779463a81d",
+    "g_expression_gtex_mask": "f43cf915c23ab4e2d25dd690f077a5185b3720e23a0bf15b4ca3671566cebc63",
+    "d_tissue": "076c4e14513f8cbf6fa49ae5ede5d115a4dd7300bb3e5d7fb37b78c1b41fc3e3",
+    "d_tissue_mask": "8016701c07eda0e336b8bb58fe9f9617285b741078f4e3775cf6a9a14cabbf8a",
+    "anchor_vectors": "656f1ce8b0c4a9a51f1171caf8e701b5ef99d2af349487d727a0b33824926aec",
+    "g_image": "2ccad3012bba824b24c6d156de6b362f6f352830fae9984b437a58752ca2ed26",
+    "g_image_mask": "6000f5d13d97906c35777c91e74d461a19b073bcd393041d045a903adcf408ad",
+    "anchor_incidence": "167922778db3e982bb2aff397de9bb33067076c7edbc74e1c7ff30f9d8dac0b4"
+  },
+  "checks": {
+    "d_text": {
+      "rows_valid": 13321,
+      "dims_nonconstant_share": 1.0,
+      "mean_row_norm": 15.320130348205566
+    },
+    "d_hpo": {
+      "rows_valid": 6279,
+      "dims_nonconstant_share": 1.0,
+      "mean_row_norm": 10.916934967041016
+    },
+    "g_sequence": {
+      "rows_valid": 19313,
+      "dims_nonconstant_share": 1.0,
+      "mean_row_norm": 5.676671981811523
+    },
+    "g_function": {
+      "rows_valid": 18789,
+      "dims_nonconstant_share": 1.0,
+      "mean_row_norm": 11.213628768920898
+    },
+    "g_image": {
+      "rows_valid": 12083,
+      "dims_nonconstant_share": 1.0,
+      "mean_row_norm": 4.953752517700195
+    },
+    "g_expression": {
+      "genes_any_observed": 19239,
+      "row_mean_abs_max": 5.142361510033701e-08
+    }
+  },
+  "coverage": {
+    "genes": {
+      "sequence": {
+        "all": 19313,
+        "share_all": 0.9724082372488797,
+        "share_positive_genes": 0.9407511080009331
+      },
+      "function": {
+        "all": 18789,
+        "share_all": 0.9460248728664217,
+        "share_positive_genes": 0.9364357359458829
+      },
+      "expression": {
+        "all": 19239,
+        "share_all": 0.9686823422788379,
+        "share_positive_genes": 0.9385351061348263
+      },
+      "image": {
+        "all": 12083,
+        "share_all": 0.6083782286893913,
+        "share_positive_genes": 0.6429904362024725
+      }
+    },
+    "diseases": {
+      "d_text": {
+        "all": 13321,
+        "labelled": 5758,
+        "share_labelled": 1.0
+      },
+      "d_hpo": {
+        "all": 6279,
+        "labelled": 4229,
+        "share_labelled": 0.734456408475165
+      },
+      "d_tissue": {
+        "all": 9961,
+        "labelled": 5029,
+        "share_labelled": 0.8733935394234109
+      }
+    },
+    "anchors": {
+      "n": 10903,
+      "genes_with_anchor": 16828
+    },
+    "gene_modality_patterns": {
+      "SFE": 18717,
+      "none": 535,
+      "SE": 512,
+      "SF": 67,
+      "S": 17,
+      "E": 8,
+      "F": 3,
+      "FE": 2
+    },
+    "labelled_disease_patterns": {
+      "THQ": 3941,
+      "TQ": 1088,
+      "T": 441,
+      "TH": 288
+    }
+  },
+  "hpo_aggregation": {
+    "pairs": 141665,
+    "terms_without_vector": 0
+  },
+  "encoder_keys": {
+    "disease": {
+      "model": "sapbert",
+      "revision": "090663c3ae57bf35ffe4d0d468a2a88d03051a4d",
+      "pooling": "cls_before_pooler"
+    },
+    "hpo": {
+      "model": "sapbert",
+      "revision": "090663c3ae57bf35ffe4d0d468a2a88d03051a4d",
+      "pooling": "cls_before_pooler"
+    },
+    "sequence": {
+      "model": "esm2_35m",
+      "revision": "6fbf070e65b0b7291e7bbcd451118c216cff79d8",
+      "pooling": "coverage_normalised_residue_mean",
+      "window": 1022,
+      "overlap": 128
+    }
+  },
+  "disease_order": "World6.idx.d_ix (disease_row)",
+  "gene_order": "World6.idx.g_ix (gene_row)",
+  "provenance_reviewed": false,
+  "protocol_id": "gpu8_v71",
+  "written_utc": "2026-09-23T08:40:38Z",
+  "payload_hash": "d27677582e667e3b6027207f126e95791f65d09eb99aea5764c8138920f0c391"
+}

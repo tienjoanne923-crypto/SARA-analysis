@@ -1,0 +1,158 @@
+{
+  "cutoff": "2023-12-31",
+  "inputs": [
+    {
+      "input": "ctd_relations",
+      "path": "gpu8/tables_historical/relations.parquet",
+      "exists": true,
+      "date": "2023-12-05",
+      "not_later_than_cutoff": true,
+      "sha256": "52ae5bc4776f456094d8887acbdacdb85256399ec4b77e53729eb57c63c56c0b",
+      "note": "Wayback CTD_genes_diseases 2023-12-05 (via V5 build)"
+    },
+    {
+      "input": "ctd_evidence",
+      "path": "gpu8/tables_historical/evidence.parquet",
+      "exists": true,
+      "date": "2023-12-05",
+      "not_later_than_cutoff": true,
+      "sha256": "a8e961690f458db3990dfa2f0d8e9ce7a28e6b7b26eb5f00d20cfdd4e3fa15ce",
+      "note": "PMIDs of the same edge table"
+    },
+    {
+      "input": "ctd_vocabulary",
+      "path": "data_snapshots/historical_2023q4/association/CTD_diseases.tsv.gz",
+      "exists": true,
+      "date": "2022-01-24",
+      "not_later_than_cutoff": true,
+      "sha256": "9ab05d1de1a1a37dc8571106a6702dfbb8a5a5f0d0c63a3f4420366356c0484e",
+      "note": "Wayback CTD_diseases"
+    },
+    {
+      "input": "ctd_hierarchy",
+      "path": "gpu8/tables_historical/hierarchy.parquet",
+      "exists": true,
+      "date": "2022-01-24",
+      "not_later_than_cutoff": true,
+      "sha256": "e4d5de836b8ccba29ad9b9e8cca02c673ec04afc77c9eba31df546bd1ac18822",
+      "note": "ParentIDs of the 2022 vocabulary"
+    },
+    {
+      "input": "hpo_obo",
+      "path": "data_snapshots/historical_2023q4/phenotype/hp.obo",
+      "exists": true,
+      "date": "2023-10-09",
+      "not_later_than_cutoff": true,
+      "sha256": "d3c1280f2780628cc2adc41d43ad92eab8fa4c2bab0f421e6334c7b1e6cd4e52",
+      "note": "data-version hp/releases/2023-10-09"
+    },
+    {
+      "input": "hpoa",
+      "path": "data_snapshots/historical_2023q4/phenotype/phenotype.hpoa",
+      "exists": true,
+      "date": "2023-10-09",
+      "not_later_than_cutoff": true,
+      "sha256": "b654dac338a33225834919ac99f62a2ae54710d051042fbc5eacdf19b44e54e2",
+      "note": "HPO release v2023-10-09"
+    },
+    {
+      "input": "hpo_phenotypes_mapped",
+      "path": "gpu8/tables_historical/phenotypes.parquet",
+      "exists": true,
+      "date": "2023-10-09",
+      "not_later_than_cutoff": true,
+      "sha256": "e98898053633b777430b3502d638dcc6c204c90f25de8a655668ad86b4dbae7c",
+      "note": "HPOA mapped with the 2022 CTD alt ids"
+    },
+    {
+      "input": "genes_to_phenotype",
+      "path": "gpu8/external/v6/hpo/genes_to_phenotype_v2023-10-09.txt",
+      "exists": true,
+      "date": "2023-10-09",
+      "not_later_than_cutoff": true,
+      "sha256": "e8bba158820dc55151cd4ad2a23642326ee271b068c0cc74bc99754c2a1959cc",
+      "note": "HPO release"
+    },
+    {
+      "input": "doid",
+      "path": "data_snapshots/historical_2023q4/ontology/doid.obo",
+      "exists": true,
+      "date": "2023-11-30",
+      "not_later_than_cutoff": true,
+      "sha256": "8f90e1c91e67c4828364883a5737c4f8d824acb2468796fd8e87d8b649a40c15",
+      "note": "data-version releases/2023-11-30"
+    },
+    {
+      "input": "go_obo",
+      "path": "gpu8/external/v6/go/go-basic_2023-10-09.obo",
+      "exists": true,
+      "date": "2023-10-09",
+      "not_later_than_cutoff": true,
+      "sha256": "3da20cc774d666b4338446bc81341eaf536885dc10ccb667480a79f6b964aa3c",
+      "note": "GO release"
+    },
+    {
+      "input": "goa_human",
+      "path": "gpu8/external/v6/go/goa_human_2023-10-09.gaf.gz",
+      "exists": true,
+      "date": "2023-10-09",
+      "not_later_than_cutoff": true,
+      "sha256": "4811a64ee717cca2fa796755d36d0856ca493464d25172de36ded88ddae6c93f",
+      "note": "GOA release"
+    },
+    {
+      "input": "hgnc",
+      "path": "gpu8/external/v6/hgnc/hgnc_complete_set_2023-10-01.txt",
+      "exists": true,
+      "date": "2023-10-01",
+      "not_later_than_cutoff": true,
+      "sha256": "66f5e9ce5c1643dab6fa363b954fd15597ae0e23fc0a34c390f11b5f96a0cc55",
+      "note": "HGNC monthly"
+    },
+    {
+      "input": "gtex_v8",
+      "path": "gpu8/external/v6/gtex/GTEx_v8_gene_median_tpm.gct.gz",
+      "exists": true,
+      "date": "2017-06-05",
+      "not_later_than_cutoff": true,
+      "sha256": "ee7201ff2f280b0de5657d4b08e9a240362d9757efed7f7bd5dba35a5f8617b8",
+      "note": "GTEx v8 median TPM"
+    }
+  ],
+  "all_present": true,
+  "all_not_later": true,
+  "later_inputs_disclosed": [
+    {
+      "input": "gene background (19,861) and HGNC-based gene index",
+      "date": "2026",
+      "role": "entity index"
+    },
+    {
+      "input": "protein sequences (MANE 2025)",
+      "date": "2025",
+      "role": "static gene attribute"
+    },
+    {
+      "input": "STRING v12.0 physical network",
+      "date": "2023-07",
+      "role": "PPI (not later than the cut-off)"
+    },
+    {
+      "input": "disease equivalence groups and families",
+      "date": "2026",
+      "role": "split units only"
+    },
+    {
+      "input": "V8.1 hyper-parameters and development choices",
+      "date": "2026",
+      "role": "frozen settings"
+    },
+    {
+      "input": "SapBERT / ESM-2 checkpoints",
+      "date": "2021 / 2022",
+      "role": "frozen encoders"
+    }
+  ],
+  "mondo_used": false,
+  "generated_utc": "2026-09-24T11:13:15Z"
+}

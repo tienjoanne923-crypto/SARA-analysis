@@ -1,0 +1,45 @@
+{
+  "scope": "Metadata and file-identity audit; no new training or full reproduction",
+  "original_selected_input_files": 103,
+  "public_selected_input_files": 101,
+  "conditional_extension_files_excluded": [
+    "gpu8/tables_v71/g_image_cell_line.parquet",
+    "gpu8/tables_v71/hp_mp_bridge_v71.parquet"
+  ],
+  "selected_files_with_historical_hashes_reverified": 62,
+  "selected_files_with_new_hashes": 39,
+  "oct18_verification_records": 220,
+  "oct18_unique_paths": 213,
+  "oct18_duplicate_records": 7,
+  "overlap_between_public_catalogues": 7,
+  "deduplicated_public_catalogue_files": 307,
+  "known_missing_dependencies": [
+    {
+      "path": "gpu8/caches_v8/encoders",
+      "status": "absent",
+      "specific_required_array": "gpu8/caches_v8/encoders/sapbert_disease_seg_l1.npy",
+      "effect": "Pack8 requires segmented SapBERT disease arrays. Original absent arrays are not hashed, archived or claimed reproduced. They would need explicit regeneration from the pinned checkpoint and recorded text."
+    },
+    {
+      "path": "gpu8/external/v6/wayback",
+      "expected_resource": "complete historical CTD_genes_diseases.tsv.gz capture dated2023-12-05",
+      "status": "complete historical raw capture not retained; directory contains metadata and a partial head only",
+      "effect": "Only a262144-byte head and CDX metadata are present. Historical processed relations/evidence exist and are hashed; raw-to-processed regeneration is not established."
+    }
+  ],
+  "other_unclosed_dependencies": [
+    "V7.1 featurepack, anchor caches and other runtime caches are not exhaustively inventoried by the selected103-input audit.",
+    "All current source files are not retrospectively authenticated as the exact code bytes used for every original fitting run.",
+    "Moving upstream download endpoints can return different bytes; a mismatch must stop an exact-snapshot claim."
+  ],
+  "not_included": [
+    "third-party raw data",
+    "third-party pretrained weights",
+    "large feature/model/prediction binaries unless separately packaged and enumerated",
+    "DOI or GitHub publication claims"
+  ],
+  "full_dependency_closure_verified": false,
+  "clean_room_reproduction_executed": false,
+  "public_repository_verified": false,
+  "persistent_doi_verified": false
+}

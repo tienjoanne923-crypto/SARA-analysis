@@ -1,0 +1,27 @@
+{
+  "title": "SARA analysis code and provenance for disease gene retrieval under uneven knowledge coverage",
+  "upload_type": "software",
+  "publication_date": "2026-10-29",
+  "version": "1.0.0-rc2",
+  "creators": [
+    {
+      "name": "Xu, Jialu"
+    }
+  ],
+  "access_right": "open",
+  "license": "mit",
+  "description": "SARA V8.1 analysis source, frozen configurations, preprocessing scripts, environment specifications and content-hash provenance for the October 18 scientific manuscript snapshot and its October 28 English editorial revision. Creator: 徐嘉璐 (Jialu Xu). This release includes the original source dependency packages and bounded software/identity checks. It does not include third-party raw databases, processed research tables, fitted weights or saved prediction arrays. Original segmented V8 encoder arrays and the complete historical CTD raw dump are not retained; seed-42 replay additionally requires development-stage prediction artifacts. A full independent-environment numerical reproduction has not been completed. Third-party resources retain their original terms. No DOI is asserted by this metadata file.",
+  "keywords": [
+    "disease gene prioritization",
+    "semantic retrieval",
+    "bioinformatics",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/tienjoanne923-crypto/SARA-analysis",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}
